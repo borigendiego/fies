@@ -7,7 +7,7 @@ import Image from "next/image.js";
 
 const Caraousel = () => {
 
-    const carousel = useRef(null)
+    const carousel = useRef<any>(null)
 
     const next = () => {
         //check si el carousel tiene elementos
