@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Nav from '../nav'
 //
-
+import { motion } from 'framer-motion';
 //
 
 const Header = () => {
@@ -21,7 +21,12 @@ const Header = () => {
     */
 
     return(
-        <nav className='bg-slate-500 md:flex md:justify-around md:py-4 fixed w-full'>
+        <motion.nav 
+            className='md:flex md:justify-around md:py-4 fixed w-full z-20'
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{duration: 1.5}}
+        >
             <Image
                 src={'/vercel.svg'} 
                 alt={''}
@@ -29,7 +34,7 @@ const Header = () => {
                 height={100}
             />
             <Nav />
-        </nav>
+        </motion.nav>
     )
 }
 

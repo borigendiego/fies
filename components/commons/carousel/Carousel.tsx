@@ -59,17 +59,15 @@ const Caraousel = () => {
 
     return(
         <motion.div 
-        className='relative rounded-2xl'
+        className='relative md:my-24 overflow-hidden max-w-[1300px] mx-auto'
         initial={{
             opacity: 0,
-            x: -50,
             }}
         whileInView={{
             opacity: 1,
-            x: 0,
         }}
         viewport={{ once: true }}
-        transition={{duration: 1}}
+        transition={{duration: 1.5}}
         >
             <div className="">
                 <div className="flex flex-nowrap" ref={carousel}>

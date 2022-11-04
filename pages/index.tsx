@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Banner from '../components/banner'
+import Slick from '../components/commons/Slick'
 import Caraousel from '../components/commons/carousel/Carousel'
 import Button from '../components/commons/homeButton'
 import Footer from '../components/footer'
 import Header from '../components/header'
+//Motion framer
+
 
 export default function Home() {
   return (
@@ -18,7 +21,7 @@ export default function Home() {
       <main>
         <Button />
         <Header />
-        <Banner />
+        <Slick />
         <Caraousel />
         <Footer />
       </main>

@@ -2,12 +2,15 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -21,4 +24,8 @@ a {
 
 .carousel-arrow {
   filter: invert(99%) sepia(16%) saturate(2%) hue-rotate(158deg) brightness(113%) contrast(100%);
+}
+
+.footer-b:hover {
+  opacity: .5;
 }

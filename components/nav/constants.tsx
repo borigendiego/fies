@@ -1,11 +1,11 @@
 const NAV_DATA = [
     {
         label: 'News',
-        link: '/news/'
+        link: '/'
     },
     {
         label: 'Büro',
-        link: '/büro/'
+        link: '/buro/'
     },
     {
         label: 'Leistung',
