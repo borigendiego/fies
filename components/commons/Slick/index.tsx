@@ -48,13 +48,14 @@ const Slick = () => {
         <div className="overflow-hidden">
             <Slider {...settings}>
                 {
-                    SLIDES_DATA.map((value, index) => {
-                        return(
+                    SLIDES_DATA.map((value) => {
+                        return (
                             <a href={value.linkTo} className='relative cursor-pointer z-10 h-screen'>
                                 <img src={value.image} alt={''} className={'absolute object-cover'}/>
-                                <div className="relative z-20 top-[70vh] left-[7vw]">
-                                    <h1 className="text-white text-4xl">{value.title}</h1>
-                                    <p className="text-white text-2xl">{value.text}</p>
+                                <div className="relative z-20 top-[70vh] py-6 pl-10">
+                                    <div className={'absolute z-0 left-0 w-2/4 h-full bg-[#89ADCD80] backdrop-blur-sm rounded-r-lg'} />
+                                    <h1 className={"text-white text-4xl relative z-10 mt-6"}>{value.title}</h1>
+                                    <p className={"text-white text-2xl relative z-10"}>{value.text}</p>
                                 </div>
                             </a>
                         )

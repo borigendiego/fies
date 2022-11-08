@@ -51,10 +51,6 @@ h1, h2, h3, h4 {
   text-decoration: underline;
 }
 
-.scroll-nav {
-  background-color: azure;
-}
-
 .hover-slide {
   transition: all 0.3s linear;
 }
@@ -67,3 +63,29 @@ h1, h2, h3, h4 {
   padding: 15px;
   background-color: #89ADCD;
 }
+
+//Nav bar
+.header-blue-logo .header-white-logo {
+  transition: all 1s linear;
+}
+
+.header-blue-logo {
+  top: -90px;
+  transition: all 0.3s;
+}
+
+.scroll-nav {
+  background-color: azure;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+
+  .header-blue-logo {
+    top: 0;
+    position: relative;
+  }
+
+  .header-white-logo {
+    visibility: hidden;
+  }
+}
+
