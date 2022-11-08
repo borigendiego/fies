@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 
@@ -10,19 +11,25 @@ type slideprops = {
 
 const Slide = ({image, title, text}:slideprops) => {
     return(
-        <div className="min-w-[450px] overflow-hidden transition-all duration-300 ease-in z-10 relative p-8">
-            <div className="md:flex md:flex-col bg-indigo-500">
-                <div className="pt-16 flex flex-col justify-center items-center">
-                    <Image
-                        src={image} 
-                        alt={''}
-                        width={100}
-                        height={100} 
-                    />
-                    <h3>{title}</h3>
-                    <p>{text}</p>
+        <div className="min-w-[450px] overflow-hidden transition-all duration-300 ease-in z-10 relative px-16">
+            <Link href={'/buro'}>
+                <div className="md:flex md:flex-col rounded-md hover-slide">
+                    <div className="py-6 flex flex-col duration-300 ease-in">
+                        <div className='flex justify-center'>
+                            <Image
+                                src={image} 
+                                alt={''}
+                                width={500}
+                                height={200} 
+                            />
+                        </div>
+                        <div className="">
+                            <h2 className="mt-4 font-bold">{title}</h2>
+                            <p>{text}</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </Link>
         </div>
     )
 }

@@ -6,32 +6,31 @@ import { motion } from 'framer-motion';
 //
 
 const Header = () => {
-    /*
+
     if (process.browser) {
         // Client-side-only code
         const stickyFunction = () => window.addEventListener('scroll', function() {
             let navigation = document.querySelector('nav');
 
             if (navigation) {
-                navigation.classList.toggle('sticky', window.scrollY > 0);
+                navigation.classList.toggle('scroll-nav', window.scrollY > 0);
             }
         })
         stickyFunction();
     }
-    */
 
     return(
         <motion.nav 
-            className='md:flex md:justify-around md:py-4 fixed w-full z-20'
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}
-            transition={{duration: 1.5}}
+            className='md:flex md:justify-around md:py-7 fixed w-full z-40 duration-300 ease-linear overflow-hidden'
+            initial={{opacity: 0, y: -15}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: .5, delay: .5}}
         >
             <Image
-                src={'/vercel.svg'} 
+                src={'/assets/images/logo.png'} 
                 alt={''}
-                width={100}
-                height={100}
+                width={40}
+                height={40}
             />
             <Nav />
         </motion.nav>

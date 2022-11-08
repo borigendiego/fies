@@ -11,43 +11,55 @@ const Slick = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoPlaySpeed: 3000,
+        autoPlaySpeed: 4000,
         speed: 1000,
         cssEase: "linear"
     };
+
+    const SLIDES_DATA = [
+        {
+            linkTo: '/buro',
+            image: '/assets/images/banner/bannerImage.jpg',
+            title: 'Title example 1',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+        {
+            linkTo: '/leistung',
+            image: '/assets/images/banner/bannerImage-2.jpg',
+            title: 'Title example 2',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+        {
+            linkTo: '/projekte',
+            image: '/assets/images/banner/bannerImage-3.jpg',
+            title: 'Title example 3',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+        {
+            linkTo: '/kontakt',
+            image: '/assets/images/banner/bannerImage-4.jpg',
+            title: 'Title example 4',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+    ] 
 
 
     return(
         <div className="overflow-hidden">
             <Slider {...settings}>
-                <a href={'/leistung'} className='relative cursor-pointer z-10 h-screen'>
-                    <img src={'/assets/images/banner/bannerImage.jpg'} alt={''} className={'absolute'}/>
-                    <div className="relative z-20 top-[70vh] left-[7vw]">
-                        <h1 className="text-white text-4xl">Title example</h1>
-                        <p className="text-white text-4xl">Text example daawda</p>
-                    </div>
-                </a>
-                <a href={'/projekte'} className='relative cursor-pointer z-10'>
-                    <img src={'/assets/images/banner/bannerImage.jpg'} alt={''} className={'absolute'}/>
-                    <div className="relative z-20 top-[70vh] left-[7vw]">
-                        <h1 className="text-white text-4xl">Title example2</h1>
-                        <p className="text-white text-4xl">Text example daawda2</p>
-                    </div>
-                </a>
-                <a href={'/kontakt'} className='relative cursor-pointer z-10'>
-                    <img src={'/assets/images/banner/bannerImage.jpg'} alt={''} className={'absolute'}/>
-                    <div className="relative z-20 top-[70vh] left-[7vw]">
-                        <h1 className="text-white text-4xl">Title example3</h1>
-                        <p className="text-white text-4xl">Text example daawda3</p>
-                    </div>
-                </a>
-                <a href={'/kontakt'} className='relative cursor-pointer z-10'>
-                    <img src={'/assets/images/banner/bannerImage.jpg'} alt={''} className={'absolute'}/>
-                    <div className="relative z-20 top-[70vh] left-[7vw]">
-                        <h1 className="text-white text-4xl">Title example4</h1>
-                        <p className="text-white text-4xl">Text example daawda4</p>
-                    </div>
-                </a>
+                {
+                    SLIDES_DATA.map((value, index) => {
+                        return(
+                            <a href={value.linkTo} className='relative cursor-pointer z-10 h-screen'>
+                                <img src={value.image} alt={''} className={'absolute object-cover'}/>
+                                <div className="relative z-20 top-[70vh] left-[7vw]">
+                                    <h1 className="text-white text-4xl">{value.title}</h1>
+                                    <p className="text-white text-2xl">{value.text}</p>
+                                </div>
+                            </a>
+                        )
+                    })
+                }
             </Slider>
         </div>
     )

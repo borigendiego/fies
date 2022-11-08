@@ -15,7 +15,7 @@ const Caraousel = () => {
             //obtenemos el primer elemento del carousel
             const primerElemento = carousel.current.children[0];
             //transicion para el carousel
-            carousel.current.style.transition = `1000ms ease-out all`;
+            carousel.current.style.transition = `500ms ease all`;
     
             const tamañoSlide = carousel.current.children[0].offsetWidth;
     
@@ -50,7 +50,7 @@ const Caraousel = () => {
             carousel.current.style.transform = `translateX(-${tamañoSlide}px)`;
     
             setTimeout(() => {
-                carousel.current.style.transition = `1000ms ease-out all`;
+                carousel.current.style.transition = `500ms ease all`;
                 carousel.current.style.transform = `translateX(0)`;   
             }, 30)
     
@@ -59,15 +59,15 @@ const Caraousel = () => {
 
     return(
         <motion.div 
-        className='relative md:my-24 overflow-hidden max-w-[1300px] mx-auto'
-        initial={{
-            opacity: 0,
+            className='relative md:my-24 overflow-hidden max-w-[1300px] mx-auto'
+            initial={{
+                opacity: 0,
+                }}
+            whileInView={{
+                opacity: 1,
             }}
-        whileInView={{
-            opacity: 1,
-        }}
-        viewport={{ once: true }}
-        transition={{duration: 1.5}}
+            viewport={{ once: true }}
+            transition={{duration: 1, delay: .5}}
         >
             <div className="">
                 <div className="flex flex-nowrap" ref={carousel}>
@@ -76,13 +76,13 @@ const Caraousel = () => {
                     }
                 </div>
             </div>
-            <div className="absolute top-[40%] w-full h-full z-20">
+            <div className="absolute top-[40%] w-full z-20">
                 <motion.button
-                onMouseDown={back}
-                whileHover={{scale: 1.1}}
-                whileTap={{scale: 0}}
-                transition={{duration: 0.3}}
-                className='cursor-pointer outline-none ease-in absolute bg-pink-600 rounded-full mx-2 py-2 px-4 shadow-xl'
+                    onMouseDown={back}
+                    whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0}}
+                    transition={{duration: 0.3}}
+                    className='cursor-pointer outline-none ease-in absolute bg-pink-600 rounded-full mx-2 py-2 px-4 shadow-xl'
                 >
                     <Image 
                     src="/assets/images/carousel/arrow-left.svg" 
@@ -92,11 +92,12 @@ const Caraousel = () => {
                     className='carousel-arrow'/>
                 </motion.button>
                 <motion.button
-                onMouseDown={next}
-                whileHover={{scale: 1.1}}
-                whileTap={{scale: 0}}
-                transition={{duration: 0.3}}
-                className='cursor-pointer outline-none ease-in absolute bg-pink-600 rounded-full mx-2 py-2 px-4 right-0 shadow-xl'>
+                    onMouseDown={next}
+                    whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0}}
+                    transition={{duration: 0.3}}
+                    className='cursor-pointer outline-none ease-in absolute bg-pink-600 rounded-full mx-2 py-2 px-4 right-0 shadow-xl'
+                >
                     <Image 
                         src="/assets/images/carousel/arrow-right.svg" 
                         width={20}
