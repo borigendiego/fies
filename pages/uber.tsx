@@ -2,23 +2,27 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Header from '../components/header';
+import WhoWeAre from '../components/whoWeAre';
+
+import Footer from '../components/footer';
+import LayoutDisplayer from '../components/layoutDisplayer';
 
 
-const Buro: NextPage = () => {
+const Uber: NextPage = () => {
     return(
         <div className='page'>
             <Head>
             </Head>
             <main>
                 <Header />
-                <div>
-                </div>
+                <WhoWeAre />
+                <LayoutDisplayer />
             </main>
             <footer>
-
+                <Footer />
             </footer>
         </div>
     )
 }
 
-export default Buro;
+export default Uber;

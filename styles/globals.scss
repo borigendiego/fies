@@ -74,12 +74,23 @@ h1, h2, h3, h4 {
   transition: all 0.3s;
 }
 
+.header-white-logo {
+  transition: transform 300ms ease;
+}
+
 .scroll-nav {
-  background-color: azure;
+  background-color: #89ADCD;
   padding-top: 16px !important;
   padding-bottom: 16px !important;
 
-  .header-blue-logo {
+  .header-white-logo {
+    transform: scale(.8);
+  }
+
+}
+
+/*  
+.header-blue-logo {
     top: 0;
     position: relative;
   }
@@ -87,5 +98,4 @@ h1, h2, h3, h4 {
   .header-white-logo {
     visibility: hidden;
   }
-}
-
+*/

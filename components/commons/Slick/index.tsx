@@ -18,7 +18,7 @@ const Slick = () => {
 
     const SLIDES_DATA = [
         {
-            linkTo: '/buro',
+            linkTo: '/uber',
             image: '/assets/images/banner/bannerImage.jpg',
             title: 'Title example 1',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
