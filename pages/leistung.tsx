@@ -5,6 +5,7 @@ import Header from '../components/header';
 import Projektewicklung from '../components/projektenwicklung';
 import LeistungComp from '../components/leistung';
 import ArchitekturComp from '../components/architektur';
+import Statik from '../components/statik';
 
 const Leistung: NextPage = () => {
     return(
@@ -16,6 +17,7 @@ const Leistung: NextPage = () => {
                 <LeistungComp />
                 <Projektewicklung />
                 <ArchitekturComp />
+                <Statik />
             </main>
             <footer>
 

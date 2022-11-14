@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import { motion } from 'framer-motion';
 
 const Slick = () => {
 
@@ -55,7 +54,7 @@ const Slick = () => {
                                 <div className="relative z-20 top-[70vh] py-6 pl-10">
                                     <div className={'absolute z-0 left-0 w-2/4 h-full bg-[#89ADCD80] backdrop-blur-sm rounded-r-lg'} />
                                     <h1 className={"text-white text-4xl relative z-10 mt-6"}>{value.title}</h1>
-                                    <p className={"text-white text-2xl relative z-10"}>{value.text}</p>
+                                    <p className={"text-white text-xl relative z-10"}>{value.text}</p>
                                 </div>
                             </a>
                         )

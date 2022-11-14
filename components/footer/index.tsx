@@ -13,13 +13,12 @@ const toTop = () => {
 const Footer = () => {
     return(
        <motion.div 
-       className='md:h-[40vh] md:flex md:pt-16 md:pl-20 justify-around bg-[#89ADCD]' 
-
-       id='#FOOTER'
-       initial={{opacity: 0}}
-       whileInView={{opacity: 1}}
-       transition={{duration:  .7, delay: .5}}
-       viewport={{once: true}}
+        className='md:h-[40vh] md:flex md:pt-16 md:pl-20 justify-around bg-[#89ADCD]' 
+        id='#FOOTER'
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{duration:  .7, delay: .5}}
+        viewport={{once: true}}
        >
             <motion.div
                 initial={{opacity: 0, x: -15}}

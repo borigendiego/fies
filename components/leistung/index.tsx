@@ -11,7 +11,7 @@ const LeistungComp = () => {
                     initial={{opacity: 0, y: 20}}
                     whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
-                    transition={{duration: .5, delay: 1}}
+                    transition={{duration: .7, delay: 1}}
                 >
                     Beim Bau und in der Planung überschneiden sich die verschiedenen Disziplinen, der unterschiedlichen Fachbereiche.<br/>
                     Unser Ziel ist es ganzheitlich zu planen, sodass von Anfang an und zu jeder Zeit, alle Beteiligten in den Planungsprozess eingebunden sind.<br/> 
@@ -23,7 +23,7 @@ const LeistungComp = () => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: .3}}
                 viewport={{once: true}}
-                transition={{duration: .5, delay: 1.5}}
+                transition={{duration: 1, delay: 1.5}}
             />
         </div>
     )
