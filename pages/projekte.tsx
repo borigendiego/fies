@@ -2,6 +2,8 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Header from '../components/header';
+import ProjektComponent from '../components/projektComponent';
+import ProjektDisplayer from '../components/projektDisplayer';
 
 const Projekte: NextPage = () => {
     return(
@@ -10,7 +12,8 @@ const Projekte: NextPage = () => {
             </Head>
             <main>
                 <Header />
-                <h1>PROJEKTE</h1>
+                <ProjektComponent />
+                <ProjektDisplayer />
             </main>
             <footer>
 
