@@ -2,7 +2,7 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Header from '../components/header';
-import ProjektComponent from '../components/projektComponent';
+import ProjektComponent from '../components/projektPageComponent';
 import ProjektDisplayer from '../components/projektDisplayer';
 
 const Projekte: NextPage = () => {

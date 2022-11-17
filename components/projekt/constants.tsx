@@ -7,6 +7,50 @@ const PROJEKTS_DATA = [
         baukosten: '6.8 Mio €',
         leistungen: 'Projektenwicklung Projektsteuerung Architektur, LPH 1-5',
         zeitraum: '2021-2022',
+        gallery: [
+            {
+                src: '/assets/images/projekts/willich/willich-1.jpg',
+                thumbnail: '/assets/images/projekts/willich/willich-1.jpg',
+                thumbnailWidth: 150,
+                thumbnailHeight: 150,
+                caption: ''
+            },
+            {
+                src: '/assets/images/projekts/willich/willich-2.jpg',
+                thumbnail: '/assets/images/projekts/willich/willich-2.jpg',
+                thumbnailWidth: 150,
+                thumbnailHeight: 150,
+                caption: ''
+            },
+            {
+                src: '/assets/images/projekts/willich/willich-3.jpg',
+                thumbnail: '/assets/images/projekts/willich/willich-3.jpg',
+                thumbnailWidth: 150,
+                thumbnailHeight: 150,
+                caption: ''
+            },
+            {
+                src: '/assets/images/projekts/willich/willich-4.jpg',
+                thumbnail: '/assets/images/projekts/willich/willich-4.jpg',
+                thumbnailWidth: 150,
+                thumbnailHeight: 150,
+                caption: ''
+            },
+            {
+                src: '/assets/images/projekts/willich/willich-5.jpg',
+                thumbnail: '/assets/images/projekts/willich/willich-5.jpg',
+                thumbnailWidth: 150,
+                thumbnailHeight: 150,
+                caption: ''
+            },
+            {
+                src: '/assets/images/projekts/willich/willich-6.jpg',
+                thumbnail: '/assets/images/projekts/willich/willich-6.jpg',
+                thumbnailWidth: 150,
+                thumbnailHeight: 150,
+                caption: ''
+            },
+        ],
     },
     {
         title: 'Airpark',

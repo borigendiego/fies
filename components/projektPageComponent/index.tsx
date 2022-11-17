@@ -7,9 +7,9 @@ const ProjektComponent = () => {
         <div className='h-screen bg-red-800 flex flex-col justify-center items-center'>
             <motion.div 
                 className='bg-[#89ADCD] p-8 rounded-xl'
-                initial={{opacity: 0}}
-                whileInView={{opacity: 1}}
-                transition={{duration:  1.5, delay: 1}}
+                initial={{opacity: 0, scale: .8}}
+                whileInView={{opacity: 1, scale: 1}}
+                transition={{duration:  .5, delay: .5}}
                 viewport={{once: true}}
             >
                 <h1 className='text-white text-center text-2xl'>PROJEKTE:</h1>

@@ -17,6 +17,7 @@ const ProjektDisplayer = () => {
                             baukosten={value.baukosten}
                             leistungen={value.leistungen}
                             zeitraum={value.zeitraum}
+                            gallery={value.gallery}
                         />
                     )
                 })
