@@ -82,7 +82,7 @@ const Projekt = ({title, mainImage, ort, projekt, baukosten, leistungen, zeitrau
                 </motion.div>
             </div>
             <motion.div 
-                className='w-7/12 flex items-center justify-center'
+                className='w-7/12 flex flex-col items-center justify-center'
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration:  1, delay: 1}}
@@ -94,7 +94,11 @@ const Projekt = ({title, mainImage, ort, projekt, baukosten, leistungen, zeitrau
                     height={600}
                     width={600}
                  />
-                 <ProjektGallery gallery={gallery} />
+                 <div className='h-[40vh] w-[550px] overflow-y-scroll z-50'>
+                    {
+                        gallery && <ProjektGallery gallery={gallery} />
+                    }
+                 </div>
             </motion.div>
         </div>
     )

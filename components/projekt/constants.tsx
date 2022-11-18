@@ -60,6 +60,11 @@ const PROJEKTS_DATA = [
         baukosten: '',
         leistungen: '',
         zeitraum: '',
+        gallery: [
+            {
+
+            },
+        ],
     },
     {
         title: 'Metzingen',
@@ -69,6 +74,11 @@ const PROJEKTS_DATA = [
         baukosten: '',
         leistungen: '',
         zeitraum: '',
+        gallery: [
+            {
+
+            },
+        ],
     },
     {
         title: 'Pfaffenhofen',
@@ -78,6 +88,11 @@ const PROJEKTS_DATA = [
         baukosten: '',
         leistungen: '',
         zeitraum: '',
+        gallery: [
+            {
+
+            },
+        ],
     },
 ]
 

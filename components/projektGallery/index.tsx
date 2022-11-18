@@ -8,10 +8,10 @@ type galleryImages = {
 
 const ProjektGallery = ({gallery}:galleryImages) => {
 
-    const IMAGES = gallery.map((imageURL: any, index: any) => {
+    const IMAGES = gallery.map((value: any, index: any) => {
         return {
-            src: imageURL,
-            thumbnail: imageURL,
+            src: value.src,
+            thumbnail: value.thumbnail,
             thumbnailWidth: 150,
             thumbnailHeight: 150,
             caption: `Picture ${index}`
