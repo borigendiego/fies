@@ -82,7 +82,7 @@ const Caraousel = () => {
                     whileHover={{scale: 1.1}}
                     whileTap={{scale: 0}}
                     transition={{duration: 0.3}}
-                    className='cursor-pointer outline-none ease-in absolute bg-pink-600 rounded-full mx-2 py-2 px-4 shadow-xl'
+                    className='cursor-pointer outline-none ease-in absolute bg-slate-600 rounded-full mx-2 py-2 px-4 shadow-xl'
                 >
                     <Image 
                     src="/assets/images/carousel/arrow-left.svg" 
@@ -96,7 +96,7 @@ const Caraousel = () => {
                     whileHover={{scale: 1.1}}
                     whileTap={{scale: 0}}
                     transition={{duration: 0.3}}
-                    className='cursor-pointer outline-none ease-in absolute bg-pink-600 rounded-full mx-2 py-2 px-4 right-0 shadow-xl'
+                    className='cursor-pointer outline-none ease-in absolute bg-slate-600 rounded-full mx-2 py-2 px-4 right-0 shadow-xl'
                 >
                     <Image 
                         src="/assets/images/carousel/arrow-right.svg" 

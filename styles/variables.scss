@@ -1,0 +1,62 @@
+//Colors
+$white: #FFF;
+$black: #000;
+$main-blue: #89ADCD;
+$hover-orange: rgba(246, 160, 27, 0.81);
+$hover-orange-2: rgba(246, 160, 27, 0.60);
+$grey-color : #6B6B6B;
+$grey-banner: #434141;
+
+//Devices sizes
+$xs-screen: 450px;
+$md-screen: 1024px;
+$lg-screen: 1280px;
+
+//Fonts
+$Roboto: 'Roboto';
+$titleFont: 'Poppins 700';
+$poppins8: 'Poppins 800';
+$poppins6: 'Poppins 600';
+$poppins5: 'Poppins 500';
+$poppins4: 'Poppins 400';
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/assets/fonts/Roboto-black.ttf');
+}
+@font-face {
+  font-family: 'Poppins 700';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins 800';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/assets/fonts/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins 600';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/assets/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins 500';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins 400';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Poppins-Regular.ttf');
+}

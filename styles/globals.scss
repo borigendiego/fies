@@ -2,6 +2,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import 'variables.scss';
+
 
 html,
 body {
@@ -61,7 +63,7 @@ h1, h2, h3, h4 {
 
 .common-button:hover {
   padding: 15px;
-  background-color: #89ADCD;
+  background-color: $main-blue;
 }
 
 //Nav bar
@@ -79,7 +81,7 @@ h1, h2, h3, h4 {
 }
 
 .scroll-nav {
-  background-color: #89ADCD;
+  background-color: $main-blue;
   padding-top: 16px !important;
   padding-bottom: 16px !important;
 
@@ -92,4 +94,104 @@ h1, h2, h3, h4 {
 .styles_lightroom__1X2qE {
   position: fixed !important;
   z-index: 40 !important;
+}
+
+//Contact button styles
+
+
+
+//FORM STYLES
+
+.form {
+  padding: 3% 4%;
+  margin: 0 auto;
+  width: 30%;
+  background-color: #89ADCD80;
+  border-radius: 5%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: relative;
+  left: 20%;
+}
+
+.item {
+  color: white;
+}
+
+.input {
+  border-bottom: 1px solid $main-blue;
+  height: 40px;
+  width: 100%;
+  transition: 300ms;
+  background-color: transparent;
+  padding: 25px 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.input.error {
+  border: 3px solid #cc0017;
+  background-color: #cc001712;
+  font-weight: 600;
+}
+
+.input_box {
+  border-bottom: 3px solid #ccc;
+  background-color: transparent;
+  height: 80%;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.contact-input-button {
+  color: $main-blue;
+  display: flex;
+  justify-content: center;
+  margin: 7% auto 0 auto;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #E2DFDF;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.contact-button-text {
+  transition: all 0.7s ease;
+  z-index: 10;
+}
+
+.contact-input-button::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: $main-blue;
+  position: absolute;
+  overflow: hidden;
+  transition: transform 700ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+  z-index: 2;
+
+}
+
+.contact-input-button:hover {
+  .contact-button-text {
+    color: $white;
+  }
+}
+
+
+
+.contact-input-button:hover:after {
+  transform: scaleY(1);
+  transform-origin: top;
+
 }
