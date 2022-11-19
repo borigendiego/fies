@@ -1,12 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Slick from '../components/commons/Slick'
-import Caraousel from '../components/commons/carousel/Carousel'
-import Button from '../components/commons/homeButton'
-import Footer from '../components/footer'
-import Header from '../components/header'
-//Motion framer
-
+import Head from 'next/head';
+import Slick from '../components/commons/Slick';
+import Caraousel from '../components/commons/carousel/Carousel';
+import Button from '../components/commons/homeButton';
+import Footer from '../components/footer';
+import Header from '../components/header';
+import CookieConsent from 'react-cookie-consent';
 
 export default function Home() {
   return (
@@ -18,11 +16,31 @@ export default function Home() {
       </Head>
 
       <main>
+
         <Button />
         <Header />
         <Slick />
         <Caraousel />
         <Footer />
+        <CookieConsent
+          location={"bottom"}
+          buttonText={'Alle akzeptieren'}
+          cookieName={"Datenschutzeinstellungen"}
+          style={{ background: "#2B373B" }}
+          buttonStyle={{ color: "#4e503b", fontSize: "20px" }}
+          expires={150}
+          overlay
+          buttonWrapperClasses={'m-auto'}
+        >
+          <div className={'px-10 py-4'}>
+            <p>Wir nutzen Cookies auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern.</p>
+            <p>Wenn Sie unter 16 Jahre alt sind und Ihre Zustimmung zu freiwilligen Diensten geben möchten, müssen Sie Ihre Erziehungsberechtigten um Erlaubnis bitten.</p>
+            <p>Wir verwenden Cookies und andere Technologien auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern. Personenbezogene Daten können verarbeitet werden (z. B. IP-Adressen), z. B. für personalisierte Anzeigen und Inhalte oder Anzeigen- und Inhaltsmessung. Weitere Informationen über die Verwendung Ihrer Daten finden Sie in unserer Datenschutzerklärung. Sie können Ihre Auswahl jederzeit unter Einstellungen widerrufen oder anpassen.</p>
+            <a className={'text-[#ffd42d] underline cursor-pointer'} href={'datenschutzeinstellungen'}>
+              Datenschutzeinstellungen
+            </a>
+          </div>
+        </CookieConsent>
       </main>
 
       <footer>
