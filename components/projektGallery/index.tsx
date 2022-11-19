@@ -1,25 +1,37 @@
 import React from 'react';
-//Components
-import { Gallery } from 'react-grid-gallery';
+import dynamic from 'next/dynamic'
+//@ts-ignore
+const Lightroom: any = dynamic(() => import('react-lightbox-gallery'), {
+    ssr: false
+  })
 
 type galleryImages = {
     gallery: any
 }
 
 const ProjektGallery = ({gallery}:galleryImages) => {
-
     const IMAGES = gallery.map((value: any, index: any) => {
         return {
             src: value.src,
-            thumbnail: value.thumbnail,
-            thumbnailWidth: 150,
-            thumbnailHeight: 150,
-            caption: `Picture ${index}`
+            desc: 'Person wearing shoes',
+            sub: 'Gift Habeshaw'
         }
     });
 
+    const settings = {
+        columnCount:{
+          default:3,
+          mobile:3,
+          tab:4
+        },
+        mode: 'dark'
+    }
+
     return (
-        <Gallery enableImageSelection={false} images={IMAGES} />
+        <div className={'image-gallery'}>
+            <Lightroom images={IMAGES} settings={settings} />
+        </div>
+       
     )
 };
 

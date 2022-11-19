@@ -11,43 +11,43 @@ const PROJEKTS_DATA = [
             {
                 src: '/assets/images/projekts/willich/willich-1.jpg',
                 thumbnail: '/assets/images/projekts/willich/willich-1.jpg',
-                thumbnailWidth: 150,
-                thumbnailHeight: 150,
+                thumbnailWidth: 100,
+                thumbnailHeight: 100,
                 caption: ''
             },
             {
                 src: '/assets/images/projekts/willich/willich-2.jpg',
                 thumbnail: '/assets/images/projekts/willich/willich-2.jpg',
-                thumbnailWidth: 150,
-                thumbnailHeight: 150,
+                thumbnailWidth: 100,
+                thumbnailHeight: 100,
                 caption: ''
             },
             {
                 src: '/assets/images/projekts/willich/willich-3.jpg',
                 thumbnail: '/assets/images/projekts/willich/willich-3.jpg',
-                thumbnailWidth: 150,
-                thumbnailHeight: 150,
+                thumbnailWidth: 100,
+                thumbnailHeight: 100,
                 caption: ''
             },
             {
                 src: '/assets/images/projekts/willich/willich-4.jpg',
                 thumbnail: '/assets/images/projekts/willich/willich-4.jpg',
-                thumbnailWidth: 150,
-                thumbnailHeight: 150,
+                thumbnailWidth: 100,
+                thumbnailHeight: 100,
                 caption: ''
             },
             {
                 src: '/assets/images/projekts/willich/willich-5.jpg',
                 thumbnail: '/assets/images/projekts/willich/willich-5.jpg',
-                thumbnailWidth: 150,
-                thumbnailHeight: 150,
+                thumbnailWidth: 100,
+                thumbnailHeight: 100,
                 caption: ''
             },
             {
                 src: '/assets/images/projekts/willich/willich-6.jpg',
                 thumbnail: '/assets/images/projekts/willich/willich-6.jpg',
-                thumbnailWidth: 150,
-                thumbnailHeight: 150,
+                thumbnailWidth: 100,
+                thumbnailHeight: 100,
                 caption: ''
             },
         ],

@@ -712,6 +712,16 @@ react-dom@18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-grid-gallery@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-grid-gallery/-/react-grid-gallery-1.0.0.tgz#31604b9488dfa75a899aa39bc8884138f0409a12"
+  integrity sha512-S1gr6WXBlPFVrE0x2BHuu7jhyaB61mabcMQyx+8KCgAyKzGza0WF67AfAnS9Q00aurFEq4IP8eqb2Bk5F4RAmQ==
+
+react-lightbox-gallery@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-lightbox-gallery/-/react-lightbox-gallery-2.0.1.tgz#443d9d09f6d816ad9de333e0ff6fd490ff9832ef"
+  integrity sha512-G5Ao+0FOASCW3YJKT920U7vHHiLNOB0N3yaFOEZCTgt0B6xbNOfrW9/57vNhC22nCurROMaqST2+j/jFuSYujg==
+
 react-slick@^0.29.0:
   version "0.29.0"
   resolved "https://registry.yarnpkg.com/react-slick/-/react-slick-0.29.0.tgz#0bed5ea42bf75a23d40c0259b828ed27627b51bb"

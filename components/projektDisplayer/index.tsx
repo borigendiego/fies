@@ -1,7 +1,6 @@
 import React from "react";
 import Projekt from "../projekt";
 import { PROJEKTS_DATA } from "../projekt/constants";
-//
 
 const ProjektDisplayer = () => {
     return(
