@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 
 const Slick = () => {
@@ -18,25 +18,25 @@ const Slick = () => {
     const SLIDES_DATA = [
         {
             linkTo: '/uber',
-            image: '/assets/images/banner/bannerImage.jpg',
+            image: '/assets/images/banner/banner-1-min.jpg',
             title: 'Title example 1',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             linkTo: '/leistung',
-            image: '/assets/images/banner/bannerImage-2.jpg',
+            image: '/assets/images/banner/banner-2-min-2.jpg',
             title: 'Title example 2',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             linkTo: '/projekte',
-            image: '/assets/images/banner/bannerImage-3.jpg',
+            image: '/assets/images/banner/banner-3-min.jpg',
             title: 'Title example 3',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             linkTo: '/kontakt',
-            image: '/assets/images/banner/bannerImage-4.jpg',
+            image: '/assets/images/banner/banner-4-min.jpg',
             title: 'Title example 4',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
@@ -47,9 +47,9 @@ const Slick = () => {
         <div className="overflow-hidden">
             <Slider {...settings}>
                 {
-                    SLIDES_DATA.map((value) => {
+                    SLIDES_DATA.map((value, index) => {
                         return (
-                            <a href={value.linkTo} className='relative cursor-pointer z-10 h-screen'>
+                            <a key={`${value.title}-${index}`} href={value.linkTo} className='relative cursor-pointer z-10 h-screen'>
                                 <img src={value.image} alt={''} className={'absolute object-cover'}/>
                                 <div className="relative z-20 top-[70vh] py-6 pl-10">
                                     <div className={'absolute z-0 left-0 w-2/4 h-full bg-[#89ADCD80] backdrop-blur-sm rounded-r-lg'} />

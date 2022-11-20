@@ -37,6 +37,12 @@ h1, h2, h3, h4 {
   filter: invert(99%) sepia(16%) saturate(2%) hue-rotate(158deg) brightness(113%) contrast(100%);
 }
 
+//Banner Carouse
+.slick-list, .slick-slider {
+  height: 100%;
+}
+//Banner Carouse end
+
 .footer-b:hover {
   opacity: .5;
 }

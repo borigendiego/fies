@@ -3,8 +3,11 @@ import Image from 'next/image'
 import Nav from '../nav'
 import { motion } from 'framer-motion';
 
-const Header = () => {
+type HeaderPropType = {
+    isHomePage?: boolean
+};
 
+const Header = ({ isHomePage }:HeaderPropType) => {
     if (process.browser) {
         // Client-side-only code
         const stickyFunction = () => window.addEventListener('scroll', function() {
@@ -19,7 +22,7 @@ const Header = () => {
 
     return(
         <motion.nav 
-            className={'md:flex md:justify-between md:px-28 md:py-7 sticky top-0 w-full z-10 duration-300 ease-linear overflow-hidden items-center'}
+            className={`md:flex md:justify-between md:px-28 md:py-7 ${isHomePage ? 'fixed' : 'sticky'} top-0 w-full z-30 duration-300 ease-linear overflow-hidden items-center`}
             initial={{opacity: 0, y: -15}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: .5, delay: .5}}
@@ -32,7 +35,7 @@ const Header = () => {
                 className={'header-blue-logo absolute'}
             />
             <Image
-                src={'/assets/images/logo-white.png'}
+                src={'/assets/images/logo.png'}
                 className={'header-white-logo'}
                 alt={''}
                 width={80}

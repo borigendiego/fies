@@ -3,10 +3,9 @@ import React from "react";
 //Framer
 import { motion } from "framer-motion";
 
-
 const WhoWeAre = () => {
     return(
-        <div className={'md:pt-[20vh]'}>
+        <div className={'pt-10'}>
             <motion.h1 
                 className='py-4 text-center text-3xl'
                 initial={{opacity: 0}}
@@ -21,8 +20,8 @@ const WhoWeAre = () => {
                     viewport={{once: true}}
                     transition={{duration: .7, delay: 1}}
                 >
-                    <Image src={'/assets/images/uber/Fies-min.jpg'} alt={'Johannes Fies photo'} width={200} height={100}></Image>
-                    <Image src={'/assets/images/uber/Schmitz-min.jpg'} alt={'Johannes Schmitz photo'} width={200} height={100}></Image>
+                    <Image src={'/assets/images/uber/Fies-min.jpg'} alt={'Johannes Fies photo'} width={400} height={200}></Image>
+                    <Image src={'/assets/images/uber/Schmitz-min.jpg'} alt={'Johannes Schmitz photo'} width={400} height={200}></Image>
                 </motion.div>
                 <motion.div
                     initial={{opacity: 0, y: 30}}

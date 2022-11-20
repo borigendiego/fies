@@ -16,9 +16,8 @@ export default function Home() {
       </Head>
 
       <main>
-
         <Button />
-        <Header />
+        <Header isHomePage />
         <Slick />
         <Caraousel />
         <Footer />
