@@ -48,7 +48,7 @@ const Projekt = ({
     }
 
     return(
-        <div className={'grid grid-flow-row md:grid-flow-col md:my-8 max-w-[1400px] mx-auto border-b pb-20'}>
+        <div className={'grid grid-flow-row md:grid-flow-col md:my-8 max-w-[1400px] px-8 mx-auto border-b pb-20'}>
             <div className={'pt-16 grid-cols-1'}>
                 <div className={'flex items-center mt-6 mb-12'}>
                     <h1 className={'font-bold text-4xl'}>PROJEKTE:</h1>
