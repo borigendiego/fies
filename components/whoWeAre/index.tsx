@@ -11,12 +11,14 @@ const WhoWeAre = () => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: true}}
+                transition={{duration: 1, delay: .5}}
+
             >Wer wir sind?</motion.h1>
             <div>
                 <motion.div 
                     className='flex flex-col md:flex-row md:justify-around py-6'
-                    initial={{opacity: 0, x: -30}}
-                    whileInView={{opacity: 1, x: 0}}
+                    initial={{opacity: 0, y: 30}}
+                    whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
                     transition={{duration: .7, delay: 1}}
                 >

@@ -10,7 +10,7 @@ const News: NextPage = () => {
             <Head>
             </Head>
             <main>
-                <Header />
+                <Header isHomePage />
                 <KontaktComponent />
             </main>
             <footer>

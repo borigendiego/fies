@@ -26,7 +26,6 @@ export default function App({ Component, pageProps }: AppProps) {
           opacity: 1,
           transition: {
               duration: .5,
-              delay: .5
           }
       }
     };
