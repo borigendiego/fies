@@ -9,24 +9,38 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: $franklin, sans-serif;
   scroll-behavior: smooth;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $dinRegular;
 }
 
 p, li {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $franklin;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-family: $dinLight;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 * {
@@ -92,13 +106,17 @@ h1, h2, h3, h4 {
   padding-bottom: 16px !important;
 
   .header-white-logo {
-    transform: scale(.8);
+    transform: scale(.9);
+    //display: none;
+  }
+
+  .header-blue-logo {
+    //top: 0;
   }
 
   .nav-item {
     color: $black;
   }
-
 }
 
 .styles_lightroom__1X2qE {

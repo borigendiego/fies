@@ -10,7 +10,12 @@ type LayoutProps = {
     reverse?: boolean
 }
 
-const Layout = ({image, title, text, reverse}:LayoutProps) => {
+const Layout = ({ 
+    image, 
+    title, 
+    text, 
+    reverse
+}:LayoutProps) => {
     return(
         <div className={`flex md:h-screen relative my-6 flex-wrap ${reverse ? 'md:flex-row-reverse' : ''}`}>
             <motion.div 
@@ -29,7 +34,9 @@ const Layout = ({image, title, text, reverse}:LayoutProps) => {
                 transition={{duration:  1, delay: 1}}
                 viewport={{once: true}}
             >
-                <h1 className={'text-center md:text-xl text-[30px] mb-3'}>{title}</h1>
+                <h1 className={'text-center text-[30px] mb-3'}>
+                    {title}
+                </h1>
                 <div className={'px-8 md:w-10/12'}>{text}</div>
             </motion.div>
         </div>

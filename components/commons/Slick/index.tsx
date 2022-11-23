@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
 import { motion } from 'framer-motion';
-
+import Image from 'next/image';
 
 const Slick = () => {
 
@@ -27,7 +27,7 @@ const Slick = () => {
         },
         {
             linkTo: '/leistung',
-            image: '/assets/images/banner/banner-2-min-2.jpg',
+            image: '/assets/images/banner/banner-2-min.png',
             title: 'Title example 2',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
@@ -63,11 +63,19 @@ const Slick = () => {
                     SLIDES_DATA.map((value, index) => {
                         return (
                             <Link key={`${value.title}-${index}`} href={value.linkTo} className='relative cursor-pointer z-10 h-screen'>
+                                <Image 
+                                    src={value.image}
+                                    className={'absolute object-cover'}
+                                    fill
+                                    alt={value.title}
+                                />
                                 <img src={value.image} alt={''} className={'absolute object-cover'}/>
                                 <div className="relative z-20 top-[70vh] py-6 pl-10">
                                     <div className={'absolute z-0 left-0 w-2/4 h-full bg-[#89ADCD80] backdrop-blur-sm rounded-r-lg'} />
-                                    <h1 className={"text-white text-4xl relative z-10 mt-6"}>{value.title}</h1>
-                                    <p className={"text-white text-xl relative z-10"}>{value.text}</p>
+                                    <h1 className={"text-white relative z-10 mt-6"}>
+                                        {value.title}
+                                    </h1>
+                                    <p className={"text-white text-xl relative z-10 hidden"}>{value.text}</p>
                                 </div>
                             </Link>
                         )

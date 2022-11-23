@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Header from '../components/header';
 import ProjektComponent from '../components/projektPageComponent';
 import ProjektDisplayer from '../components/projektDisplayer';
+import Footer from '../components/footer';
 
 const Projekte: NextPage = () => {
     return(
@@ -14,6 +15,7 @@ const Projekte: NextPage = () => {
                 <Header />
                 <ProjektComponent />
                 <ProjektDisplayer />
+                <Footer />
             </main>
             <footer>
 

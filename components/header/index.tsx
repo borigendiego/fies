@@ -31,17 +31,17 @@ const Header = ({ isHomePage }:HeaderPropType) => {
             <Link href={'/'}>
                 <Image
                     src={'/assets/images/logo.png'} 
-                    alt={''}
+                    alt={'Logo'}
                     width={50}
                     height={30}
                     className={'header-blue-logo absolute'}
                 />
                 <Image
-                    src={'/assets/images/logo.png'}
+                    src={'/assets/images/Logo_white.png'}
                     className={'header-white-logo'}
-                    alt={''}
-                    width={80}
-                    height={80}
+                    alt={'Logo'}
+                    width={120}
+                    height={120}
                 />
             </Link>
             <Nav />
