@@ -14,9 +14,9 @@ const Projektewicklung = () => {
                 transition={{duration:  1, delay: 2}}
                 viewport={{once: true}}
              />
-            <div className='flex flex-col relative md:pl-16 md:pt-12 md:pb-12'>
+            <div className={'flex flex-col relative md:pl-16 md:pt-12 md:pb-12'} id={'projektewicklung'}>
                 <motion.h1 
-                    className='text-5xl'
+                    className={'text-5xl'}
                     initial={{opacity: 0, x:-30}}
                     whileInView={{opacity: 1, x:0}}
                     transition={{duration:  .7, delay: 1}}

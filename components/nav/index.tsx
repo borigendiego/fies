@@ -10,11 +10,11 @@ const Nav = () => {
                     className={'hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg text-white nav-item'}
                 >Über uns</Link>
                 <ul className={'sub-menu absolute hidden'}>
-                    <li><Link href={'/uber'}>Wir stellen uns vor</Link></li>
-                    <li><Link href={'/uber#1'}>Forschung</Link></li>
-                    <li><Link href={'/uber#2'}>BIM</Link></li>
-                    <li><Link href={'/uber#3'}>Nachhaltigkeit</Link></li>
-                    <li><Link href={'/uber#4'}>Bauen mit Holz</Link></li>
+                    <li><a href={'/uber'}>Wir stellen uns vor</a></li>
+                    <li><a href={'/uber#1'}>Forschung</a></li>
+                    <li><a href={'/uber#2'}>BIM</a></li>
+                    <li><a href={'/uber#3'}>Nachhaltigkeit</a></li>
+                    <li><a href={'/uber#4'}>Bauen mit Holz</a></li>
                 </ul>
             </li>
             <li>
@@ -25,7 +25,7 @@ const Nav = () => {
                     Leistung
                 </Link>
                 <ul className={'sub-menu absolute hidden'}>
-                    <li><Link href={'/leistung'}>Projektewicklung</Link></li>
+                    <li><a href={'/leistung/#projektewicklung'}>Projektewicklung</a></li>
                     <li><Link href={'/leistung'}>Architektur</Link></li>
                     <li><Link href={'/leistung'}>Statik</Link></li>
                 </ul>
