@@ -8,7 +8,8 @@ const ProjektDisplayer = () => {
             {
                 PROJEKTS_DATA.map((value, index) => {
                     return (
-                        <Projekt 
+                        <Projekt
+                            key={`${value.title}-${index}`}
                             title={value.title} 
                             mainImage={value.mainImage} 
                             ort={value.ort} 

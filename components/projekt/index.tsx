@@ -50,8 +50,8 @@ const Projekt = ({
     return(
         <div className={'grid grid-flow-row md:grid-flow-col md:my-8 max-w-[1400px] px-8 mx-auto border-b pb-20'}>
             <div className={'pt-16 grid-cols-1'}>
-                <div className={'flex items-center mt-6 mb-12'}>
-                    <h1 className={'font-bold text-4xl'}>PROJEKTE:</h1>
+                <div className={'flex mt-6 mb-12 items-baseline'}>
+                    <h1 className={'font-bold'}>PROJEKTE:</h1>
                     <p className={'text-4xl pl-2'}>{title}</p>
                 </div>
                 <motion.div 
@@ -96,7 +96,7 @@ const Projekt = ({
                 </motion.div>
             </div>
             <motion.div 
-                className={'flex flex-col items-end justify-end'}
+                className={'flex flex-col items-end justify-center'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration:  1, delay: 1}}
@@ -111,7 +111,7 @@ const Projekt = ({
                  <motion.div className={'my-2 flex w-full justify-end'} variants={projektItems}>
                     <div className={'max-w-[600px]'}>
                         {
-                            gallery.length && <ProjektGallery gallery={gallery} />
+                            gallery.length > 0 && <ProjektGallery gallery={gallery} />
                         }
                     </div>
                 </motion.div>
