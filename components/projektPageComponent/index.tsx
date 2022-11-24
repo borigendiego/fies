@@ -6,7 +6,7 @@ const ProjektComponent = () => {
     return(
         <div className={'flex flex-col justify-center items-center my-10'}>
             <motion.div 
-                className='bg-[#89ADCD] p-8 rounded-xl'
+                className='projekts-banner p-8 rounded-xl'
                 initial={{opacity: 0, scale: .8}}
                 whileInView={{opacity: 1, scale: 1}}
                 transition={{duration:  .5, delay: .5}}

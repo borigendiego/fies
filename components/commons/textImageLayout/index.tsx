@@ -7,17 +7,19 @@ type LayoutProps = {
     image: string,
     title?: string,
     text: any,
+    id: any,
     reverse?: boolean
 }
 
 const Layout = ({ 
     image, 
     title, 
-    text, 
+    text,
+    id,
     reverse
 }:LayoutProps) => {
     return(
-        <div className={`flex md:h-screen relative my-6 flex-wrap ${reverse ? 'md:flex-row-reverse' : ''}`}>
+        <div className={`flex md:h-screen relative my-6 flex-wrap ${reverse ? 'md:flex-row-reverse' : ''}`} id={`${id}`}>
             <motion.div 
                 className={'w-full md:w-5/12 md:h-full h-52 relative mb-6 md:mb-0'}
                 initial={{opacity: 0}}
@@ -34,7 +36,7 @@ const Layout = ({
                 transition={{duration:  1, delay: 1}}
                 viewport={{once: true}}
             >
-                <h1 className={'text-center text-[30px] mb-3'}>
+                <h1 className={'text-center text-[30px] mb-3 font-bold'}>
                     {title}
                 </h1>
                 <div className={'px-8 md:w-10/12'}>{text}</div>

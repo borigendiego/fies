@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Statik = ( ) => {
     return(
-        <div className=' bg-[#89ADCD80] backdrop-blur-sm h-[120vh] flex justify-center items-center'>
+        <div className='bg-[#89ADCD80] backdrop-blur-sm h-[120vh] flex justify-center items-center' id={'#3'}>
             <div className='bg-white flex justify-around md:py-12'>
                 <motion.div 
                 className='md:w-5/12 px-8'

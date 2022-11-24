@@ -7,7 +7,7 @@ const LayoutDisplayer = () => {
         <div>
             {
                 LAYOUT_DATA.map((value, index) => {
-                    return <Layout title={value.title} image={value.image} text={value.text} reverse={value.reversed}/>
+                    return <Layout title={value.title} image={value.image} text={value.text} reverse={value.reversed} id={value.id}/>
                 })
             }
         </div>

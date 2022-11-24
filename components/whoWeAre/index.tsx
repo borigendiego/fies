@@ -4,32 +4,58 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const WhoWeAre = () => {
+
+    const imagesAnimations = {
+        visible: { 
+            opacity: 1,
+            y: 0,
+            transition: {
+                when: "beforeChildren",
+                staggerChildren: .5,
+              }, 
+        },
+        hidden: {
+            opacity: 0,
+            y: 30,
+            x: 0,
+            transition: {
+                when: "afterChildren",
+              },
+            },
+    }
+
+    const imagesChild = {
+        visible: {opacity: 1,y: 0},
+        hidden: {opacity: 0, y: 50}
+    }
+
     return(
-        <div className={'pt-10'}>
+        <div className={'pt-6'}>
             <motion.h1 
                 className={'py-4 text-center'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: true}}
-                transition={{duration: 1, delay: .5}}
+                transition={{duration: 1, delay: 1}}
 
             >Wer wir sind?</motion.h1>
             <div>
                 <motion.div 
                     className='flex flex-col md:flex-row md:justify-around py-6'
-                    initial={{opacity: 0, y: 30}}
-                    whileInView={{opacity: 1, y: 0}}
+                    variants={imagesAnimations}
+                    initial={'hidden'}
+                    whileInView={'visible'}
                     viewport={{once: true}}
-                    transition={{duration: .7, delay: 1}}
+                    transition={{duration: 1, delay: 1.2}}
                 >
-                    <Image src={'/assets/images/uber/Fies-min.jpg'} alt={'Johannes Fies photo'} width={400} height={200}></Image>
-                    <Image src={'/assets/images/uber/Schmitz-min.jpg'} alt={'Johannes Schmitz photo'} width={400} height={200}></Image>
+                    <motion.div variants={imagesChild} transition={{duration: .7, delay:1}}><Image src={'/assets/images/uber/Fies-min.jpg'} alt={'Johannes Fies photo'} width={400} height={200}></Image></motion.div>
+                    <motion.div variants={imagesChild} transition={{duration: .7, delay:1.7}}><Image src={'/assets/images/uber/Schmitz-min.jpg'} alt={'Johannes Schmitz photo'} width={400} height={200}></Image></motion.div>
                 </motion.div>
                 <motion.div
                     initial={{opacity: 0, y: 30}}
                     whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
-                    transition={{duration: .7, delay: 1.5}}
+                    transition={{duration: .7, delay: 2}}
                     className='px-16'
                 >
                     <p className="py-2">Wir sind ein junges Team engagierter Architekten und Ingenieure, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.</p>

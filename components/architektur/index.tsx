@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const ArchitekturComp = () => {
     return(
-        <div className='relative'>
+        <div className='relative' id={'#2'}>
             <div className='md:py-10 md:mt-20 w-6/12 md:pl-10 border rounded-xl rounded-l-none rounded-b-none'>
                 <motion.h1 
                     className='text-3xl'
@@ -44,13 +44,13 @@ const ArchitekturComp = () => {
                     </p>
                 </motion.div>
                 <motion.div 
-                    className='pl-16 pt-32'
+                    className='md:pt-32 mx-auto'
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                     transition={{duration:  1, delay: 1}}
                     viewport={{once: true}}
                 >
-                    <Image src={'/assets/images/leistung/architektur-image.png'} alt={'architekt image'} width={700} height={200} className={''}/>
+                    <Image src={'/assets/images/leistung/architektur-image.png'} alt={'architekt image'} width={650} height={200} className={'rounded-xl'}/>
                 </motion.div>
             </div>
         </div>
