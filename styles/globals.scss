@@ -84,12 +84,12 @@ h4 {
 //Home button
 
 .common-button {
-  background-color: $red;
+  background-color: $main-blue;
 }
 
 .common-button:hover {
   padding: 15px;
-  background-color: $red-hover;
+  background-color: $main-blue-hover;
 }
 
 //Nav list styles
@@ -102,9 +102,11 @@ h4 {
 
 .sub-menu {
   transition: all 400ms ease-in;
-  background-color: $green;
+  background-color: $main-blue;
   border-radius: 5px;
   margin-top: 5px;
+  border: 1px solid $main-blue;
+  border-radius: 10px;
 
   li {
     font-weight: bold;
@@ -118,9 +120,8 @@ h4 {
 }
 
 .sub-menu li:hover {
-  background-color: $green-hover;
+  background-color: $main-blue-hover;
 }
-
 
 //Nav bar
 .header-blue-logo .header-white-logo {
@@ -284,6 +285,9 @@ h4 {
   }
   li {
     list-style-type: disc;
+  }
+  a {
+    text-decoration: underline;
   }
   @media (max-width: 480px) {
     h1 {

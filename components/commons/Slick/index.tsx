@@ -20,27 +20,27 @@ const Slick = () => {
 
     const SLIDES_DATA = [
         {
-            linkTo: '/uber',
+            linkTo: '/uber#1',
             image: '/assets/images/banner/banner-1-min.jpg',
-            title: 'Title example 1',
+            title: 'Forschung',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
-            linkTo: '/leistung',
+            linkTo: '/uber#2',
             image: '/assets/images/banner/banner-2-min.png',
-            title: 'Title example 2',
+            title: 'Bim',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             linkTo: '/projekte',
             image: '/assets/images/banner/banner-3-min.jpg',
-            title: 'Title example 3',
+            title: 'Unsere Arbeit',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             linkTo: '/kontakt',
             image: '/assets/images/banner/banner-4-min.jpg',
-            title: 'Title example 4',
+            title: 'Kontaktiere uns',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
     ] 
