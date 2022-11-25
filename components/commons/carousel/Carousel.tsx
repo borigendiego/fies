@@ -58,56 +58,61 @@ const Caraousel = () => {
     }
 
     return(
-        <motion.div 
-            className='relative md:my-24 overflow-hidden max-w-[1300px] mx-auto'
-            initial={{
-                opacity: 0,
-                }}
-            whileInView={{
-                opacity: 1,
-            }}
-            viewport={{ once: true }}
-            transition={{duration: 1, delay: .5}}
-        >
-            <div className="">
-                <div className="flex flex-nowrap" ref={carousel}>
-                    {
-                        TEAM_DATA.map((value, index) => <Slide image={value.image} title={value.title} text={value.text} />)
-                    }
-                </div>
+        <>
+            <div className="my-12 relative left-[7.5%] w-fit">
+                <p className="font-bold">Nachrichten</p>
             </div>
-            <div className="absolute top-[40%] w-full z-20">
-                <motion.button
-                    onMouseDown={back}
-                    whileHover={{scale: 1.1}}
-                    whileTap={{scale: 0}}
-                    transition={{duration: 0.3}}
-                    className='cursor-pointer outline-none ease-in absolute bg-slate-600 rounded-full mx-2 py-2 px-4 shadow-xl'
-                >
-                    <Image 
-                    src="/assets/images/carousel/arrow-left.svg" 
-                    width={20}
-                    height={20}
-                    alt={'Left arrow image'}
-                    className='carousel-arrow'/>
-                </motion.button>
-                <motion.button
-                    onMouseDown={next}
-                    whileHover={{scale: 1.1}}
-                    whileTap={{scale: 0}}
-                    transition={{duration: 0.3}}
-                    className='cursor-pointer outline-none ease-in absolute bg-slate-600 rounded-full mx-2 py-2 px-4 right-0 shadow-xl'
-                >
-                    <Image 
-                        src="/assets/images/carousel/arrow-right.svg" 
+            <motion.div 
+                className='relative md:my-24 overflow-hidden max-w-[1300px] mx-auto'
+                initial={{
+                    opacity: 0,
+                    }}
+                whileInView={{
+                    opacity: 1,
+                }}
+                viewport={{ once: true }}
+                transition={{duration: 1, delay: .5}}
+            >
+                <div className="">
+                    <div className="flex flex-nowrap" ref={carousel}>
+                        {
+                            TEAM_DATA.map((value, index) => <Slide image={value.image} title={value.title} text={value.text} />)
+                        }
+                    </div>
+                </div>
+                <div className="absolute top-[40%] w-full z-20">
+                    <motion.button
+                        onMouseDown={back}
+                        whileHover={{scale: 1.1}}
+                        whileTap={{scale: 0}}
+                        transition={{duration: 0.3}}
+                        className='cursor-pointer outline-none ease-in absolute bg-slate-600 rounded-full mx-2 py-2 px-4 shadow-xl'
+                    >
+                        <Image 
+                        src="/assets/images/carousel/arrow-left.svg" 
                         width={20}
                         height={20}
                         alt={'Left arrow image'}
-                        className='carousel-arrow'
-                    />
-                </motion.button>
-            </div>
-        </motion.div>
+                        className='carousel-arrow'/>
+                    </motion.button>
+                    <motion.button
+                        onMouseDown={next}
+                        whileHover={{scale: 1.1}}
+                        whileTap={{scale: 0}}
+                        transition={{duration: 0.3}}
+                        className='cursor-pointer outline-none ease-in absolute bg-slate-600 rounded-full mx-2 py-2 px-4 right-0 shadow-xl'
+                    >
+                        <Image 
+                            src="/assets/images/carousel/arrow-right.svg" 
+                            width={20}
+                            height={20}
+                            alt={'Left arrow image'}
+                            className='carousel-arrow'
+                        />
+                    </motion.button>
+                </div>
+            </motion.div>
+        </>
     )
 }
 

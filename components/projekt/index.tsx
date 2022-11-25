@@ -76,7 +76,7 @@ const Projekt = ({
                         <p className='w-[250px] font-bold text-end'>{projekt}</p>
                     </motion.div>
                     <motion.div 
-                        className={'my-2 flex w-full justify-between'} variants={projektItems}
+                        className={'my-2 w-full justify-between hidden'} variants={projektItems}
                     >
                         <h3 className=''>Baukosten:</h3>
                         <p className='font-bold text-end'>{baukosten}</p>

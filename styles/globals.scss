@@ -247,7 +247,7 @@ h4 {
   overflow: hidden;
   transition: transform 700ms ease;
   transform: scaleY(0);
-  transform-origin: top;
+  transform-origin: bottom;
   z-index: 2;
 
 }
@@ -260,7 +260,7 @@ h4 {
 
 .contact-input-button:hover:after {
   transform: scaleY(1);
-  transform-origin: top;
+  transform-origin: bottom;
 
 }
 

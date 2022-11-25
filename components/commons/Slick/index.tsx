@@ -20,28 +20,28 @@ const Slick = () => {
 
     const SLIDES_DATA = [
         {
-            linkTo: '/uber#1',
+            linkTo: '/projekte',
             image: '/assets/images/banner/banner-1-min.jpg',
-            title: 'Forschung',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            title: 'Willich',
+            text: 'Projektenwicklung Projektsteuerung Architektur, LPH 1-5'
         },
         {
             linkTo: '/uber#2',
             image: '/assets/images/banner/banner-2-min.png',
-            title: 'Bim',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            title: 'Airpark',
+            text: 'Generalplanung Projektsteuerung Architektur, LPH 1-8 Tragwerksplanung TGA-Planung Brandschutz'
         },
         {
-            linkTo: '/projekte',
+            linkTo: '/lesitung',
             image: '/assets/images/banner/banner-3-min.jpg',
-            title: 'Unsere Arbeit',
+            title: 'Leistung',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         },
         {
             linkTo: '/kontakt',
             image: '/assets/images/banner/banner-4-min.jpg',
-            title: 'Kontaktiere uns',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            title: 'Heimstetten',
+            text: 'Generalplanung Projektsteuerung Architektur, LPH 1-8 Tragwerksplanung TGA-Planung Brandschutz'
         },
     ] 
 
@@ -75,7 +75,7 @@ const Slick = () => {
                                     <h1 className={"text-white relative z-10 mt-6"}>
                                         {value.title}
                                     </h1>
-                                    <p className={"text-white text-xl relative z-10 hidden"}>{value.text}</p>
+                                    <p className={"text-white text-xl relative z-10"}>{value.text}</p>
                                 </div>
                             </Link>
                         )
