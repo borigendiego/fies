@@ -22,26 +22,26 @@ const Slick = () => {
         {
             linkTo: '/projekte',
             image: '/assets/images/banner/banner-1-min.jpg',
-            title: 'Willich',
-            text: 'Projektenwicklung Projektsteuerung Architektur, LPH 1-5'
+            title: 'Projektenwicklung',
+            text: ''
         },
         {
             linkTo: '/uber#2',
             image: '/assets/images/banner/banner-2-min.png',
-            title: 'Airpark',
-            text: 'Generalplanung Projektsteuerung Architektur, LPH 1-8 Tragwerksplanung TGA-Planung Brandschutz'
+            title: 'Generalplanung',
+            text: ''
         },
         {
             linkTo: '/lesitung',
             image: '/assets/images/banner/banner-3-min.jpg',
             title: 'Leistung',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            text: ''
         },
         {
             linkTo: '/kontakt',
             image: '/assets/images/banner/banner-4-min.jpg',
-            title: 'Heimstetten',
-            text: 'Generalplanung Projektsteuerung Architektur, LPH 1-8 Tragwerksplanung TGA-Planung Brandschutz'
+            title: 'Projektsteuerung',
+            text: ''
         },
     ] 
 
