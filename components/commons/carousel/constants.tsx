@@ -80,13 +80,11 @@ const HOME_CAROUSEL:CarouselType[] = [
         </div>,
         linkTo: '/',
     },
-    /*
     {
         bgImage: '/assets/images/home-slider/Spatenstich.jpg',
-        title: 'Wir finden für Ihr',
-        text: 'Wir übernehmen Ihre PROJEKTE deutschlandweit, in jeder Größenordnung.',
+        title: 'Willich Bauarbeiten',
         linkTo: '/',
-    }*/
+    }
 ];
 
 export { 
