@@ -1,9 +1,8 @@
 import React, {useRef} from "react";
-import { TEAM_DATA } from './constants.js'
+import { HOME_CAROUSEL } from './constants';
 import Slide from "./Slide";
 import { motion } from 'framer-motion';
 import Image from "next/image.js";
-
 
 const Caraousel = () => {
 
@@ -63,7 +62,7 @@ const Caraousel = () => {
                 <p className="font-bold">Nachrichten</p>
             </div>
             <motion.div 
-                className='relative md:my-24 overflow-hidden max-w-[1300px] mx-auto'
+                className={'relative md:my-24 overflow-hidden max-w-[1300px] mx-auto'}
                 initial={{
                     opacity: 0,
                     }}
@@ -73,12 +72,20 @@ const Caraousel = () => {
                 viewport={{ once: true }}
                 transition={{duration: 1, delay: .5}}
             >
-                <div className="">
-                    <div className="flex flex-nowrap" ref={carousel}>
-                        {
-                            TEAM_DATA.map((value, index) => <Slide image={value.image} title={value.title} text={value.text} />)
-                        }
-                    </div>
+                <div className={"flex flex-nowrap"} ref={carousel}>
+                    {
+                        HOME_CAROUSEL.map((item:any, index:number) => 
+                            <Slide 
+                                key={`${item.title}-${index}`} 
+                                bgImage={item.bgImage} 
+                                title={item.title} 
+                                text={item.text}
+                                bgColor={item.bgColor}
+                                colorSquare={item.colorSquare}
+                                linkTo={item.linkTo}
+                                content={item.content}
+                            />)
+                    }
                 </div>
                 <div className="absolute top-[40%] w-full z-20">
                     <motion.button

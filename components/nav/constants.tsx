@@ -1,9 +1,8 @@
 const NAV_DATA = [
-    /*
     {
         label: 'Aktuelles',
         link: '/'
-    },*/
+    },
     {
         label: 'Über uns',
         link: '/uber/'
