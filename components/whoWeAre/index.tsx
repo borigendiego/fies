@@ -25,20 +25,20 @@ const WhoWeAre = () => {
     }
 
     const imagesChild = {
-        visible: {opacity: 1,y: 0},
+        visible: {opacity: 1, y: 0},
         hidden: {opacity: 0, y: 50}
     }
 
     return(
-        <div className={'pt-6'}>
+        <div className={'pt-2'}>
             <motion.h1 
-                className={'py-4 text-center'}
+                className={'text-center'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: true}}
                 transition={{duration: 1, delay: 1}}
 
-            >Wer wir sind?</motion.h1>
+            >Wir stellen uns Vor</motion.h1>
             <div>
                 <motion.div 
                     className='flex flex-col md:flex-row md:justify-around py-6'
@@ -48,15 +48,21 @@ const WhoWeAre = () => {
                     viewport={{once: true}}
                     transition={{duration: 1, delay: 1.2}}
                 >
-                    <motion.div variants={imagesChild} transition={{duration: .7, delay:1}}><Image src={'/assets/images/uber/Fies-min.jpg'} alt={'Johannes Fies photo'} width={400} height={200}></Image></motion.div>
-                    <motion.div variants={imagesChild} transition={{duration: .7, delay:1.7}}><Image src={'/assets/images/uber/Schmitz-min.jpg'} alt={'Johannes Schmitz photo'} width={400} height={200}></Image></motion.div>
+                    <motion.div variants={imagesChild} transition={{duration: .7, delay:1}}>
+                        <Image src={'/assets/images/uber/Fies-min.jpg'} alt={'Johannes Fies photo'} width={400} height={200}></Image>
+                        <p className="text-center font-semibold md:pl-12">Johannes Fies, M.A. Architekt</p>
+                    </motion.div>
+                    <motion.div variants={imagesChild} transition={{duration: .7, delay:1.7}}>
+                        <Image src={'/assets/images/uber/Schmitz-min.jpg'} alt={'Johannes Schmitz photo'} width={400} height={200}></Image>
+                        <p className="text-center font-semibold md:pl-12">Johannes Schmitz, M.A. Architekt</p>
+                    </motion.div>
                 </motion.div>
                 <motion.div
                     initial={{opacity: 0, y: 30}}
                     whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
-                    transition={{duration: .7, delay: 2}}
-                    className='px-16'
+                    transition={{duration: .7, delay: 1}}
+                    className='px-16 mt-8'
                 >
                     <p className="py-2">Wir sind ein junges Team engagierter Architekten und Ingenieure, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.</p>
                     <p className="py-2">Dabei arbeiten wir digital vernetzt und bundesweit, um Projekte jeder Größenordnung zu realisieren. </p>

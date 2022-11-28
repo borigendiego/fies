@@ -51,7 +51,7 @@ const Projekt = ({
         <div className={'grid grid-flow-row md:grid-flow-col md:my-8 max-w-[1400px] px-8 mx-auto border-b pb-20'}>
             <div className={'pt-16 grid-cols-1'}>
                 <div className={'flex mt-6 mb-12 items-baseline'}>
-                    <h1 className={'font-bold'}>PROJEKTE:</h1>
+                    <h1 className={'font-bold'}>PROJEKT:</h1>
                     <p className={'text-4xl pl-2'}>{title}</p>
                 </div>
                 <motion.div 

@@ -48,7 +48,7 @@ const Slick = () => {
 
     return(
         <motion.div 
-            className="overflow-hidden"
+            className=""
             initial={{
                 opacity: 0,
                 }}
@@ -69,10 +69,9 @@ const Slick = () => {
                                     fill
                                     alt={value.title}
                                 />
-                                <img src={value.image} alt={''} className={'absolute object-cover'}/>
-                                <div className="relative z-20 top-[70vh] py-6 pl-10">
-                                    <div className={'absolute z-0 left-0 w-2/4 h-full bg-[#89ADCD80] backdrop-blur-sm rounded-r-lg'} />
-                                    <h1 className={"text-white relative z-10 mt-6"}>
+                                <div className='absolute h-full w-full bg-[#282c34] z-30 opacity-20' />
+                                <div className="relative z-40 top-[70vh] py-6 pl-10">
+                                    <h1 className={"text-white relative z-10 mt-6 font-semibold"}>
                                         {value.title}
                                     </h1>
                                     <p className={"text-white text-xl relative z-10"}>{value.text}</p>

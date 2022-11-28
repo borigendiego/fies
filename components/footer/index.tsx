@@ -13,7 +13,7 @@ const toTop = () => {
 const Footer = () => {
     return(
        <motion.div 
-        className='md:h-[40vh] md:flex md:pt-16 md:pl-20 justify-around bg-[#89ADCD]' 
+        className='md:flex md:pt-16 md:pb-8 justify-around bg-[#89ADCD]' 
         id='#FOOTER'
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
@@ -36,19 +36,10 @@ const Footer = () => {
             viewport={{once: true}}
             transition={{delay: 2}}
             >
-                Back to top
+                Zurück
             </motion.button>
        </motion.div> 
     )
 }
 
 export default Footer;
-
-/*<div>
-<a className='hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg'>#Office location <br/>#Adress, postal code</a>
-</div>
-<div className='mt-4 flex flex-col'>
-    <a href="" className='hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg'>#Cellphone</a>
-    <a href="" className='hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg'>#Email</a>
-</div>
-*/

@@ -4,10 +4,18 @@ import React from 'react';
 const Nav = () => {
     return(
         <ul className='flex nav'>
+            <li>
+                <a 
+                    href={'#aktuelles'} 
+                    className={'md:mx-4 md:p-4 hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg text-white nav-item'}
+                >
+                    Aktuelles
+                </a>
+            </li>
             <li className=''>
                 <Link 
                     href={'/uber/'} 
-                    className={'hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg text-white nav-item'}
+                    className={'md:mx-4 md:p-4 hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg text-white nav-item'}
                 >Über uns</Link>
                 <ul className={'sub-menu absolute hidden'}>
                     <li><a href={'/uber'}>Wir stellen uns vor</a></li>
@@ -39,7 +47,7 @@ const Nav = () => {
             </Link>
             </li>
             <li>
-            <Link 
+                <Link 
                     href={'/kontakt'} 
                     className={'md:mx-4 md:p-4 hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg text-white nav-item'}
                 >

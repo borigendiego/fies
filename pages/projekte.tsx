@@ -13,7 +13,6 @@ const Projekte: NextPage = () => {
             </Head>
             <main>
                 <Header />
-                <h1 className={'text-center text-[60px] mt-6 md:mt-12'}>Projekte</h1>
                 <ProjektComponent />
                 <ProjektDisplayer />
                 <Footer />

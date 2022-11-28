@@ -57,9 +57,9 @@ const Caraousel = () => {
     }
 
     return(
-        <>
-            <div className="my-12 relative left-[7.5%] w-fit">
-                <p className="font-bold">Nachrichten</p>
+        <div id={'aktuelles'}>
+            <div className="my-12 relative left-[7.5%] w-fit" >
+                <p className="font-bold text-[#4f505f]">Aktuelles</p>
             </div>
             <motion.div 
                 className={'relative md:my-24 overflow-hidden max-w-[1300px] mx-auto'}
@@ -119,13 +119,8 @@ const Caraousel = () => {
                     </motion.button>
                 </div>
             </motion.div>
-        </>
+        </div>
     )
 }
 
 export default Caraousel
-
-
-/*
-
-*/

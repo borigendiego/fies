@@ -34,7 +34,7 @@ const KontaktComponent = () => {
                         name: 'message',
                         type: 'text',
                         label: '',
-                        placeholder: 'Botschaft',
+                        placeholder: 'Nachricht',
                         validations: [required]
                     },
                 ]}

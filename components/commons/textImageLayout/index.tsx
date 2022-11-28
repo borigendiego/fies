@@ -21,7 +21,7 @@ const Layout = ({
     return(
         <div className={`flex md:h-screen relative my-6 flex-wrap ${reverse ? 'md:flex-row-reverse' : ''}`} id={`${id}`}>
             <motion.div 
-                className={'w-full md:w-5/12 md:h-full h-52 relative mb-6 md:mb-0'}
+                className={'w-full md:w-5/12 md:h-4/5 h-52 relative mb-6 md:mb-0'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration:  1.5, delay: .5}}
