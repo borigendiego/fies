@@ -28,13 +28,14 @@ const Slide = ({
                     </div>
                     : <div className="md:flex md:flex-col rounded-md hover-slide">
                         <div 
-                            className={'p-6 flex flex-col duration-300 ease-in w-[300px] h-[300px] justify-between'}
+                            className={'flex flex-col duration-300 ease-in w-[300px] h-[300px] justify-end bg-cover bg-center'}
                             style={{ 
-                                backgroundImage: '/assets/images/banner/bannerImage-4.jpg',
-                                color: '#fff',
+                                backgroundImage: `url(${bgImage})`,
                             }}
                         >
-                            <h1>{title}</h1>
+                            <p className={'text-[18px] p-2 bg-[#abaaaa87] text-white'}>
+                                {title}
+                            </p>
                         </div>
                     </div>
                 }

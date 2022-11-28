@@ -21,6 +21,12 @@ const Slick = () => {
     const SLIDES_DATA = [
         {
             linkTo: '/projekte',
+            image: '/assets/images/projekts/willich/willich-6.jpg',
+            title: '',
+            text: ''
+        },
+        {
+            linkTo: '/projekte',
             image: '/assets/images/banner/banner-1-min.jpg',
             title: 'Projektenwicklung',
             text: ''

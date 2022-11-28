@@ -13,8 +13,8 @@ const ProjektGallery = ({gallery}:galleryImages) => {
     const IMAGES = gallery.map((value: any, index: any) => {
         return {
             src: value.src,
-            desc: 'Person wearing shoes',
-            sub: 'Gift Habeshaw'
+            desc: '',
+            sub: ''
         }
     });
 
