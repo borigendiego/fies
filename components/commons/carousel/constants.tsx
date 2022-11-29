@@ -66,7 +66,7 @@ const HOME_CAROUSEL:CarouselType[] = [
             <p className={'text-white'}>in jeder</p>
             <p className={'text-white'}>Größenordnung</p>
         </div>,
-        linkTo: '/',
+        linkTo: '/projekte',
     },
     {
         title: 'Wir finden für Ihr',
@@ -78,7 +78,7 @@ const HOME_CAROUSEL:CarouselType[] = [
             <p className={'text-white'}>die sinnvollste und</p>
             <p className={'text-white'}>effizienteste Lösung</p>
         </div>,
-        linkTo: '/',
+        linkTo: '/leistung#1',
     },
     {
         bgImage: '/assets/images/home-slider/Willich-Bauarbeiten.jpeg',

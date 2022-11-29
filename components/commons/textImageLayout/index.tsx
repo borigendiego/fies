@@ -19,9 +19,9 @@ const Layout = ({
     reverse
 }:LayoutProps) => {
     return(
-        <div className={`flex md:h-screen relative my-6 flex-wrap ${reverse ? 'md:flex-row-reverse' : ''}`} id={`${id}`}>
+        <div className={`flex relative my-4 py-12 flex-wrap border-b ${reverse ? 'md:flex-row-reverse' : ''}`} id={`${id}`}>
             <motion.div 
-                className={'w-full md:w-5/12 md:h-4/5 h-52 relative mb-6 md:mb-0'}
+                className={'w-full md:w-6/12 md:h-auto h-52 relative mb-6 md:mb-0'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration:  1.5, delay: .5}}
@@ -30,7 +30,7 @@ const Layout = ({
                <Image src={image} alt={''} layout={'fill'} className={`object-cover rounded-2xl  ${reverse ? 'rounded-r-none' : 'rounded-l-none'}`} /> 
             </motion.div>
             <motion.div 
-                className={'w-full md:w-7/12 md:flex md:flex-col md:justify-center md:items-center'}
+                className={'w-full md:w-6/12 md:flex md:flex-col md:justify-center md:items-center mx-auto'}
                 initial={{opacity: 0, x: -30}}
                 whileInView={{opacity: 1, x: 0}}
                 transition={{duration:  1, delay: 1}}
@@ -39,7 +39,7 @@ const Layout = ({
                 <h1 className={'text-center text-[30px] mb-3 font-bold'}>
                     {title}
                 </h1>
-                <div className={'px-8 md:w-10/12'}>{text}</div>
+                <div className={'px-8 md:w-9/12'}>{text}</div>
             </motion.div>
         </div>
     )

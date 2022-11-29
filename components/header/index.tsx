@@ -30,15 +30,8 @@ const Header = ({ isHomePage }:HeaderPropType) => {
         >
             <Link href={'/'}>
                 <Image
-                    src={'/assets/images/logo.png'} 
-                    alt={'Logo'}
-                    width={50}
-                    height={30}
-                    className={'header-blue-logo absolute'}
-                />
-                <Image
                     src={'/assets/images/Logo_white.png'}
-                    className={'header-white-logo'}
+                    className={'header-white-logo hover:scale-105'}
                     alt={'Logo'}
                     width={120}
                     height={120}

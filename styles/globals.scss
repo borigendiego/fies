@@ -200,7 +200,7 @@ h4 {
 
 //FORM STYLES
 .form {
-  padding: 3% 4%;
+  padding: 1% 4%;
   margin: 0 auto;
   width: 30%;
   background-color: #89ADCD80;
@@ -232,11 +232,13 @@ h4 {
 }
 
 .input_box {
-  border-bottom: 3px solid #ccc;
+  border-bottom: 1px solid $main-blue;
   background-color: transparent;
   height: 80%;
   width: 100%;
-  padding-left: 10px;
+  padding: 5px 15px;
+  font-family: 'Montserrat', sans-serif;
+  resize: none;
 }
 
 .contact-input-button {

@@ -31,8 +31,15 @@ const KontaktComponent = () => {
                         validations: [required, email]
                     },
                     {
-                        name: 'message',
+                        name: 'phone',
                         type: 'text',
+                        label: '',
+                        placeholder: 'Phone',
+                        validations: []
+                    },
+                    {
+                        name: 'message',
+                        type: 'textArea',
                         label: '',
                         placeholder: 'Nachricht',
                         validations: [required]

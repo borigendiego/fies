@@ -70,7 +70,7 @@ const WhoWeAre = () => {
                     <p className="py-2">Gemeinsame Server und digitale Gebäudemodelle helfen uns, die Schnittstellen zwischen den unterschiedlichen Planern transparent aufzulösen. Auf diese Weise stellen wir sicher, dass alle Mitwirkenden in den Planungsprozess involviert sind – von Anfang an und zu jeder Zeit.</p>
                     <h3 className={"pt-2"}>Partner:</h3>
                     <p className="py-2">Wir, Johannes Fies und Johannes Schmitz, haben uns während des Architekturstudiums 2009 kenngelernt. Bereits seitdem planen wir Projekte im Team. Nach über zwölfjähriger Zusammenarbeit haben wir 2021 unser gemeinsames Büro gegründet. </p>
-                    <p className="py-2">Wir freuen uns für Sie tätig zu werden!</p>
+                    <p className="py-2 font-semibold">Wir freuen uns für Sie tätig zu werden!</p>
                 </motion.div>
             </div>
         </div>

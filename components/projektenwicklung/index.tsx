@@ -37,7 +37,7 @@ const Projektewicklung = () => {
                          Durch die Planung nach Maß erreichen wir die größtmögliche Wertsteigerung des Grundstücks.
                           Gleichzeitig fördern wir so die ökologisch sinnvolle Nachverdichtung unserer Städte.
                     </p>
-                    <a className='cursor-pointer font-semibold hover:underline'>Mehr sehen</a>
+                    <a className='cursor-pointer font-semibold hover:underline hidden'>Mehr sehen</a>
                 </motion.div>
             </div>
         </div>
