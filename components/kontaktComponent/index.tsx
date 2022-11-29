@@ -8,7 +8,7 @@ const KontaktComponent = () => {
         <div className='bg-gray-800 flex justify-center'>
             <motion.img 
                 src='/assets/images/projekts/willich/willich-5.jpg' 
-                className='absolute h-full w-full'
+                className='absolute h-full w-full object-cover'
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration:  1, delay: .5}}

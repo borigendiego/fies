@@ -6,22 +6,22 @@ const Projektewicklung = () => {
         <div className='relative' id={'#1'}>
             <motion.img 
                 src='/assets/images/leistung/projektewick-bg.png' 
-                className='absolute h-full w-full'
+                className='absolute h-full w-full object-cover'
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration:  1, delay: 2}}
                 viewport={{once: true}}
              />
-            <div className={'flex flex-col relative md:pl-16 md:pt-12 md:pb-12'} id={'projektewicklung'}>
+            <div className={'flex flex-col relative md:pl-16 px-6 md:pr-0 text-center md:text-left pt-12 pb-12'} id={'projektewicklung'}>
                 <motion.h1 
-                    className={'text-5xl'}
+                    className={'md:text-5xl font-semibold'}
                     initial={{opacity: 0, x:-30}}
                     whileInView={{opacity: 1, x:0}}
                     transition={{duration:  .7, delay: 1}}
                     viewport={{once: true}}
                 >Projektewicklung</motion.h1>
                 <motion.div 
-                    className='w-3/12'
+                    className='md:w-3/12'
                     initial={{opacity: 0, x: -30}}
                     whileInView={{opacity: 1, x: 0}}
                     transition={{duration: .7, delay: 1.5}}

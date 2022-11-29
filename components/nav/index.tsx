@@ -3,7 +3,7 @@ import React from 'react';
 
 const Nav = () => {
     return(
-        <ul className='flex nav'>
+        <ul className='md:flex hidden nav'>
             <li>
                 <a 
                     href={'/#aktuelles'} 

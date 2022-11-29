@@ -27,7 +27,7 @@ const Layout = ({
                 transition={{duration:  1.5, delay: .5}}
                 viewport={{once: true}}
             >
-               <Image src={image} alt={''} layout={'fill'} className={`object-cover rounded-2xl  ${reverse ? 'rounded-r-none' : 'rounded-l-none'}`} /> 
+               <Image src={image} alt={''} layout={'fill'} className={`object-cover md:rounded-2xl  ${reverse ? 'rounded-r-none' : 'rounded-l-none'}`} /> 
             </motion.div>
             <motion.div 
                 className={'w-full md:w-6/12 md:flex md:flex-col md:justify-center md:items-center mx-auto'}
@@ -39,7 +39,7 @@ const Layout = ({
                 <h1 className={'text-center text-[30px] mb-3 font-bold'}>
                     {title}
                 </h1>
-                <div className={'px-8 md:w-9/12'}>{text}</div>
+                <div className={'px-8 md:w-9/12 text-center md:text-left'}>{text}</div>
             </motion.div>
         </div>
     )

@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 const Sanierung = () => {
     return(
-        <div className='flex'>
+        <div className='flex flex-col md:flex-row'>
             <motion.div 
-                className='mx-auto flex items-center'
+                className='mx-auto flex items-center py-4'
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration:  1}}
@@ -18,11 +18,11 @@ const Sanierung = () => {
                     height={200} 
                     width={700} 
                     alt={''}
-                    className={'rounded-xl rounded-l-none'}
+                    className={'md:rounded-xl rounded-l-none'}
                 />
             </motion.div>
             <motion.div 
-                className='w-1/2 px-16'
+                className='md:w-1/2 md:px-16 px-4 text-center'
                 initial={{opacity: 0, x: -30}}
                 whileInView={{opacity: 1, x: 0}}
                 transition={{duration: .7, delay: .5}}

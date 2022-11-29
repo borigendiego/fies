@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 const Statik = ( ) => {
     return(
         <div className='bg-[#89ADCD80] backdrop-blur-sm h-[120vh] flex justify-center items-center' id={'#3'}>
-            <div className='bg-white flex justify-around md:py-12'>
+            <div className='bg-white flex flex-col-reverse md:flex-row justify-around md:py-12'>
                 <motion.div 
-                className='md:w-5/12 px-8'
+                className='md:w-5/12 px-8 text-center'
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
                 transition={{duration:  .7, delay: 1.5}}
@@ -29,13 +29,13 @@ const Statik = ( ) => {
                     </p>
                 </motion.div>
                 <motion.div 
-                    className='md:w-6/12'
+                    className='md:w-6/12 py-4 md:py-0'
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                     transition={{duration:  1, delay: 1}}
                     viewport={{once: true}}
                 >
-                    <Image src={'/assets/images/leistung/statik.jpg'} alt={'Working people'} height={200} width={600} className={'rounded-xl'}/>
+                    <Image src={'/assets/images/leistung/statik.jpg'} alt={'Working people'} height={200} width={600} className={'md:rounded-xl'}/>
                 </motion.div>
             </div>
         </div>

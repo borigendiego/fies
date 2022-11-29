@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <div>
             <motion.div 
-                className='md:flex md:pt-16 md:pb-8 justify-around bg-[#89ADCD]' 
+                className='md:flex md:pt-16 pt-10 md:pb-8 pb-4 justify-around bg-[#89ADCD]' 
                 id='#FOOTER'
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
@@ -27,7 +27,7 @@ const Footer = () => {
                     <Contact />
                 </motion.div>
                 <motion.button 
-                className='footer-b cursor-pointer text-lg h-8 hover:underline'
+                className='footer-b cursor-pointer text-lg h-8 hover:underline hidden md:block'
                 onClick={toTop}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}

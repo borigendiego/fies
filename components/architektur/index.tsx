@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const ArchitekturComp = () => {
     return(
         <div className='relative' id={'#2'}>
-            <div className='md:py-10 md:mt-20 w-6/12 md:pl-10 border rounded-xl rounded-l-none rounded-b-none'>
+            <div className='md:py-10 mt-20 md:w-6/12 md:pl-10 px-2 md:pr-0 border rounded-xl rounded-l-none rounded-b-none'>
                 <motion.h1 
                     className='text-3xl'
                     initial={{opacity: 0}}
@@ -17,9 +17,9 @@ const ArchitekturComp = () => {
                     bis zur Realisierung des Projekts.
                 </motion.h1>
             </div>
-            <div className='flex w-full border rounded-xl rounded-l-none rounded-r-none'>
+            <div className='flex md:flex-row flex-col-reverse w-full border rounded-xl rounded-l-none rounded-r-none'>
                 <motion.div 
-                    className='w-2/6 pl-10 pt-10'
+                    className='md:w-2/6 md:pl-10 pt-10 px-2 md:pr-0 text-center'
                     initial={{opacity: 0, x: -30}}
                     whileInView={{opacity: 1, x: 0}}
                     transition={{duration:  .7, delay: 1.5}}
@@ -44,13 +44,13 @@ const ArchitekturComp = () => {
                     </p>
                 </motion.div>
                 <motion.div 
-                    className='md:pt-32 mx-auto'
+                    className='md:pt-32 pt-12 mx-auto'
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                     transition={{duration:  1, delay: 1}}
                     viewport={{once: true}}
                 >
-                    <Image src={'/assets/images/leistung/architektur-image.png'} alt={'architekt image'} width={650} height={200} className={'rounded-xl'}/>
+                    <Image src={'/assets/images/leistung/architektur-image.png'} alt={'architekt image'} width={650} height={200} className={'md:rounded-xl'}/>
                 </motion.div>
             </div>
         </div>

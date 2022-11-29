@@ -333,3 +333,11 @@ input::placeholder, textarea::placeholder {
     }
   }
 }
+
+@media (max-width: 500px) {
+  .form {
+    width: 90%;
+    left: 0;
+    padding: 5% 5%;
+  }
+}

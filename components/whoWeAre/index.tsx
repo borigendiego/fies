@@ -32,7 +32,7 @@ const WhoWeAre = () => {
     return(
         <div className={'pt-2'}>
             <motion.h1 
-                className={'text-center'}
+                className={'text-center font-semibold'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: true}}
@@ -52,7 +52,7 @@ const WhoWeAre = () => {
                         <Image src={'/assets/images/uber/Fies-min.jpg'} alt={'Johannes Fies photo'} width={400} height={200}></Image>
                         <p className="text-center font-semibold md:pl-12">Johannes Fies, M.A. Architekt</p>
                     </motion.div>
-                    <motion.div variants={imagesChild} transition={{duration: .7, delay:1.7}}>
+                    <motion.div variants={imagesChild} transition={{duration: .7, delay:1.7}} className={'mt-10 md:mt-0'}>
                         <Image src={'/assets/images/uber/Schmitz-min.jpg'} alt={'Johannes Schmitz photo'} width={400} height={200}></Image>
                         <p className="text-center font-semibold md:pl-12">Johannes Schmitz, M.A. Architekt</p>
                     </motion.div>
@@ -62,7 +62,7 @@ const WhoWeAre = () => {
                     whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
                     transition={{duration: .7, delay: 1}}
-                    className='px-16 mt-8'
+                    className='px-16 mt-8 text-center'
                 >
                     <p className="py-2">Wir sind ein junges Team engagierter Architekten und Ingenieure, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.</p>
                     <p className="py-2">Dabei arbeiten wir digital vernetzt und bundesweit, um Projekte jeder Größenordnung zu realisieren. </p>

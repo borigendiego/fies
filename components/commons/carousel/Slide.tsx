@@ -11,13 +11,13 @@ const Slide = ({
     bgImage
 }:CarouselType) => {
     return(
-        <div className="min-w-[360px] overflow-hidden transition-all duration-300 ease-in z-10 relative px-16">
+        <div className="min-w-[360px] overflow-hidden transition-all duration-300 ease-in z-10 relative md:px-16">
             <a href={linkTo}>
                 {
                     colorSquare 
                     ? <div className="md:flex md:flex-col rounded-md hover-slide">
                         <div 
-                            className={'p-6 flex flex-col duration-300 ease-in w-[300px] h-[300px] justify-between'}
+                            className={'p-6 flex flex-col duration-300 ease-in w-[300px] h-[300px] justify-between md:mx-0 mx-auto'}
                             style={{ backgroundColor: bgColor }}
                         >
                             <p className={'text-white text-[20px]'}>
@@ -28,7 +28,7 @@ const Slide = ({
                     </div>
                     : <div className="md:flex md:flex-col rounded-md hover-slide">
                         <div 
-                            className={'flex flex-col duration-300 ease-in w-[300px] h-[300px] justify-end bg-cover bg-center'}
+                            className={'flex flex-col duration-300 ease-in w-[300px] h-[300px] justify-end bg-cover bg-center md:mx-0 mx-auto'}
                             style={{ 
                                 backgroundImage: `url(${bgImage})`,
                             }}

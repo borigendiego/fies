@@ -57,7 +57,7 @@ const Caraousel = () => {
     }
 
     return(
-        <div id={'aktuelles'}>
+        <div id={'aktuelles'} className={'my-24 md:my-0'}>
             <div className="my-12 relative left-[7.5%] w-fit" >
                 <p className="font-bold text-[#4f505f]">Aktuelles</p>
             </div>

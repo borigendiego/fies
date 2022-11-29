@@ -76,8 +76,8 @@ const Slick = () => {
                                     alt={value.title}
                                 />
                                 <div className='absolute h-full w-full bg-[#282c34] z-30 opacity-20' />
-                                <div className="relative z-40 top-[70vh] py-6 pl-10">
-                                    <h1 className={"text-white relative z-10 mt-6 font-semibold"}>
+                                <div className="relative z-40 top-[75vh] py-6 pl-10">
+                                    <h1 className={"text-white relative z-10 mt-6 font-semibold text-4xl"}>
                                         {value.title}
                                     </h1>
                                     <p className={"text-white text-xl relative z-10"}>{value.text}</p>
