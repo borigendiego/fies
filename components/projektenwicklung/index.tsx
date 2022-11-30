@@ -14,7 +14,7 @@ const Projektewicklung = () => {
              />
             <div className={'flex flex-col relative md:pl-16 px-6 md:pr-0 text-center md:text-left pt-12 pb-12'} id={'projektewicklung'}>
                 <motion.h1 
-                    className={'md:text-5xl font-semibold'}
+                    className={'md:text-5xl font-semibold py-4'}
                     initial={{opacity: 0, x:-30}}
                     whileInView={{opacity: 1, x:0}}
                     transition={{duration:  .7, delay: 1}}

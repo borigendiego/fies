@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 
 const Statik = ( ) => {
     return(
-        <div className='bg-[#89ADCD80] backdrop-blur-sm h-[120vh] flex justify-center items-center' id={'#3'}>
-            <div className='bg-white flex flex-col-reverse md:flex-row justify-around md:py-12'>
+        <div className={'flex justify-center items-center'} id={'#3'}>
+            <div className='grid grid-cols-1 md:grid-cols-2 md:py-12'>
                 <motion.div 
-                className='md:w-5/12 px-8 text-center'
+                className={'px-8 text-center m-auto'}
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
                 transition={{duration:  .7, delay: 1.5}}
@@ -29,7 +29,7 @@ const Statik = ( ) => {
                     </p>
                 </motion.div>
                 <motion.div 
-                    className='md:w-6/12 py-4 md:py-0'
+                    className={'m-auto'}
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                     transition={{duration:  1, delay: 1}}

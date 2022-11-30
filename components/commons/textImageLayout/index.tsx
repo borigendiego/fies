@@ -19,7 +19,7 @@ const Layout = ({
     reverse
 }:LayoutProps) => {
     return(
-        <div className={`flex relative my-4 py-12 flex-wrap border-b ${reverse ? 'md:flex-row-reverse' : ''}`} id={`${id}`}>
+        <div className={`flex relative my-4 py-20 flex-wrap border-b ${reverse ? 'md:flex-row-reverse' : ''}`} id={`${id}`}>
             <motion.div 
                 className={'w-full md:w-6/12 md:h-auto h-52 relative mb-6 md:mb-0'}
                 initial={{opacity: 0}}

@@ -5,21 +5,22 @@ import { motion } from "framer-motion";
 
 const ArchitekturComp = () => {
     return(
-        <div className='relative' id={'#2'}>
-            <div className='md:py-10 mt-20 md:w-6/12 md:pl-10 px-2 md:pr-0 border rounded-xl rounded-l-none rounded-b-none'>
+        <div id={'#2'}>
+            <div className={'pl-14 pt-4 mt-20 md:w-6/12 md:pr-0 border rounded-xl rounded-l-none rounded-b-none'}>
                 <motion.h1 
-                    className='text-3xl'
+                    className={'md:text-[36px] text-[20px] p-2'}
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                     transition={{duration:  1, delay: .5}}
                     viewport={{once: true}}
-                >Wir begleiten Sie von der Konzeption <br/>
+                >
+                    Wir begleiten Sie von der Konzeption <br/>
                     bis zur Realisierung des Projekts.
                 </motion.h1>
             </div>
-            <div className='flex md:flex-row flex-col-reverse w-full border rounded-xl rounded-l-none rounded-r-none'>
+            <div className={'border grid grid-cols-1 md:grid-cols-2'}>
                 <motion.div 
-                    className='md:w-2/6 md:pl-10 pt-10 px-2 md:pr-0 text-center'
+                    className={' p-12 text-center'}
                     initial={{opacity: 0, x: -30}}
                     whileInView={{opacity: 1, x: 0}}
                     transition={{duration:  .7, delay: 1.5}}
@@ -44,7 +45,7 @@ const ArchitekturComp = () => {
                     </p>
                 </motion.div>
                 <motion.div 
-                    className='md:pt-32 pt-12 mx-auto'
+                    className={'m-auto'}
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                     transition={{duration:  1, delay: 1}}

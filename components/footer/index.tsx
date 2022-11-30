@@ -21,7 +21,7 @@ const Footer = () => {
                 <motion.div
                     initial={{opacity: 0, x: -15}}
                     whileInView={{opacity: 1, x: 0}}
-                    transition={{duration: .5 , delay: 1.5}}
+                    transition={{duration: .5 , delay: 1}}
                     viewport={{once: true}}
                 >
                     <Contact />

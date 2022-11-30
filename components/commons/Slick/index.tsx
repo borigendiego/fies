@@ -20,21 +20,21 @@ const Slick = () => {
 
     const SLIDES_DATA = [
         {
-            linkTo: '/projekte',
+            linkTo: '/projekte/#Willich',
             image: '/assets/images/projekts/willich/willich-6.jpg',
-            title: '',
+            title: 'PROJEKT: Willich',
             text: ''
         },
         {
-            linkTo: '/projekte',
+            linkTo: '/projekte/#Willich',
             image: '/assets/images/banner/banner-1-min.jpg',
-            title: 'Projektenwicklung',
+            title: 'PROJEKT: Willich',
             text: ''
         },
         {
-            linkTo: '/uber#2',
+            linkTo: '/projekte/#Airpark',
             image: '/assets/images/banner/banner-2-min.png',
-            title: 'Generalplanung',
+            title: 'PROJEKT: Airpark',
             text: ''
         },
         {
@@ -44,9 +44,9 @@ const Slick = () => {
             text: ''
         },
         {
-            linkTo: '/kontakt',
+            linkTo: '/projekte/#Heimstetten',
             image: '/assets/images/banner/banner-4-min.jpg',
-            title: 'Projektsteuerung',
+            title: 'PROJEKT: Heimstetten',
             text: ''
         },
     ] 
@@ -68,7 +68,7 @@ const Slick = () => {
                 {
                     SLIDES_DATA.map((value, index) => {
                         return (
-                            <Link key={`${value.title}-${index}`} href={value.linkTo} className='relative cursor-pointer z-10 h-screen'>
+                            <a key={`${value.title}-${index}`} href={value.linkTo} className='relative cursor-pointer z-10 h-screen'>
                                 <Image 
                                     src={value.image}
                                     className={'absolute object-cover'}
@@ -82,7 +82,7 @@ const Slick = () => {
                                     </h1>
                                     <p className={"text-white text-xl relative z-10"}>{value.text}</p>
                                 </div>
-                            </Link>
+                            </a>
                         )
                     })
                 }
