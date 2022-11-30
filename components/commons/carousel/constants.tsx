@@ -10,6 +10,16 @@ export type CarouselType = {
 
 const HOME_CAROUSEL:CarouselType[] = [
     {
+        bgImage: '/assets/images/home-slider/Willich-Bauarbeiten.jpeg',
+        title: 'Willich Bauarbeiten',
+        linkTo: '/',
+    },
+    {
+        bgImage: '/assets/images/home-slider/Spatenstich.jpg',
+        title: 'Willich Spatenstich',
+        linkTo: '/https://www.meine-woche.de/staedte/willich/spatenstich-auf-dem-toholt-gelaende-in-willich_aid-73284361',
+    },
+    {
         title: 'Mit BIM bauen wir',
         bgColor: '#feea41',
         colorSquare: true,
@@ -30,7 +40,7 @@ const HOME_CAROUSEL:CarouselType[] = [
             <p className={'mb-2 text-white'}>entwicklung</p>
             <p className={'text-white'}>in 7 Schritten</p>
         </div>,
-        linkTo: '/',
+        linkTo: '/leistung#grundstück',
     },
     {
         title: 'Unsere Leistungen umfassen das gesamte',       
@@ -79,16 +89,6 @@ const HOME_CAROUSEL:CarouselType[] = [
             <p className={'text-white'}>effizienteste Lösung</p>
         </div>,
         linkTo: '/leistung#1',
-    },
-    {
-        bgImage: '/assets/images/home-slider/Willich-Bauarbeiten.jpeg',
-        title: 'Willich Bauarbeiten',
-        linkTo: '/',
-    },
-    {
-        bgImage: '/assets/images/home-slider/Spatenstich.jpg',
-        title: 'Willich Spatenstich',
-        linkTo: '/https://www.meine-woche.de/staedte/willich/spatenstich-auf-dem-toholt-gelaende-in-willich_aid-73284361',
     },
 ];
 

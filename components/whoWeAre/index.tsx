@@ -32,7 +32,7 @@ const WhoWeAre = () => {
     return(
         <div className={'pt-2'}>
             <motion.h1 
-                className={'text-center font-semibold mt-12'}
+                className={'text-center font-semibold mt-6'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: true}}
@@ -62,15 +62,18 @@ const WhoWeAre = () => {
                     whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
                     transition={{duration: .7, delay: 1}}
-                    className={'px-16 my-12 text-center'}
+                    className={'flex justify-around px-16 my-12 text-center md:text-left'}
                 >
-                    <p className="py-2">Wir sind ein junges Team engagierter Architekten und Ingenieure, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.</p>
-                    <p className="py-2">Dabei arbeiten wir digital vernetzt und bundesweit, um Projekte jeder Größenordnung zu realisieren. </p>
-                    <p className="py-2">Durch die gemeinsame digitale Planung in allen Fachbereichen – insbesondere der Disziplinen Architektur, Statik, Technische Gebäude Ausrüstung, Energieberatung und Brandschutz – sind wir effizient und schaffen Synergien. So können wir unseren Auftraggeber*innen äußerste Planungssicherheit zusichern. </p>
-                    <p className="py-2">Gemeinsame Server und digitale Gebäudemodelle helfen uns, die Schnittstellen zwischen den unterschiedlichen Planern transparent aufzulösen. Auf diese Weise stellen wir sicher, dass alle Mitwirkenden in den Planungsprozess involviert sind – von Anfang an und zu jeder Zeit.</p>
-                    <h3 className={"py-4"}>Partner:</h3>
-                    <p className="py-2">Wir, Johannes Fies und Johannes Schmitz, haben uns während des Architekturstudiums 2009 kenngelernt. Bereits seitdem planen wir Projekte im Team. Nach über zwölfjähriger Zusammenarbeit haben wir 2021 unser gemeinsames Büro gegründet. </p>
-                    <p className="py-2 font-semibold">Wir freuen uns für Sie tätig zu werden!</p>
+                    <div className='w-7/12'>
+                        <p className="py-2">Wir sind ein junges Team engagierter Architekten und Ingenieure, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.</p>
+                        <p className="py-2">Dabei arbeiten wir digital vernetzt und bundesweit, um Projekte jeder Größenordnung zu realisieren. </p>
+                        <p className="py-2">Durch die gemeinsame digitale Planung in allen Fachbereichen – insbesondere der Disziplinen Architektur, Statik, Technische Gebäude Ausrüstung, Energieberatung und Brandschutz – sind wir effizient und schaffen Synergien. So können wir unseren Auftraggeber*innen äußerste Planungssicherheit zusichern. </p>
+                        <p className="py-2">Gemeinsame Server und digitale Gebäudemodelle helfen uns, die Schnittstellen zwischen den unterschiedlichen Planern transparent aufzulösen. Auf diese Weise stellen wir sicher, dass alle Mitwirkenden in den Planungsprozess involviert sind – von Anfang an und zu jeder Zeit.</p>
+                        <h3 className={"py-4"}>Partner:</h3>
+                        <p className="py-2">Wir, Johannes Fies und Johannes Schmitz, haben uns während des Architekturstudiums 2009 kenngelernt. Bereits seitdem planen wir Projekte im Team. Nach über zwölfjähriger Zusammenarbeit haben wir 2021 unser gemeinsames Büro gegründet. </p>
+                        <p className="py-2 font-semibold">Wir freuen uns für Sie tätig zu werden!</p>
+                    </div>
+                    <Image src={'/assets/images/uber/uber-map.jpg'} alt={'Map'} height={200} width={450}/>
                 </motion.div>
             </div>
         </div>

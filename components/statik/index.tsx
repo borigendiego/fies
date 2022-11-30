@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-//
 import { motion } from "framer-motion";
 
 
@@ -9,7 +8,7 @@ const Statik = ( ) => {
         <div className={'flex justify-center items-center'} id={'#3'}>
             <div className='grid grid-cols-1 md:grid-cols-2 md:py-12'>
                 <motion.div 
-                className={'px-8 text-center m-auto'}
+                className={'px-8 text-center md:text-left m-auto'}
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
                 transition={{duration:  .7, delay: 1.5}}

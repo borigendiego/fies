@@ -20,7 +20,7 @@ const ArchitekturComp = () => {
             </div>
             <div className={'border grid grid-cols-1 md:grid-cols-2'}>
                 <motion.div 
-                    className={' p-12 text-center'}
+                    className={'p-12 text-center md:text-left'}
                     initial={{opacity: 0, x: -30}}
                     whileInView={{opacity: 1, x: 0}}
                     transition={{duration:  .7, delay: 1.5}}

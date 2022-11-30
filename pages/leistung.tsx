@@ -8,6 +8,7 @@ import ArchitekturComp from '../components/architektur';
 import Statik from '../components/statik';
 import Footer from '../components/footer';
 import Sanierung from '../components/sanierung';
+import Grundstuck from '../components/Grundstuck7';
 
 const Leistung: NextPage = () => {
     return(
@@ -21,6 +22,7 @@ const Leistung: NextPage = () => {
                 <ArchitekturComp />
                 <Statik />
                 <Sanierung />
+                <Grundstuck />
                 <Footer />
             </main>
             <footer>
