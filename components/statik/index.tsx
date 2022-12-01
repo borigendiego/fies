@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 
 const Statik = ( ) => {
     return(
-        <div className={'flex justify-center items-center'} id={'#3'}>
-            <div className='grid grid-cols-1 md:grid-cols-2 md:py-12'>
+        <div className={'flex justify-center items-center'}>
+            <div className='flex md:flex-row-reverse flex-col-reverse py-12'>
                 <motion.div 
-                className={'px-8 text-center md:text-left m-auto'}
+                className={'px-8 text-center md:text-left m-auto md:w-1/2 pt-8 md:pt-0'}
+                id={'statik'}
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
                 transition={{duration:  .7, delay: 1.5}}

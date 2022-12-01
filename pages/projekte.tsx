@@ -10,6 +10,8 @@ const Projekte: NextPage = () => {
     return(
         <div>
             <Head>
+                <title>SPEKTRUM - Projekte</title>
+                <meta name="description" content="SPEKTRUM - Projekte" />
             </Head>
             <main>
                 <Header />

@@ -4,10 +4,12 @@ import Head from 'next/head';
 import Header from '../components/header';
 import KontaktComponent from '../components/kontaktComponent';
 
-const News: NextPage = () => {
+const Kontakt: NextPage = () => {
     return(
         <div>
             <Head>
+                <title>SPEKTRUM - Kontakt</title>
+                <meta name="description" content="SPEKTRUM - Kontakt" />
             </Head>
             <main>
                 <Header isHomePage />
@@ -20,4 +22,4 @@ const News: NextPage = () => {
     )
 }
 
-export default News;
+export default Kontakt;

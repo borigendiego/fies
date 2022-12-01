@@ -7,9 +7,9 @@ import Image from "next/image";
 
 const Grundstuck = () => {
     return(
-        <div id="#grundstück">
+        <div id={'grundstuck'}>
             <motion.div 
-                className='grid md:grid-cols-4 gap-2 md:mx-auto px-10 my-16'
+                className='grid md:grid-cols-4 gap-2 mx-auto px-10 my-16'
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -20,7 +20,7 @@ const Grundstuck = () => {
                         return (
                             <div 
                                 key={index}
-                                className={`flex flex-col w-[270px] mx-auto mt-8`}
+                                className={`flex flex-col items-center md:items-start text-center md:text-left w-[270px] mx-auto mt-8`}
                             >
                                 <Image src={item.image} alt={''} height={200} width={250} />
                                 <h2 className='text-2xl font-semibold pt-3'>{item.title}</h2>

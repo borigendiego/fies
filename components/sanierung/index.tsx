@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Sanierung = () => {
     return(
-        <div className='flex flex-col md:flex-row'>
+        <div className='flex flex-col md:flex-row md:py-8' id={'sanierung'}>
             <motion.div 
                 className='mx-auto flex items-center py-4'
                 initial={{opacity: 0}}
@@ -22,13 +22,13 @@ const Sanierung = () => {
                 />
             </motion.div>
             <motion.div 
-                className='md:w-1/2 md:px-16 px-4 text-center'
+                className='md:w-1/2 md:px-16 px-4 text-center md:text-left'
                 initial={{opacity: 0, x: -30}}
                 whileInView={{opacity: 1, x: 0}}
                 transition={{duration: .7, delay: .5}}
                 viewport={{once: true}}
             >
-                <h1 className='pt-4'>Sanierung</h1>
+                <h1 className='pt-4 font-semibold'>Sanierung</h1>
                 <p className='my-4'>
                     Laut der Deutschen Energie-Agentur müssen bis spätestens 2050 etwa drei Viertel der 22
                     Millionen Gebäude in Deutschland saniert werden – das entspricht ungefähr 2.500

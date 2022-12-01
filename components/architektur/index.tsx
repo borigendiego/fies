@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 
 const ArchitekturComp = () => {
     return(
-        <div id={'#2'}>
-            <div className={'pl-14 pt-4 mt-20 md:w-6/12 md:pr-0 border rounded-xl rounded-l-none rounded-b-none'}>
+        <div>
+            <div className={'pl-14 py-4 mt-20 md:w-6/12 md:pr-0 border rounded-xl rounded-l-none rounded-b-none'}>
                 <motion.h1 
                     className={'md:text-[36px] text-[20px] p-2'}
+                    id={'architektur'}
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                     transition={{duration:  1, delay: .5}}
@@ -18,9 +19,9 @@ const ArchitekturComp = () => {
                     bis zur Realisierung des Projekts.
                 </motion.h1>
             </div>
-            <div className={'border grid grid-cols-1 md:grid-cols-2'}>
+            <div className={'border flex md:flex-row flex-col-reverse'}>
                 <motion.div 
-                    className={'p-12 text-center md:text-left'}
+                    className={'p-12 text-center md:text-left md:w-1/2'}
                     initial={{opacity: 0, x: -30}}
                     whileInView={{opacity: 1, x: 0}}
                     transition={{duration:  .7, delay: 1.5}}

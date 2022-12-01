@@ -12,6 +12,8 @@ const Uber: NextPage = () => {
     return(
         <div className='page'>
             <Head>
+                <title>SPEKTRUM - Über</title>
+                <meta name="description" content="SPEKTRUM - Über" />
             </Head>
             <main>
                 <Header />

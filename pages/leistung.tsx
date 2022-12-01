@@ -9,18 +9,28 @@ import Statik from '../components/statik';
 import Footer from '../components/footer';
 import Sanierung from '../components/sanierung';
 import Grundstuck from '../components/Grundstuck7';
+import Technische from '../components/technische';
+import Brandschutz from '../components/brandschutz';
+import Energieberatung from '../components/energieberatung';
+import Finanzierung from '../components/finanzierung';
 
 const Leistung: NextPage = () => {
     return(
         <div>
             <Head>
+                <title>SPEKTRUM - Leistung</title>
+                <meta name="description" content="SPEKTRUM - Lesitung" />
             </Head>
             <main>
                 <Header />
                 <LeistungComp />
-                <Projektewicklung />
                 <ArchitekturComp />
                 <Statik />
+                <Technische />
+                <Brandschutz />
+                <Energieberatung />
+                <Projektewicklung />
+                <Finanzierung />
                 <Sanierung />
                 <Grundstuck />
                 <Footer />

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Projektewicklung = () => {
     return(
-        <div className='relative' id={'#1'}>
+        <div className='relative'>
             <motion.img 
                 src='/assets/images/leistung/projektewick-bg.png' 
                 className='absolute h-full w-full object-cover'
