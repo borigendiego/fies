@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Statik = ( ) => {
     return(
-        <div className={'flex justify-center items-center'}>
+        <div className={'flex justify-center items-center'} id='tragwerksplanung'>
             <div className='flex md:flex-row-reverse flex-col-reverse py-12'>
                 <motion.div 
                 className={'px-8 text-center md:text-left m-auto md:w-1/2 pt-8 md:pt-0'}
@@ -15,6 +15,13 @@ const Statik = ( ) => {
                 transition={{duration:  .7, delay: 1.5}}
                 viewport={{once: true}}
                 >
+                    <motion.h1 
+                        className={'md:text-5xl font-semibold py-6'}
+                        initial={{opacity: 0, x:-30}}
+                        whileInView={{opacity: 1, x:0}}
+                        transition={{duration:  .7, delay: 1}}
+                        viewport={{once: true}}
+                    >Tragwerksplanung</motion.h1>
                     <p className='font-bold'>Die Statik ist ein essenzieller Bestandteil eines jeden Gebäudes. </p>
                     <p className='my-4'>
                         Das statische Konzept und der Architektonische Entwurf gehen um effizient zu planen

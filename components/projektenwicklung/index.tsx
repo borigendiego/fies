@@ -12,7 +12,7 @@ const Projektewicklung = () => {
                 transition={{duration:  1, delay: 2}}
                 viewport={{once: true}}
              />
-            <div className={'flex flex-col relative md:pl-16 px-6 md:pr-0 text-center md:text-left pt-12 pb-12'} id={'projektewicklung'}>
+            <div className={'flex flex-col relative md:pl-16 px-6 md:pr-0 text-center md:text-left pt-12 pb-12'} id={'projektenwicklung'}>
                 <motion.h1 
                     className={'md:text-5xl font-semibold py-4'}
                     initial={{opacity: 0, x:-30}}

@@ -34,13 +34,14 @@ const Nav = () => {
                 </Link>
                 <ul className={'sub-menu absolute hidden'}>
                     <li><a href={'/leistung/#architektur'}>Architektur</a></li>
+                    <li><a href={'/leistung/#tragwerksplanung'}>Tragwerksplanung</a></li>
                     <li><a href={'/leistung/#technise'}>Technische Gebäudeausrüstung</a></li>
                     <li><a href={'/leistung/#brandschutz'}>Brandschutz</a></li>
                     <li><a href={'/leistung/#energieberatung'}>Energieberatung</a></li>
-                    <li><a href={'/leistung/#projektewicklung'}>Projektewicklung</a></li>
+                    <li><a href={'/leistung/#projektenwicklung'}>Projektenwicklung</a></li>
                     <li><a href={'/leistung/#finanzierung'}>Finanzierung</a></li>
                     <li><a href={'/leistung/#sanierung'}>Sanierung</a></li>
-                    <li><a href={'/leistung/#grundstuck'}>Grundstuck</a></li>
+                    <li><a href={'/leistung/#grundstuck'}>Grundstücks-entwicklung</a></li>
                 </ul>
             </li>
             <li>
