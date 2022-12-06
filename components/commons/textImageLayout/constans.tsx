@@ -29,12 +29,13 @@ const LAYOUT_DATA = [
         title: 'Nachhaltigkeit',
         image: '/assets/images/banner/bannerImage-4.jpg',
         reversed: false,
+        textDisplay: true,
         text: <div>
                     <p className='py-2'>37 Prozent der weltweiten CO2-Emissionen werden laut UN-Bericht von 2021 durch den Bau und die Unterhaltung von Gebäuden verursacht. Gleichzeitig werden dabei 36 Prozent des weltweiten Energiebedarfs verbraucht. Das macht den Gebäudesektor im Vergleich sowohl zum größten CO2-Emittenten, als auch zum größten Energieverbraucher.</p>
                     <p className='py-2'>Das EU-Klimaziel sieht vor, den Ausstoß von Treibhausgasen bis 2030 um 55 Prozent verglichen mit 1990 zu reduzieren. Bis 2045 wird sogar die Treibhausgas neutralität angestrebt. Derweil steigen Emissionen und Energiebedarf jährlich immer weiter an.</p>
                     <p className='py-2'>Diese Zahlen machen deutlich, dass dringender Handlungsbedarf besteht und gerade der Immobiliensektor eine besonders wichtige Rolle einnimmt.</p>
                     <p className='py-2'>Wir als Architekten und Ingenieure möchten unseren Teil dazu beitragen und mit dem Einsatz klimafreundlicher Materialien und nachhaltiger Bauweisen, die CO2- Emissionen und den Energieverbrauch weitestgehend senken.</p>
-                </div>
+                </div>,
     },
     {
         id: 4,

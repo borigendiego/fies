@@ -62,9 +62,9 @@ const WhoWeAre = () => {
                     whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
                     transition={{duration: .7, delay: 1}}
-                    className={'flex justify-around px-16 my-12 text-center md:text-left'}
+                    className={'flex md:flex-row flex-col justify-around px-16 my-12 text-center md:text-left'}
                 >
-                    <div className='w-7/12'>
+                    <div className='md:w-7/12'>
                         <p className="py-2">Wir sind ein junges Team engagierter Architekten und Ingenieure, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.</p>
                         <p className="py-2">Dabei arbeiten wir digital vernetzt und bundesweit, um Projekte jeder Größenordnung zu realisieren. </p>
                         <p className="py-2">Durch die gemeinsame digitale Planung in allen Fachbereichen – insbesondere der Disziplinen Architektur, Statik, Technische Gebäude Ausrüstung, Energieberatung und Brandschutz – sind wir effizient und schaffen Synergien. So können wir unseren Auftraggeber*innen äußerste Planungssicherheit zusichern. </p>
