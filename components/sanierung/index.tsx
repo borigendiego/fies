@@ -14,7 +14,7 @@ const Sanierung = () => {
                 viewport={{once: true}}
             >
                 <Image 
-                    src={'/assets/images/projekts/pfaffenhofen/Pfaffenhofen-1-min.jpeg'} 
+                    src={'/assets/images/leistung/sanierung.jpg'} 
                     height={200} 
                     width={700} 
                     alt={''}

@@ -45,7 +45,7 @@ const Energieberatung = () => {
                     Wir erstellen Energiekonzepte, bei denen die anfänglichen Mehrkosten durch staatliche
                     Zuschüsse subventioniert werden. Durch vergünstigte Zinsen über geförderte Kredite der KfW
                     (Kreditanstalt für Wiederaufbau) amortisieren sich die anfänglichen Kosten besonders
-                    schnell..
+                    schnell.
                 </p>
                 <p className='my-4'>
                     Wir möchten eine langfristige Lösung finden, die sowohl die Umwelt schont und

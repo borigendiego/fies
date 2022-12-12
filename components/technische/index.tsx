@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Technische = () => {
     return(
-        <div className='flex flex-col md:flex-row-reverse border md:py-8' id={'technise'}>
+        <div className='flex flex-col md:flex-row-reverse border md:py-8' id={'technische'}>
             <motion.div 
                 className='mx-auto flex items-center py-4'
                 initial={{opacity: 0}}
@@ -27,7 +27,7 @@ const Technische = () => {
                 transition={{duration: .7, delay: .5}}
                 viewport={{once: true}}
             >
-                <h1 className='py-4 font-semibold text-4xl md:text-[40px]' id={'technische'}>Technische Gebäudeausrüstung</h1>
+                <h1 className='py-4 font-semibold text-4xl md:text-[40px]'>Technische Gebäudeausrüstung</h1>
                 <p className='my-4'>
                     Die Planung der Technischen Gebäudeausrüstung nimmt einen zunehmend größeren Stellenwert ein.
                     Insbesondere das Konzept der Gebäudeheizung, Kühlung und Belüftung ist ein fester Bestandteil
@@ -42,8 +42,8 @@ const Technische = () => {
                     Die Vielzahl der Leitungen für Lüftung, Sanitär und Elektro,
                     die bei modernen Gebäuden zum Einsatz kommt, muss im Vorfeld optimal dimensioniert
                     und geplant werden. Anhand unserer 3D- Gebäudemodelle können wir den Flächenbedarf
-                    für die Anlagentechnik grafisch im Modell ablesen und effiziente Strang- und
-                    Leitungsführung entwickeln 
+                    für die Anlagentechnik grafisch im Modell ablesen und eine effiziente Strang- und
+                    Leitungsführung entwickeln.
                 </p>
                 <p className='my-4'>
                     Das Ergebnis unserer Planung ist eine optimal abgestimmte Verteilung der gesamten Haustechnik,

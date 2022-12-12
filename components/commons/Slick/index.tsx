@@ -38,7 +38,7 @@ const Slick = () => {
             text: ''
         },
         {
-            linkTo: '/lesitung',
+            linkTo: '/leistung',
             image: '/assets/images/banner/banner-3-min.jpg',
             title: 'Leistung',
             text: ''

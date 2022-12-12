@@ -35,7 +35,7 @@ const Nav = () => {
                 <ul className={'sub-menu absolute hidden'}>
                     <li><a href={'/leistung/#architektur'}>Architektur</a></li>
                     <li><a href={'/leistung/#tragwerksplanung'}>Tragwerksplanung</a></li>
-                    <li><a href={'/leistung/#technise'}>Technische Gebäudeausrüstung</a></li>
+                    <li><a href={'/leistung/#technische'}>Technische Gebäudeausrüstung</a></li>
                     <li><a href={'/leistung/#brandschutz'}>Brandschutz</a></li>
                     <li><a href={'/leistung/#energieberatung'}>Energieberatung</a></li>
                     <li><a href={'/leistung/#projektenwicklung'}>Projektenwicklung</a></li>

@@ -34,7 +34,7 @@ const KontaktComponent = () => {
                         name: 'phone',
                         type: 'text',
                         label: '',
-                        placeholder: 'Phone',
+                        placeholder: 'Telefon',
                         validations: []
                     },
                     {

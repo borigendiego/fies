@@ -40,7 +40,7 @@ const HOME_CAROUSEL:CarouselType[] = [
             <p className={'mb-2 text-white'}>entwicklung</p>
             <p className={'text-white'}>in 7 Schritten</p>
         </div>,
-        linkTo: '/leistung#grundstück',
+        linkTo: '/leistung#grundstuck',
     },
     {
         title: 'Unsere Leistungen umfassen das gesamte',       
@@ -88,7 +88,7 @@ const HOME_CAROUSEL:CarouselType[] = [
             <p className={'text-white'}>die sinnvollste und</p>
             <p className={'text-white'}>effizienteste Lösung</p>
         </div>,
-        linkTo: '/leistung#1',
+        linkTo: '/leistung#grundstuck',
     },
 ];
 

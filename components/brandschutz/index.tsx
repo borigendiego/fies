@@ -34,7 +34,7 @@ const Brandschutz = () => {
                     Wir betrachten den vorbeugenden Brandschutz von Beginn der Planung als untrennbaren Teil
                     der Architektur. Als oberstes Ziel gilt, im Brandfall die Sicherheit der
                     Nutzer sicherstellen zu können. Wir beziehen je nach Gebäudegröße und Nutzeranzahl
-                    die notwendigen Abmessungen der Ersten und zweiten Rettungswege sinnvoll in das
+                    die notwendigen Abmessungen der ersten und zweiten Rettungswege sinnvoll in das
                     Gebäudekonzept mit ein. Ebenso erstellen wir die Entrauchungskonzepte für Gebäude
                     und Tiefgaragen, unter Berücksichtigung der unterschiedlichen Brandverhalten der
                     Baustoffe. Da im Falle eines Brandes die größte Gefahr von der Rauchentwicklung

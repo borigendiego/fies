@@ -32,7 +32,7 @@ const Finanzierung = () => {
                     Wenn Sie Hilfe bei der Finanzierung Ihres Bauvorhabens benötigen,
                     unterstützen wir Sie gerne! Wir arbeiten sowohl mit Banken als auch mit freien
                     Finanzierern zusammen und finden für Sie die besten Konditionen. Je nach Energie-Standard
-                    des Gebäudes ist es möglich Fördermittel für den Neubau, oder einer energetischen
+                    des Gebäudes ist es möglich, Fördermittel für den Neubau, oder einer energetischen
                     Sanierung zu beantragen. Als Planer können wir frühzeitig passend zu Ihrem individuellen
                     Gebäude, die passenden Finanzierungen mit den entsprechenden Förderungen für
                     Sie zusammenstellen. So bietet die KfW (Kreditanstalt für Wiederaufbau) beispielsweise

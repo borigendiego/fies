@@ -6,19 +6,6 @@ import { motion } from "framer-motion";
 const ArchitekturComp = () => {
     return(
         <div>
-            <div className={'pl-14 py-4 mt-20 md:w-6/12 md:pr-0 border rounded-xl rounded-l-none rounded-b-none'}>
-                <motion.h1 
-                    className={'md:text-[36px] text-[20px] p-2'}
-                    id={'architektur'}
-                    initial={{opacity: 0}}
-                    whileInView={{opacity: 1}}
-                    transition={{duration:  1, delay: .5}}
-                    viewport={{once: true}}
-                >
-                    Wir begleiten Sie von der Konzeption <br/>
-                    bis zur Realisierung des Projekts.
-                </motion.h1>
-            </div>
             <div className={'border flex md:flex-row flex-col-reverse'}>
                 <motion.div 
                     className={'p-12 text-center md:text-left md:w-1/2'}
@@ -27,9 +14,10 @@ const ArchitekturComp = () => {
                     transition={{duration:  .7, delay: 1.5}}
                     viewport={{once: true}}
                 >
+                    <h1 className='pt-4 font-semibold' id={'architektur'}>Architektur</h1>
                     <p className='py-2 text-base'>
                         Im Bereich des Hochbaus bieten wir Ihnen umfangreiche Planungs- und Beratungsleistungen an.
-                        Wir Planen und realisieren Gebäude verschiedenster Größenordnung und Funktionen, von der ersten Standortanalyse bis zur Inbetriebnahme des fertigen Bauwerks.
+                        Wir planen und realisieren Gebäude verschiedenster Größenordnung und Funktionen, von der ersten Standortanalyse bis zur Inbetriebnahme des fertigen Bauwerks.
                     </p>
                     <p className='py-2 text-base'>
                         Unser Leistungsspektrum umfasst nicht nur die Arbeit des klassischen Architekten,

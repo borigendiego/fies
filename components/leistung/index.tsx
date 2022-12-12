@@ -18,13 +18,6 @@ const LeistungComp = () => {
                     Für unsere Bauherren können wir auf diese Weise die größtmögliche Planungssicherheit schaffen.
                 </motion.p>
             </div>
-            <motion.div 
-                className='bg-sky-500 h-[3px] w-1/2 rounded-xl mt-12' 
-                initial={{opacity: 0}}
-                whileInView={{opacity: .3}}
-                viewport={{once: true}}
-                transition={{duration: 1, delay: 1.5}}
-            />
         </div>
     )
 }

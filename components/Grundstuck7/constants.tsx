@@ -12,12 +12,12 @@ const GRUNDSTUCK_DATA = [
     {
         image: '/assets/images/leistung/Wertermittlung-min.png',
         title: '2. Wertermittlung',
-        text: 'Für einen Investor ist Ausschlaggebend, wie viel Wohnraum maximal auf dem Grundstück gebaut werden kann. Über die Differenz zwischen Baukosten und Verkaufserlös der Wohnfläche wird der Grundstückswert ermittelt.',
+        text: 'Für einen Investor ist ausschlaggebend, wie viel Wohnraum maximal auf dem Grundstück gebaut werden kann. Über die Differenz zwischen Baukosten und Verkaufserlös der Wohnfläche wird der Grundstückswert ermittelt.',
     },
     {
         image: '/assets/images/leistung/Rahmenbedingungen-min.png',
         title: '3. Rahmenbedingungen',
-        text: 'Durch eine individuelle Vorplanung werden alle Werte, die zur Berechnung des Grundstückswertes notwendigen sind, genau bestimmt.',
+        text: 'Durch eine individuelle Vorplanung werden alle Werte, die zur Berechnung des Grundstückswertes notwendig sind, genau bestimmt.',
     },
     {
         image: '/assets/images/leistung/Baurecht-min.png',
