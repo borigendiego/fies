@@ -125,6 +125,17 @@ const PROJEKTS_DATA = [
         gallery: [
         ],
     },
+    {
+        title: 'Karlsfeld',
+        mainImage: '/assets/images/projekts/karlsfeld/Karlsfeld-1-min.jpeg',
+        ort: 'Karslfeld, 85757 Herbststraße 7',
+        projekt: 'Neubau, Mehrparteienhaus 7 WE',
+        baukosten: '1,3 Mio €',
+        leistungen: 'Generalplanung Projektsteuerung Architektur, LPH 1-8 Tragwerksplanung TGA-Planung Brandschutz',
+        zeitraum: '2022- 2024',
+        gallery: [
+        ],
+    },
 ]
 
 export { PROJEKTS_DATA }
