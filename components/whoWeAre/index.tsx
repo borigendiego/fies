@@ -32,7 +32,7 @@ const WhoWeAre = () => {
     return(
         <div className={'pt-2'}>
             <motion.h1 
-                className={'text-center font-semibold mt-6'}
+                className={'text-center font-semibold mt-12'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: true}}
@@ -62,7 +62,7 @@ const WhoWeAre = () => {
                     whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
                     transition={{duration: .7, delay: 1}}
-                    className={'flex md:flex-row flex-col justify-around px-16 my-12 text-center md:text-left'}
+                    className={'flex md:flex-row flex-col justify-around px-16 my-14 text-center md:text-left'}
                 >
                     <div className='md:w-7/12'>
                         <p className="py-2">Wir sind ein junges Team engagierter Architekten und Ingenieure, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.</p>
@@ -73,7 +73,7 @@ const WhoWeAre = () => {
                         <p className="py-2">Wir, Johannes Fies und Johannes Schmitz, haben uns während des Architekturstudiums 2009 kenngelernt. Bereits seitdem planen wir Projekte im Team. Nach über zwölfjähriger Zusammenarbeit haben wir 2021 unser gemeinsames Büro gegründet. </p>
                         <p className="py-2 font-semibold">Wir freuen uns für Sie tätig zu werden!</p>
                     </div>
-                    <Image src={'/assets/images/uber/uber-map.jpg'} alt={'Map'} height={200} width={450}/>
+                    <Image src={'/assets/images/uber/uber-map.jpg'} alt={'Map'} height={200} width={400}/>
                 </motion.div>
             </div>
         </div>

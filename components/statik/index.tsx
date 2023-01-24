@@ -22,7 +22,6 @@ const Statik = ( ) => {
                         transition={{duration:  .7, delay: 1}}
                         viewport={{once: true}}
                     >Tragwerksplanung</motion.h1>
-                    <p className=''>Die Statik ist ein essenzieller Bestandteil eines jeden Gebäudes. </p>
                     <p className='my-4'>
                         Die Statik eines Gebäudes ist essenzieller Bestandteil seiner Planung. Daher binden wir die
                         Tragwerksplanung von Beginn der Planung in das architektonische Konzept mit ein. Durch die
