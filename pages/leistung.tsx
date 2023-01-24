@@ -13,6 +13,7 @@ import Technische from '../components/technische';
 import Brandschutz from '../components/brandschutz';
 import Energieberatung from '../components/energieberatung';
 import Finanzierung from '../components/finanzierung';
+import Bubbles from '../components/bubbles';
 
 const Leistung: NextPage = () => {
     return(
@@ -24,6 +25,7 @@ const Leistung: NextPage = () => {
             <main>
                 <Header />
                 <LeistungComp />
+                <Bubbles />
                 <ArchitekturComp />
                 <Statik />
                 <Technische />
