@@ -7,7 +7,7 @@ const Bubbles = () => {
     return(
         <div className="flex justify-center items-center h-screen mb-60 relative">
             <div className='outer-b bg-red-400 w-[300px] h-[300px] right-[55%] top-[20%]'>
-                <a className='inner-b bg-red-600 w-[200px] h-[200px]' href="#brandschutz">BRANDSCHUTZ</a>
+                <a className='inner-b bg-red-500 w-[200px] h-[200px]' href="#brandschutz">BRANDSCHUTZ</a>
             </div>
             <div className='outer-b bg-blue-400 w-[250px] h-[250px] left-[50%]'>
                 <a className='inner-b bg-blue-600 w-[150px] h-[150px] hover:w-[170px] hover:h-[170px]' href="#">TGA</a>
