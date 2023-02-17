@@ -311,22 +311,149 @@ input::placeholder, textarea::placeholder {
   position: absolute;
 }
 
+
+.red {
+  background-color: rgba(251 , 80 , 60, 0.7);
+  width: 275px;
+  height: 275px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .inner-b {
+    background-color: $bubble-red;
+    width: 200px;
+    height: 200px;
+
+    &:hover {
+      width: 225px;
+      height: 225px;
+    }
+  }
+}
+
+.blue {
+  background-color: rgba(65 , 89 , 202, 0.7);
+  width: 300px;
+  height: 300px;
+
+  .inner-b {
+    background-color: $bubble-blue;
+    width: 175px;
+    height: 175px;
+
+    &:hover {
+      width: 200px;
+      height: 200px;
+    }
+    
+  }
+}
+.silver {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(137 , 173 , 205, 0.7);
+  width: 350px;
+  height: 350px;
+  z-index: 20;
+
+  .inner-b {
+    background-color: $bubble-silver;
+    width: 250px;
+    height: 250px;
+
+    &:hover {
+      width: 275px;
+      height: 275px;
+    }
+  }
+}
+.yellow {
+  background-color: rgba(255, 234, 65, 0.7);
+  width: 350px;
+  height: 350px;
+
+  .inner-b {
+    background-color: $bubble-yelllow;
+    width: 225px;
+    height: 225px;
+
+    &:hover {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+.green {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: rgba(39 , 201 , 125, 0.7);
+  width: 300px;
+  height: 300px;
+
+  .inner-b {
+    background-color: $bubble-green;
+    width: 225px;
+    height: 225px;
+
+    &:hover {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+.orange {
+  background-color: rgba(250, 141 , 86, 0.7);
+  width: 325px;
+  height: 325px;
+
+  .inner-b {
+    background-color: $bubble-orange;
+    width: 225px;
+    height: 225px;
+
+    &:hover {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+.purple {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: rgba(186 , 105 , 175, 0.7);
+  width: 300px;
+  height: 300px;
+  
+  .inner-b {
+    background-color: $bubble-purple;
+    width: 200px;
+    height: 200px;
+
+    &:hover {
+      width: 225px;
+      height: 225px;
+    }
+  }
+}
+
 .inner-b {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  animation: animate 6s ease-in-out infinite;
+  animation: animate 5s ease-in-out infinite;
   border-radius: 50%;
   cursor: pointer;
-  transition: all .5s ease-in-out;
   color: $white;
+  transition: all .4s ease-in-out;
+  font-size: large;
+
 }
 
-.inner-b:hover {
-  z-index: 10;
-  transform: scale(1.5);
-}
 
 @keyframes animate
 {

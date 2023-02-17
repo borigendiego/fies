@@ -32,7 +32,7 @@ const WhoWeAre = () => {
     return(
         <div className={'pt-2'}>
             <motion.h1 
-                className={'text-center font-semibold mt-12'}
+                className={'text-center font-semibold mt-6'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: true}}

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const LeistungComp = () => {
     return(
-        <div className={'py-32 flex flex-col items-center'}>
+        <div className={'py-32 flex-col items-center h-screen hidden'}>
             <div className='mx-auto px-12'>
                 <motion.p 
                     className='text-center leading-loose text-lg'
