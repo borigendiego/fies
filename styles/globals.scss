@@ -307,7 +307,7 @@ input::placeholder, textarea::placeholder {
 
 .outer-b {
   border-radius: 50%;
-  animation: animate 6s ease-in-out infinite;
+  animation: animate 5s ease-in-out infinite;
   position: absolute;
 }
 
@@ -334,17 +334,17 @@ input::placeholder, textarea::placeholder {
 
 .blue {
   background-color: rgba(65 , 89 , 202, 0.7);
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
 
   .inner-b {
     background-color: $bubble-blue;
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
 
     &:hover {
-      width: 200px;
-      height: 200px;
+      width: 225px;
+      height: 225px;
     }
     
   }
@@ -445,11 +445,11 @@ input::placeholder, textarea::placeholder {
   align-items: center;
   justify-content: center;
   position: absolute;
-  animation: animate 5s ease-in-out infinite;
+  animation: animate 4s ease-in-out infinite;
   border-radius: 50%;
   cursor: pointer;
   color: $white;
-  transition: all .4s ease-in-out;
+  transition: all .3s ease-in-out;
   font-size: large;
 
 }

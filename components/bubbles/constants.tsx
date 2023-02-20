@@ -49,7 +49,7 @@ const BUBBLES_DATA = [
     },
     {
         title: 'STATIK',
-        link: '#statik',
+        link: '#tragwerksplanung',
         left: '50px',
         top: '250px',
         delay: 2.9,

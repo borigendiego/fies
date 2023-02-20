@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Energieberatung = () => {
     return(
-        <div className='flex flex-col md:flex-row-reverse border md:py-8' id={'energieberatung'}>
+        <div className='flex flex-col md:flex-row-reverse border md:py-8 scroll-mt-[100px]' id={'energieberatung'}>
             <motion.div 
                 className='mx-auto flex items-center py-4'
                 initial={{opacity: 0}}

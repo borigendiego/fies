@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Technische = () => {
     return(
-        <div className='flex flex-col md:flex-row-reverse border md:py-8' id={'technische'}>
+        <div className='flex flex-col md:flex-row-reverse border md:py-8 scroll-mt-[100px]' id={'technische'}>
             <motion.div 
                 className='mx-auto flex items-center py-4'
                 initial={{opacity: 0}}

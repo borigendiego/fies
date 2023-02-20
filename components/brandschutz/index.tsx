@@ -27,7 +27,7 @@ const Brandschutz = () => {
                 transition={{duration: .7, delay: .5}}
                 viewport={{once: true}}
             >
-                <h1 className='pt-4 font-semibold' id={'brandschutz'}>Brandschutz</h1>
+                <h1 className='pt-4 font-semibold scroll-mt-[120px]' id={'brandschutz'}>Brandschutz</h1>
                 <p className='my-4'>
                     Egal ob Wohnhaus, Schule oder Bürogebäude, die Brandschutzplanung
                     ist für die Sicherheit eines jeden Gebäudes unerlässlich.

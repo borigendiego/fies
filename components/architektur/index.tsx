@@ -8,13 +8,13 @@ const ArchitekturComp = () => {
         <div>
             <div className={'border flex md:flex-row flex-col-reverse'}>
                 <motion.div 
-                    className={'p-12 text-center md:text-left md:w-1/2'}
+                    className={'py-12 px-6 text-center md:text-left md:w-1/2'}
                     initial={{opacity: 0, x: -30}}
                     whileInView={{opacity: 1, x: 0}}
                     transition={{duration:  .7, delay: 1.5}}
                     viewport={{once: true}}
                 >
-                    <h1 className='pt-4 font-semibold' id={'architektur'}>Architektur</h1>
+                    <h1 className='pt-4 font-semibold scroll-mt-[150px]' id={'architektur'}>Architektur</h1>
                     <p className='py-2 text-base'>
                         Im Bereich des Hochbaus bieten wir Ihnen umfangreiche Planungs- und Beratungsleistungen an.
                         Wir planen und realisieren Gebäude verschiedenster Größenordnung und Funktionen, von der ersten Standortanalyse bis zur Inbetriebnahme des fertigen Bauwerks.

@@ -5,7 +5,7 @@ import Image from "next/image";
 const Projektewicklung = () => {
     return(
         <div className='flex flex-col md:flex-row-reverse border md:py-8'>
-            <div className={'md:w-1/2 md:px-16 px-4 text-center md:text-left'} id={'projektenwicklung'}>
+            <div className={'md:w-1/2 md:px-16 px-4 text-center md:text-left scroll-mt-[150px]'} id={'projektenwicklung'}>
                 <motion.h1 
                     className={'md:text-5xl font-semibold py-4'}
                     initial={{opacity: 0, x:-30}}

@@ -9,7 +9,7 @@ const Grundstuck = () => {
     return(
         <div id={'grundstuck'}>
             <motion.h1 
-                className={'md:px-16 px-4 text-center md:text-left font-semibold mt-6'}
+                className={'md:px-16 px-4 text-center md:text-left font-semibold mt-6 text-[30px] md:text-4xl'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: true}}
