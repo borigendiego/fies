@@ -354,8 +354,8 @@ input::placeholder, textarea::placeholder {
   justify-content: center;
   align-items: flex-start;
   background-color: rgba(137 , 173 , 205, 0.7);
-  width: 20rem;
-  height: 20rem;
+  width: 23rem;
+  height: 23rem;
   z-index: 20;
 
   .inner-b {
@@ -510,5 +510,30 @@ input::placeholder, textarea::placeholder {
     width: 90%;
     left: 0;
     padding: 5% 5%;
+  }
+}
+
+//Gallery Changes
+.styles_lightroomcontent__1SCaZ {
+  height: 100% !important;
+}
+
+.styles_lightroom__1X2qE {
+  background-color: #0000009e !important;
+}
+
+.styles_topmenu__oGT_u :first-child {
+  display: none;
+}
+
+.styles_topmenu__oGT_u {
+  top: 5% !important;
+  right: 6% !important;
+}
+
+.styles_topmenu__oGT_u, .styles_carouselcontrolprev__Bmyua, .styles_carouselcontrolnext__DoQ9- {
+  width: 30px;
+  img {
+    width: 40px;
   }
 }
