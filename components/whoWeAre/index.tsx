@@ -65,7 +65,7 @@ const WhoWeAre = () => {
                     className={'flex md:flex-row flex-col justify-around px-16 my-14 text-center md:text-left'}
                 >
                     <div className='md:w-7/12'>
-                        <p className="py-2">Wir sind ein junges Team engagierter Architekten und Ingenieure, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.</p>
+                        <p className="py-2">Wir sind ein junges Team engagierter Architekten und Ingenieuren, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.</p>
                         <p className="py-2">Dabei arbeiten wir digital vernetzt und bundesweit, um Projekte jeder Größenordnung zu realisieren. </p>
                         <p className="py-2">Durch die gemeinsame digitale Planung in allen Fachbereichen – insbesondere der Disziplinen Architektur, Statik, Technische Gebäude Ausrüstung, Energieberatung und Brandschutz – sind wir effizient und schaffen Synergien. So können wir unseren Auftraggeber*innen äußerste Planungssicherheit zusichern. </p>
                         <p className="py-2">Gemeinsame Server und digitale Gebäudemodelle helfen uns, die Schnittstellen zwischen den unterschiedlichen Planern transparent aufzulösen. Auf diese Weise stellen wir sicher, dass alle Mitwirkenden in den Planungsprozess involviert sind – von Anfang an und zu jeder Zeit.</p>

@@ -18,7 +18,7 @@ const BUBBLES_DATA = [
     {
         title: 'ARCHITEKTUR',
         link: '#architektur',
-        left: '475px',
+        left: '450px',
         top: '275px',
         delay: 1.3,
         customClass: 'silver',
