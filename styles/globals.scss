@@ -306,6 +306,7 @@ input::placeholder, textarea::placeholder {
 .outer-b {
   border-radius: 50%;
   animation: animate 5s ease-in-out infinite;
+  position: absolute;
 }
 
 

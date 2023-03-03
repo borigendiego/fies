@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const ArchitekturComp = () => {
     return(
         <div>
-            <div className={'border flex md:flex-row flex-col-reverse'}>
+            <div className={'border flex md:flex-row flex-col-reverse mt-8'}>
                 <motion.div 
                     className={'py-12 px-6 text-center md:text-left md:w-1/2'}
                     initial={{opacity: 0, x: -30}}
