@@ -311,8 +311,8 @@ input::placeholder, textarea::placeholder {
 
 .red {
   background-color: rgba(251 , 80 , 60, 0.7);
-  width: 300px;
-  height: 300px;
+  width: 17rem;
+  height: 17rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,8 +331,8 @@ input::placeholder, textarea::placeholder {
 
 .blue {
   background-color: rgba(65 , 89 , 202, 0.7);
-  width: 350px;
-  height: 350px;
+  width: 18rem;
+  height: 18rem;
 
   .inner-b {
     background-color: $bubble-blue;
@@ -351,8 +351,8 @@ input::placeholder, textarea::placeholder {
   justify-content: flex-start;
   align-items: flex-start;
   background-color: rgba(137 , 173 , 205, 0.7);
-  width: 550px;
-  height: 550px;
+  width: 23rem;
+  height: 23rem;
   z-index: 20;
 
   .inner-b {
@@ -368,8 +368,8 @@ input::placeholder, textarea::placeholder {
 }
 .yellow {
   background-color: rgba(255, 234, 65, 0.7);
-  width: 350px;
-  height: 350px;
+  width: 19rem;
+  height: 19rem;
 
   .inner-b {
     background-color: $bubble-yelllow;
@@ -387,8 +387,8 @@ input::placeholder, textarea::placeholder {
   justify-content: center;
   align-items: flex-end;
   background-color: rgba(39 , 201 , 125, 0.7);
-  width: 350px;
-  height: 350px;
+  width: 18rem;
+  height: 18rem;
 
   .inner-b {
     background-color: $bubble-green;
@@ -403,8 +403,8 @@ input::placeholder, textarea::placeholder {
 }
 .orange {
   background-color: rgba(250, 141 , 86, 0.7);
-  width: 375px;
-  height: 375px;
+  width: 19rem;
+  height: 19rem;
 
   .inner-b {
     background-color: $bubble-orange;
@@ -422,8 +422,8 @@ input::placeholder, textarea::placeholder {
   justify-content: flex-end;
   align-items: flex-end;
   background-color: rgba(186 , 105 , 175, 0.7);
-  width: 300px;
-  height: 300px;
+  width: 19rem;
+  height: 19rem;
   
   .inner-b {
     background-color: $bubble-purple;
@@ -505,5 +505,30 @@ input::placeholder, textarea::placeholder {
     width: 90%;
     left: 0;
     padding: 5% 5%;
+  }
+}
+
+//Gallery Changes
+.styles_lightroomcontent__1SCaZ {
+  height: 100% !important;
+}
+
+.styles_lightroom__1X2qE {
+  background-color: #0000009e !important;
+}
+
+.styles_topmenu__oGT_u :first-child {
+  display: none;
+}
+
+.styles_topmenu__oGT_u {
+  top: 5% !important;
+  right: 6% !important;
+}
+
+.styles_topmenu__oGT_u, .styles_carouselcontrolprev__Bmyua, .styles_carouselcontrolnext__DoQ9- {
+  width: 30px;
+  img {
+    width: 40px;
   }
 }

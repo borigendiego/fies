@@ -10,10 +10,10 @@ const BUBBLES_DATA = [
     {
         title: 'TGA',
         link: '#technische',
-        left: '1025px',
         top: '0px',
         delay: .9,
         customClass: 'blue',
+        right: '2rem'
     },
     {
         title: 'ARCHITEKTUR',
@@ -26,15 +26,15 @@ const BUBBLES_DATA = [
     {
         title: 'ENERGIEBERATUNG',
         link: '#energieberatung',
-        left: '650px',
         top: '-50px',
         delay: 1.7,
         customClass: 'green',
+        right: '24rem'
     },
     {
         title: 'PROJEKTENWICKLUNG',
         link: '#projektenwicklung',
-        left: '325px',
+        left: '20rem',
         top: '-15px',
         delay: 2.1,
         customClass: 'yellow',

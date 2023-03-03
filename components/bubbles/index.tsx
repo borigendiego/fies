@@ -30,16 +30,17 @@ const Bubbles = () => {
 
 
     return(
-        <div>
-            <div className="h-[1000px] relative md:block hidden overflow-hidden">
+        <div className="min-h-[100vh] relative md:flex hidden mt-6 justify-center p-3">
+            <div className={'justify-center w-full relative max-w-[1300px]'}>
                 {
-                    BUBBLES_DATA.map((value, index) => {
+                    BUBBLES_DATA.map((value) => {
                         return(
-                            <motion.div
-                                className={`${value.customClass} outer-b absolute z-0`}
+                            <motion.div 
+                                className={`${value.customClass} outer-b `}
                                 style={{
                                     left: value.left,
-                                    top: value.top
+                                    top: value.top,
+                                    right: value.right
                                 }}
                                 variants={imagesChild}
                                 initial={'hidden'}
@@ -48,7 +49,7 @@ const Bubbles = () => {
                                 transition={{duration: 1, delay: value.delay}}
                             >
                                 <motion.a 
-                                    className={`inner-b z-10 absolute`}
+                                    className={`inner-b`}
                                     variants={imagesChild} 
                                     transition={{duration: .7, delay: value.delay}}
                                     href={`${value.link}`}
