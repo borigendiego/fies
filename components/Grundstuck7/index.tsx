@@ -16,7 +16,7 @@ const Grundstuck = () => {
                 transition={{duration: 1, delay: 1}}
 
             >
-                Grundstücksentwiclkung in 7- Schritten
+                Grundstücksentwicklung in 7- Schritten
             </motion.h1>
             <motion.div 
                 className='grid md:grid-cols-4 gap-2 mx-auto px-10 my-16'
