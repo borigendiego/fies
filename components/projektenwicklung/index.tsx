@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Projektewicklung = () => {
     return(
-        <div className='flex flex-col md:flex-row-reverse border md:py-8'>
+        <div className='flex md:flex-row-reverse flex-col-reverse border md:py-8'>
             <div className={'md:w-1/2 md:px-16 px-4 text-center md:text-left scroll-mt-[150px]'} id={'projektenwicklung'}>
                 <motion.h1 
                     className={'md:text-5xl font-semibold py-4'}
@@ -40,7 +40,7 @@ const Projektewicklung = () => {
                 viewport={{once: true}}
             >
                 <Image 
-                    src={'/assets/images/leistung/projektewick-bg.png'} 
+                    src={'/assets/images/leistung/projektewick-bg.jpg'} 
                     height={200} 
                     width={700} 
                     alt={''}

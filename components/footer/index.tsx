@@ -27,7 +27,7 @@ const Footer = () => {
                     <Contact />
                 </motion.div>
                 <motion.button 
-                className='footer-b cursor-pointer text-lg h-8 hover:underline hidden md:block'
+                className='footer-b cursor-pointer text-lg h-8 hover:underline hidden md:block font-semibold'
                 onClick={toTop}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}

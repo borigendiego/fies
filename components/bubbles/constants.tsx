@@ -29,7 +29,7 @@ const BUBBLES_DATA = [
         top: '-50px',
         delay: 1.7,
         customClass: 'green',
-        right: '24rem'
+        right: '22rem'
     },
     {
         title: 'PROJEKTENWICKLUNG',
