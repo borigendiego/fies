@@ -145,11 +145,6 @@ h4 {
 .scroll-nav {
   background-color: $main-blue;
 
-  /*.header-white-logo {
-    transform: scale(.9);
-  }
-  */
-
   .nav-item {
     color: $black;
   }
@@ -305,15 +300,16 @@ input::placeholder, textarea::placeholder {
 
 .outer-b {
   border-radius: 50%;
-  animation: animate 5s ease-in-out infinite;
+  -webkit-animation: animate linear 1s 2 forwards;
+  animation: animate linear 5s 2 forwards;
   position: absolute;
 }
 
 
 .red {
   background-color: rgba(251 , 80 , 60, 0.7);
-  width: 19rem;
-  height: 19rem;
+  width: 17rem;
+  height: 17rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -363,8 +359,8 @@ input::placeholder, textarea::placeholder {
     height: 200px;
 
     &:hover {
-      width: 225px;
-      height: 225px;
+      width: 20rem;
+      height: 20rem;
     }
   }
 }
@@ -380,8 +376,8 @@ input::placeholder, textarea::placeholder {
     height: 225px;
 
     &:hover {
-      width: 250px;
-      height: 250px;
+      width: 18rem;
+      height: 18rem;
     }
   }
 }
@@ -428,8 +424,8 @@ input::placeholder, textarea::placeholder {
   justify-content: flex-end;
   align-items: flex-end;
   background-color: rgba(186 , 105 , 175, 0.7);
-  width: 19rem;
-  height: 19rem;
+  width: 17rem;
+  height: 17rem;
   animation-delay: 0.5s;
   
   .inner-b {
@@ -448,7 +444,9 @@ input::placeholder, textarea::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: animate 5s ease-in-out infinite;
+  //animation: animate 5s ease-in-out infinite;
+  -webkit-animation: animate linear 1s 2 forwards;
+  animation: animate linear 5s 2 forwards;
   border-radius: 50%;
   cursor: pointer;
   color: $white;

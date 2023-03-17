@@ -16,12 +16,13 @@ const BUBBLES_DATA = [
         right: '2rem'
     },
     {
-        title: 'ARCHITEKTUR',
-        link: '#architektur',
-        left: '450px',
-        top: '275px',
+        title: 'PROJEKTENWICKLUNG',
+        link: '#projektenwicklung',
+        left: '500px',
+        top: '285px',
         delay: 1.3,
-        customClass: 'silver',
+        customClass: 'yellow',
+        
     },
     {
         title: 'ENERGIEBERATUNG',
@@ -32,12 +33,12 @@ const BUBBLES_DATA = [
         right: '22rem'
     },
     {
-        title: 'PROJEKTENWICKLUNG',
-        link: '#projektenwicklung',
-        left: '20rem',
+        title: 'ARCHITEKTUR',
+        link: '#architektur',
+        left: '18rem',
         top: '-15px',
         delay: 2.1,
-        customClass: 'yellow',
+        customClass: 'silver',
     },
     {
         title: 'FINANZIERUNG',

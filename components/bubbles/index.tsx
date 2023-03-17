@@ -3,26 +3,6 @@ import { motion } from "framer-motion";
 import { BUBBLES_DATA } from "./constants";
 
 const Bubbles = () => {
-
-    const imagesAnimations = {
-        visible: { 
-            opacity: 1,
-            y: 0,
-            transition: {
-                when: "beforeChildren",
-                staggerChildren: .5,
-              }, 
-        },
-        hidden: {
-            opacity: 0,
-            y: 0,
-            x: 0,
-            transition: {
-                when: "afterChildren",
-              },
-            },
-    }
-
     const imagesChild = {
         visible: {opacity: 1, y: 0},
         hidden: {opacity: 0, y: 0},

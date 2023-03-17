@@ -57,7 +57,7 @@ const Contact = () => {
                             alt={'Mail icon'}
                         />
                         <Link href={'/kontakt'}>
-                            <p className='mt-4 hover:underline font-semibold'>info@spektrum-holding.de</p>
+                            <p className='mt-4 hover:underline'>info@spektrum-holding.de</p>
                         </Link>
                     </div>
                 </div>

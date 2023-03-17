@@ -40,7 +40,7 @@ const Projektewicklung = () => {
                 viewport={{once: true}}
             >
                 <Image 
-                    src={'/assets/images/leistung/projektewick-bg.jpg'} 
+                    src={'/assets/images/projekts/schwabelweis/Schwabelweis-1.png'} 
                     height={200} 
                     width={700} 
                     alt={''}

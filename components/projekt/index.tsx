@@ -59,7 +59,7 @@ const Projekt = ({
                     variants={projektList}
                     initial={'hidden'}
                     whileInView={'visible'}
-                    transition={{duration:  .7, delay: .5}}
+                    transition={{duration: .2, delay: .1}}
                     viewport={{once: true}}
                 >
                     <motion.div 
