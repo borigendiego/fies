@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
 import { motion } from 'framer-motion';
@@ -54,7 +53,6 @@ const Slick = () => {
 
     return(
         <motion.div 
-            className=""
             initial={{
                 opacity: 0,
                 }}
