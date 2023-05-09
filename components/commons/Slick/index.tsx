@@ -32,7 +32,7 @@ const Slick = () => {
         },
         {
             linkTo: '/projekte/#Airpark',
-            image: '/assets/images/banner/banner-2-min.png',
+            image: '/assets/images/banner/banner-airpark.png',
             title: 'PROJEKT: Airpark',
             text: ''
         },
