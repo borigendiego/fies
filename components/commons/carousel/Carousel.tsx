@@ -15,44 +15,44 @@ const Caraousel = () => {
             const primerElemento = carousel.current.children[0];
             //transicion para el carousel
             carousel.current.style.transition = `500ms ease all`;
-    
+
             const tamañoSlide = carousel.current.children[0].offsetWidth;
-    
+
             //mover el carousel
             carousel.current.style.transform = `translateX(-${tamañoSlide}px)`;
-    
+
             const transicion = () => {
                 //Se reinicia la posicion del slide
                 carousel.current.style.transition = 'none';
                 carousel.current.style.transform = `translateX(0)`;
                 //Tomamos el primer elemento y lo mandamos al final
                 carousel.current.appendChild(primerElemento);
-    
+
                 carousel.current.removeEventListener('transitionend', transicion)
             }
-    
+
             //EventListener para cuando termina la animación.
             carousel.current.addEventListener('transitionend', transicion);
         }
     }
-    
+
     const back = () => {
         if (carousel.current.children.length > 0) {
             //Obtenemos ultimo elemento
             const index = carousel.current.children.length - 1;
             const ultimoElemento = carousel.current.children[index];
             carousel.current.insertBefore(ultimoElemento, carousel.current.firstChild)
-    
+
             carousel.current.style.transition = 'none';
-    
+
             const tamañoSlide = carousel.current.children[0].offsetWidth;
             carousel.current.style.transform = `translateX(-${tamañoSlide}px)`;
-    
+
             setTimeout(() => {
                 carousel.current.style.transition = `500ms ease all`;
-                carousel.current.style.transform = `translateX(0)`;   
+                carousel.current.style.transform = `translateX(0)`;
             }, 30)
-    
+
         }
     }
 
@@ -61,7 +61,7 @@ const Caraousel = () => {
             <div className="my-12 relative left-[7.5%] w-fit" >
                 <p className="font-bold text-[#4f505f]">Aktuelles</p>
             </div>
-            <motion.div 
+            <motion.div
                 className={'relative md:my-24 overflow-hidden max-w-[1300px] mx-auto'}
                 initial={{
                     opacity: 0,
@@ -74,16 +74,17 @@ const Caraousel = () => {
             >
                 <div className={"flex flex-nowrap"} ref={carousel}>
                     {
-                        HOME_CAROUSEL.map((item:any, index:number) => 
-                            <Slide 
-                                key={`${item.title}-${index}`} 
-                                bgImage={item.bgImage} 
-                                title={item.title} 
+                        HOME_CAROUSEL.map((item:any, index:number) =>
+                            <Slide
+                                key={`${item.title}-${index}`}
+                                bgImage={item.bgImage}
+                                title={item.title}
                                 text={item.text}
                                 bgColor={item.bgColor}
                                 colorSquare={item.colorSquare}
                                 linkTo={item.linkTo}
                                 content={item.content}
+                                lightBoxContent={item.lightBoxContent}
                             />)
                     }
                 </div>
@@ -95,8 +96,8 @@ const Caraousel = () => {
                         transition={{duration: 0.3}}
                         className='cursor-pointer outline-none ease-in absolute bg-slate-600 rounded-full mx-2 py-2 px-4 shadow-xl'
                     >
-                        <Image 
-                        src="/assets/images/carousel/arrow-left.svg" 
+                        <Image
+                        src="/assets/images/carousel/arrow-left.svg"
                         width={20}
                         height={20}
                         alt={'Left arrow image'}
@@ -109,8 +110,8 @@ const Caraousel = () => {
                         transition={{duration: 0.3}}
                         className='cursor-pointer outline-none ease-in absolute bg-slate-600 rounded-full mx-2 py-2 px-4 right-0 shadow-xl'
                     >
-                        <Image 
-                            src="/assets/images/carousel/arrow-right.svg" 
+                        <Image
+                            src="/assets/images/carousel/arrow-right.svg"
                             width={20}
                             height={20}
                             alt={'Left arrow image'}

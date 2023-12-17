@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 //@ts-ignore
 const Lightroom: any = dynamic(() => import('react-lightbox-gallery'), {
     ssr: false
-  })
+})
 
 type galleryImages = {
     gallery: any
@@ -31,7 +31,7 @@ const ProjektGallery = ({gallery}:galleryImages) => {
         <div className={'image-gallery'}>
             <Lightroom images={IMAGES} settings={settings} />
         </div>
-       
+
     )
 };
 

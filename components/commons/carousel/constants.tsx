@@ -6,6 +6,7 @@ export type CarouselType = {
     bgColor?: string,
     linkTo: string,
     content?: any,
+    lightBoxContent?: any,
 }
 
 const HOME_CAROUSEL:CarouselType[] = [
@@ -13,6 +14,17 @@ const HOME_CAROUSEL:CarouselType[] = [
         bgImage: '/assets/images/home-slider/Willich-Bauarbeiten.jpeg',
         title: 'Willich Bauarbeiten',
         linkTo: '/',
+        lightBoxContent: <div>
+            <iframe
+                width="900"
+                height="506"
+                src="//www.youtube.com/embed/7GJerJvEbAc"
+                name="youtube embed"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                className={'max-w-full'}
+            />
+        </div>
     },
     {
         bgImage: '/assets/images/home-slider/Spatenstich.jpg',
@@ -43,7 +55,7 @@ const HOME_CAROUSEL:CarouselType[] = [
         linkTo: '/leistung#grundstuck',
     },
     {
-        title: 'Unsere Leistungen umfassen das gesamte',       
+        title: 'Unsere Leistungen umfassen das gesamte',
         bgColor: '#89adcd',
         colorSquare: true,
         content: <div>
@@ -55,7 +67,7 @@ const HOME_CAROUSEL:CarouselType[] = [
         linkTo: '/leistung',
     },
     {
-        title: 'Wir finden',     
+        title: 'Wir finden',
         bgColor: '#43c97d',
         colorSquare: true,
         content: <div>
@@ -92,6 +104,6 @@ const HOME_CAROUSEL:CarouselType[] = [
     },
 ];
 
-export { 
+export {
     HOME_CAROUSEL
 };

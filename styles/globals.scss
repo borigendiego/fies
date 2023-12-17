@@ -340,7 +340,7 @@ input::placeholder, textarea::placeholder {
       width: 200px;
       height: 200px;
     }
-    
+
   }
 }
 .silver {
@@ -427,7 +427,7 @@ input::placeholder, textarea::placeholder {
   width: 17rem;
   height: 17rem;
   animation-delay: 0.5s;
-  
+
   .inner-b {
     background-color: $bubble-purple;
     width: 200px;
@@ -461,7 +461,7 @@ input::placeholder, textarea::placeholder {
   {
     transform: translateY(-10px);
   }
-  50% 
+  50%
   {
     transform: translateY(10px);
   }
@@ -536,4 +536,18 @@ input::placeholder, textarea::placeholder {
   img {
     width: 40px;
   }
+}
+
+//Dialog
+dialog {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+dialog[open] {
+  opacity: 1;
+  pointer-events: inherit;
+}
+dialog::backdrop {
+  background-color: #00000085;
 }
