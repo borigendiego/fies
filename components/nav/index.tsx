@@ -38,7 +38,7 @@ const Nav = () => {
                     <li><a href={'/leistung/#technische'}>Technische Gebäudeausrüstung</a></li>
                     <li><a href={'/leistung/#brandschutz'}>Brandschutz</a></li>
                     <li><a href={'/leistung/#energieberatung'}>Energieberatung</a></li>
-                    <li><a href={'/leistung/#projektenwicklung'}>Projektenwicklung</a></li>
+                    <li><a href={'/leistung/#projektentwicklung'}>Projektentwicklung</a></li>
                     <li><a href={'/leistung/#finanzierung'}>Finanzierung</a></li>
                     <li><a href={'/leistung/#sanierung'}>Sanierung</a></li>
                     <li><a href={'/leistung/#grundstuck'}>Grundstücks-entwicklung</a></li>

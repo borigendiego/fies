@@ -16,8 +16,8 @@ const BUBBLES_DATA = [
         right: '2rem'
     },
     {
-        title: 'PROJEKTENWICKLUNG',
-        link: '#projektenwicklung',
+        title: 'PROJEKTENTWICKLUNG',
+        link: '#projektentwicklung',
         left: '500px',
         top: '285px',
         delay: 1.3,

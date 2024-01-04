@@ -5,14 +5,14 @@ import Image from "next/image";
 const Projektewicklung = () => {
     return(
         <div className='flex md:flex-row-reverse flex-col-reverse border md:py-8'>
-            <div className={'md:w-1/2 md:px-16 px-4 text-center md:text-left scroll-mt-[150px]'} id={'projektenwicklung'}>
+            <div className={'md:w-1/2 md:px-16 px-4 text-center md:text-left scroll-mt-[150px]'} id={'projektentwicklung'}>
                 <motion.h1 
                     className={'md:text-5xl font-semibold py-4'}
                     initial={{opacity: 0, x:-30}}
                     whileInView={{opacity: 1, x:0}}
                     transition={{duration:  .7, delay: 1}}
                     viewport={{once: true}}
-                >Projektewicklung</motion.h1>
+                >Projektentwicklung</motion.h1>
                 <motion.div 
                     className=''
                     initial={{opacity: 0, x: -30}}

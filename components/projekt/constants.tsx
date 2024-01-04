@@ -5,7 +5,7 @@ const PROJEKTS_DATA = [
         ort: 'Willich, 47877 Bahnstraße 119-121',
         projekt: 'Neubau, Mehrparteienhaus 20 WE + Tiefgarage',
         baukosten: '6.8 Mio €',
-        leistungen: 'Projektenwicklung Projektsteuerung Architektur, LPH 1-5',
+        leistungen: 'Projektentwicklung Projektsteuerung Architektur, LPH 1-5',
         zeitraum: '2021-2022',
         gallery: [
             {
