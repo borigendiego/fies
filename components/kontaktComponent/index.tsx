@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const KontaktComponent = () => {
     return(
-        <div className='bg-gray-800 flex justify-center'>
+        <div className=' flex justify-center'>
             <motion.img 
                 src='/assets/images/projekts/willich/willich-5.jpg' 
                 className='absolute h-full w-full object-cover'

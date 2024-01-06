@@ -21,8 +21,6 @@ const Layout = ({
     textDisplay
 }:LayoutProps) => {
 
-    console.log('textDisplay', textDisplay)
-    
     return(
         textDisplay 
         ?
@@ -64,7 +62,7 @@ const Layout = ({
                     transition={{duration:  1, delay: 1}}
                     viewport={{once: true}}
                 >
-                    <h1 className={'text-center text-[30px] mb-3 font-bold'}>
+                    <h1 className={'text-center text-[30px] mb-3 md:mt-0 mt-6 font-bold'}>
                         {title}
                     </h1>
                     <div className={'px-8 md:w-9/12 text-center md:text-left'}>{text}</div>
@@ -88,7 +86,7 @@ const Layout = ({
                     transition={{duration:  1, delay: 1}}
                     viewport={{once: true}}
                 >
-                    <h1 className={'text-center text-[30px] mb-3 font-bold'}>
+                    <h1 className={'text-center text-[30px] mb-3 md:mt-0 mt-6 font-bold'}>
                         {title}
                     </h1>
                     <div className={'px-8 md:w-9/12 text-center md:text-left'}>{text}</div>

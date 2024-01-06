@@ -37,7 +37,7 @@ const ArchitekturComp = () => {
                     className={'m-auto'}
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
-                    transition={{duration:  1, delay: 1}}
+                    transition={{duration:  .7, delay: .5}}
                     viewport={{once: true}}
                 >
                     <Image src={'/assets/images/leistung/architektur-image.png'} alt={'architekt image'} width={650} height={200} className={'md:rounded-xl'}/>

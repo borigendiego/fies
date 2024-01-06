@@ -25,20 +25,26 @@ const Header = ({ isHomePage }:HeaderPropType) => {
 
     return(
         <motion.nav 
-            className={`flex md:justify-between justify-around md:px-28 md:py-2 ${isHomePage ? 'fixed bg-none backdrop-blur-none' : 'sticky bg-[#89ADCD80] backdrop-blur-sm'} top-0 w-full z-30 duration-300 ease-linear items-center`}
+            className={`flex justify-between md:px-8 ${isHomePage ? 'fixed bg-none backdrop-blur-none' : 'sticky bg-[#89ADCD80] backdrop-blur-sm'} top-0 w-full z-30 duration-300 ease-linear items-center`}
             initial={{opacity: 0, y: -15}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: .5, delay: .5}}
         >
-            <Link href={'/'}>
-                <Image
-                    src={'/assets/images/Logo_white.png'}
-                    className={'header-white-logo hover:scale-110'}
-                    alt={'Logo'}
-                    width={120}
-                    height={120}
-                />
-            </Link>
+            <div className='flex items-center justify-center'>
+                <Link href={'/'}>
+                    <Image
+                        src={'/assets/images/Logo_white.png'}
+                        className={'header-white-logo hover:scale-110'}
+                        alt={'Logo'}
+                        width={100}
+                        height={120}
+                    />
+                </Link>
+                <div className='flex flex-col mt-[10%]'>
+                    <h1 className='text-2xl leading-3 text-white uppercase'>Spektrum</h1>
+                    <p className='text-white md:text-base'>Architekten | Generalplaner</p>
+                </div>
+            </div>
             <Nav />
             <MobileMenu menuItems={MENU_LINKS} />
         </motion.nav>

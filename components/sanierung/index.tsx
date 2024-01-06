@@ -23,9 +23,9 @@ const Sanierung = () => {
             </motion.div>
             <motion.div 
                 className='md:w-1/2 md:px-16 px-4 text-center md:text-left'
-                initial={{opacity: 0, x: -30}}
+                initial={{opacity: 0, x: 30}}
                 whileInView={{opacity: 1, x: 0}}
-                transition={{duration: .7, delay: .5}}
+                transition={{duration: .7, delay: 1}}
                 viewport={{once: true}}
             >
                 <h1 className='pt-4 font-semibold'>Sanierung</h1>

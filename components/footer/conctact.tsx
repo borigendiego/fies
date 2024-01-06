@@ -9,7 +9,7 @@ const Contact = () => {
             <div>
                 <h2 className='text-center md:text-left font-semibold'>Kontakt</h2>
                 <p className='text-center md:text-left'>Sie können uns anrufen, schreiben oder uns besuchen.</p>
-                <div className='flex flex-col md:flex-row mt-6'>
+                <div className='flex flex-col jus md:flex-row mt-6'>
                     <div className='flex flex-col md:mr-4 items-center md:items-start'>
                         <Image
                             width={25}
@@ -62,13 +62,13 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:pl-12">
+            <div className="md:pl-16 my-4 md:my-0">
                 <h2 className='text-center md:text-left font-semibold pt-4 md:pt-0'>Informationen</h2>
-                <ul className="md:mt-4 text-center md:text-left">
-                    <li className="font-bold pt-3"><a href="">Impressum</a></li>
-                    <li className="font-bold pt-3"><a href="">Datenschutz</a></li>
-                    <li className="font-bold pt-3"><a href="">Credits</a></li>
-                </ul>
+                <div className="md:mt-4 text-center md:text-left flex flex-col">
+                    <a className="cursor-pointer pt-2 hover:underline" href="/impressum">Impressum</a>
+                    <a className="cursor-pointer pt-2 hover:underline" href="/datenschutzerklarung">Datenschutz</a>
+                    <a className="cursor-pointer pt-2 hover:underline" href="">Credits</a>
+                </div>
             </div>
         </div>
     )

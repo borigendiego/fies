@@ -13,7 +13,7 @@
     top: 0;
     width: 40px;
     z-index: 40;
-
+    margin-right: 20px;
     -webkit-user-select: none;
     user-select: none;
   }
@@ -110,6 +110,7 @@
     width: 0;
     height: 0;
     top: -100%;
+    overflow: hidden;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */

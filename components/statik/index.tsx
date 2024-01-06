@@ -10,8 +10,8 @@ const Statik = ( ) => {
                 <motion.div 
                 className={'px-4 text-center md:text-left m-auto md:w-1/2 pt-8 md:pt-0 scroll-mt-[150px]'}
                 id={'tragwerksplanung'}
-                initial={{opacity: 0, y: 30}}
-                whileInView={{opacity: 1, y: 0}}
+                initial={{opacity: 0, x: 30}}
+                whileInView={{opacity: 1, x: 0}}
                 transition={{duration:  .7, delay: 1.5}}
                 viewport={{once: true}}
                 >
@@ -46,7 +46,7 @@ const Statik = ( ) => {
                     className={'m-auto'}
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
-                    transition={{duration:  1, delay: 1}}
+                    transition={{duration:  1, delay: .5}}
                     viewport={{once: true}}
                 >
                     <Image src={'/assets/images/leistung/statik.jpg'} alt={'Working people'} height={200} width={600} className={'md:rounded-xl'}/>
