@@ -6,6 +6,7 @@ import WhoWeAre from '../components/whoWeAre';
 
 import Footer from '../components/footer';
 import LayoutDisplayer from '../components/layoutDisplayer';
+import Button from '../components/commons/homeButton';
 
 
 const Uber: NextPage = () => {
@@ -16,6 +17,7 @@ const Uber: NextPage = () => {
                 <meta name="description" content="SPEKTRUM - Über" />
             </Head>
             <main>
+                <Button />
                 <Header />
                 <WhoWeAre />
                 <LayoutDisplayer />

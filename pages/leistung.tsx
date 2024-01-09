@@ -14,6 +14,7 @@ import Brandschutz from '../components/brandschutz';
 import Energieberatung from '../components/energieberatung';
 import Finanzierung from '../components/finanzierung';
 import Bubbles from '../components/bubbles';
+import Button from '../components/commons/homeButton';
 
 const Leistung: NextPage = () => {
     return(
@@ -23,6 +24,7 @@ const Leistung: NextPage = () => {
                 <meta name="description" content="SPEKTRUM - Lesitung" />
             </Head>
             <main>
+                <Button />
                 <Header />
                 <LeistungComp />
                 <Bubbles />

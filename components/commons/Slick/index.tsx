@@ -69,7 +69,7 @@ const Slick = () => {
                             <a key={`${value.title}-${index}`} href={value.linkTo} className='relative cursor-pointer z-10 h-screen'>
                                 <img 
                                     src={value.image}
-                                    className={'absolute object-cover h-full w-full'}
+                                    className={'absolute object-cover md:h-full md:w-full w-screen h-screen'}
                                     alt={value.title}
                                 />
                                 <div className='absolute h-full w-full bg-[#282c34] z-30 opacity-20' />

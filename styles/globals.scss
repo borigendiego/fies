@@ -88,12 +88,14 @@ h4 {
 //Home button
 
 .common-button {
-  background-color: $main-blue;
+  background-color: rgba(137, 173, 205, 0.7);
+  transition: all 450ms;
 }
 
 .common-button:hover {
   background-color: #7294b29c;
   color: #fff;
+  text-decoration: underline;
 }
 
 //Nav list styles
@@ -129,6 +131,20 @@ h4 {
 }
 
 //Nav bar
+
+#header-nav {
+  animation: blur linear both;
+  animation-timeline: scroll();
+  animation-range: 0 300px;
+}
+
+@keyframes blur {
+  to {
+    background: rgba(137, 173, 205, 0.8);
+    backdrop-filter: blur(10px);
+  }
+}
+
 .header-blue-logo .header-white-logo {
   transition: all 1s linear;
 }
