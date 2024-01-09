@@ -13,7 +13,7 @@ const Finanzierung = () => {
                 viewport={{once: true}}
             >
                 <Image 
-                    src={'/assets/images/leistung/finanzierung.jpg'} 
+                    src={'/assets/images/leistung/finanzierung.webp'} 
                     height={200} 
                     width={700} 
                     alt={''}

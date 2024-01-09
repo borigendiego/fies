@@ -49,7 +49,7 @@ const Statik = ( ) => {
                     transition={{duration:  1, delay: .5}}
                     viewport={{once: true}}
                 >
-                    <Image src={'/assets/images/leistung/statik.jpg'} alt={'Working people'} height={200} width={600} className={'md:rounded-xl'}/>
+                    <Image src={'/assets/images/banner/tragwerksplanung.webp'} alt={'Working people'} height={200} width={600} className={'md:rounded-xl'}/>
                 </motion.div>
             </div>
         </div>

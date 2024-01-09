@@ -1,7 +1,7 @@
 const PROJEKTS_DATA = [
     {
         title: 'Willich',
-        mainImage: '/assets/images/banner/bannerImage.jpg',
+        mainImage: '/assets/images/projekts/willich/willich-4.webp',
         ort: 'Willich, 47877 Bahnstraße 119-121',
         projekt: 'Neubau, Mehrparteienhaus 20 WE + Tiefgarage',
         baukosten: '6.8 Mio €',
@@ -9,43 +9,43 @@ const PROJEKTS_DATA = [
         zeitraum: '2021-2022',
         gallery: [
             {
-                src: '/assets/images/projekts/willich/willich-1.jpg',
-                thumbnail: '/assets/images/projekts/willich/willich-1.jpg',
+                src: '/assets/images/projekts/willich/willich-1.webp',
+                thumbnail: '/assets/images/projekts/willich/willich-1.webp',
                 thumbnailWidth: 100,
                 thumbnailHeight: 100,
                 caption: ''
             },
             {
-                src: '/assets/images/projekts/willich/willich-2.jpg',
-                thumbnail: '/assets/images/projekts/willich/willich-2.jpg',
+                src: '/assets/images/projekts/willich/willich-2.webp',
+                thumbnail: '/assets/images/projekts/willich/willich-2.webp',
                 thumbnailWidth: 100,
                 thumbnailHeight: 100,
                 caption: ''
             },
             {
-                src: '/assets/images/projekts/willich/willich-3.jpg',
-                thumbnail: '/assets/images/projekts/willich/willich-3.jpg',
+                src: '/assets/images/projekts/willich/willich-3.webp',
+                thumbnail: '/assets/images/projekts/willich/willich-3.webp',
                 thumbnailWidth: 100,
                 thumbnailHeight: 100,
                 caption: ''
             },
             {
-                src: '/assets/images/projekts/willich/willich-4.jpg',
-                thumbnail: '/assets/images/projekts/willich/willich-4.jpg',
+                src: '/assets/images/projekts/willich/willich-4.webp',
+                thumbnail: '/assets/images/projekts/willich/willich-4.webp',
                 thumbnailWidth: 100,
                 thumbnailHeight: 100,
                 caption: ''
             },
             {
-                src: '/assets/images/projekts/willich/willich-5.jpg',
-                thumbnail: '/assets/images/projekts/willich/willich-5.jpg',
+                src: '/assets/images/projekts/willich/willich-5.webp',
+                thumbnail: '/assets/images/projekts/willich/willich-5.webp',
                 thumbnailWidth: 100,
                 thumbnailHeight: 100,
                 caption: ''
             },
             {
-                src: '/assets/images/projekts/willich/willich-6.jpg',
-                thumbnail: '/assets/images/projekts/willich/willich-6.jpg',
+                src: '/assets/images/projekts/willich/willich-6.webp',
+                thumbnail: '/assets/images/projekts/willich/willich-6.webp',
                 thumbnailWidth: 100,
                 thumbnailHeight: 100,
                 caption: ''
@@ -54,7 +54,7 @@ const PROJEKTS_DATA = [
     },
     {
         title: 'Airpark',
-        mainImage: '/assets/images/projekts/airpark/airpark-1-min.png',
+        mainImage: '/assets/images/projekts/airpark/airpark-1.webp',
         ort: 'Lärz an der Müritz, 17248 Ludwig-Bölkow-Weg',
         projekt: 'Lärz an der Müritz, 17248',
         baukosten: '1,8 Mio €',
@@ -62,32 +62,17 @@ const PROJEKTS_DATA = [
         zeitraum: '2021- 2023',
         gallery: [
             {
-                src: '/assets/images/projekts/airpark/airpark-2-min.png',
-                thumbnail: '/assets/images/projekts/willich/willich-2.jpg',
+                src: '/assets/images/projekts/airpark/airpark-2.webp',
+                thumbnail: '/assets/images/projekts/airpark/airpark-2.webp',
                 thumbnailWidth: 100,
                 thumbnailHeight: 100,
                 caption: ''
             },
         ],
     },
-    /*
-    {
-        title: 'Metzingen',
-        mainImage: '/assets/images/banner/bannerImage-2.jpg',
-        ort: 'Metzingen, 72555 Braike-Wangen',
-        projekt: 'Neubau, Bürogebäude mit 4 WE und Tiefgarage',
-        baukosten: '3.6 Mio €',
-        leistungen: 'Projektsteuerung Architektur, LPH 1-5 TGA-Planung Brandschutz',
-        zeitraum: '2023- 2024',
-        gallery: [
-            {
-
-            },
-        ],
-    },*/
     {
         title: 'Pfaffenhofen',
-        mainImage: '/assets/images/projekts/pfaffenhofen/Pfaffenhofen-2-min.jpeg',
+        mainImage: '/assets/images/projekts/pfaffenhofen/Pfaffenhofen-2.webp',
         ort: 'Pfaffenhofen, 85276 Hochstraße 4',
         projekt: 'Energetische Sanierung, 14 WE',
         baukosten: '2,7 Mio €',
@@ -95,8 +80,8 @@ const PROJEKTS_DATA = [
         zeitraum: '2022- 2023',
         gallery: [
             {
-                src: '/assets/images/projekts/pfaffenhofen/Pfaffenhofen-1-min.jpeg',
-                thumbnail: '/assets/images/projekts/pfaffenhofen/Pfaffenhofen-1-min.jpeg',
+                src: '/assets/images/projekts/pfaffenhofen/Pfaffenhofen-1.webp',
+                thumbnail: '/assets/images/projekts/pfaffenhofen/Pfaffenhofen-1.webp',
                 thumbnailWidth: 100,
                 thumbnailHeight: 100,
                 caption: ''
@@ -105,7 +90,7 @@ const PROJEKTS_DATA = [
     },
     {
         title: 'Heimstetten',
-        mainImage: '/assets/images/projekts/heimstetten/Heimstetten-1-min.jpeg',
+        mainImage: '/assets/images/projekts/heimstetten/Heimstetten-1.webp',
         ort: 'Heimstetten, 85551 Seestraße 7',
         projekt: 'Neubau, 2 Mehrparteienhäuser 10 WE mit Tiefgarage',
         baukosten: '2.1 Mio €',
@@ -116,7 +101,7 @@ const PROJEKTS_DATA = [
     },
     {
         title: 'Schwabelweis',
-        mainImage: '/assets/images/projekts/schwabelweis/Schwabelweis-1.png',
+        mainImage: '/assets/images/projekts/schwabelweis/Schwabelweis-1.webp',
         ort: 'Schwabelweis, 93055 Michelerstr. / David- Funke-Str.',
         projekt: 'Neubau, 9 Einfamilienhäuser 1 Mehrparteienhaus mit 12 WE und Tiefgarage',
         baukosten: '4,8 Mio €',
@@ -127,7 +112,7 @@ const PROJEKTS_DATA = [
     },
     {
         title: 'Karlsfeld',
-        mainImage: '/assets/images/projekts/karlsfeld/Karlsfeld-1-min.jpeg',
+        mainImage: '/assets/images/projekts/karlsfeld/Karlsfeld-1.webp',
         ort: 'Karslfeld, 85757 Herbststraße 7',
         projekt: 'Neubau, Mehrparteienhaus 7 WE',
         baukosten: '1,3 Mio €',

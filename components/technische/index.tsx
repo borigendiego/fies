@@ -13,7 +13,7 @@ const Technische = () => {
                 viewport={{once: true}}
             >
                 <Image 
-                    src={'/assets/images/leistung/technische.jpg'} 
+                    src={'/assets/images/leistung/technische.webp'} 
                     height={200} 
                     width={700} 
                     alt={''}

@@ -20,31 +20,31 @@ const Slick = () => {
     const SLIDES_DATA = [
         {
             linkTo: '/projekte/#Willich',
-            image: '/assets/images/projekts/willich/willich-6.jpg',
+            image: '/assets/images/projekts/willich/willich-6.webp',
             title: 'PROJEKT: Willich',
             text: ''
         },
         {
             linkTo: '/projekte/#Willich',
-            image: '/assets/images/banner/banner-1-min.jpg',
+            image: '/assets/images/projekts/willich/willich-4.webp',
             title: 'PROJEKT: Willich',
             text: ''
         },
         {
             linkTo: '/projekte/#Airpark',
-            image: '/assets/images/banner/banner-airpark.png',
+            image: '/assets/images/projekts/airpark/airpark-2.webp',
             title: 'PROJEKT: Airpark',
             text: ''
         },
         {
             linkTo: '/leistung',
-            image: '/assets/images/banner/banner-3-min.jpg',
+            image: '/assets/images/banner/tragwerksplanung.webp',
             title: 'Leistung',
             text: ''
         },
         {
             linkTo: '/projekte/#Heimstetten',
-            image: '/assets/images/banner/banner-4-min.jpg',
+            image: '/assets/images/projekts/heimstetten/Heimstetten-1.webp',
             title: 'PROJEKT: Heimstetten',
             text: ''
         },
@@ -67,9 +67,10 @@ const Slick = () => {
                     SLIDES_DATA.map((value, index) => {
                         return (
                             <a key={`${value.title}-${index}`} href={value.linkTo} className='relative cursor-pointer z-10 h-screen'>
-                                <img 
+                                <Image 
                                     src={value.image}
-                                    className={'absolute object-cover md:h-full md:w-full w-screen h-screen'}
+                                    className={'absolute object-cover'}
+                                    fill
                                     alt={value.title}
                                 />
                                 <div className='absolute h-full w-full bg-[#282c34] z-30 opacity-20' />

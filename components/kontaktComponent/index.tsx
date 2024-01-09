@@ -7,7 +7,7 @@ const KontaktComponent = () => {
     return(
         <div className=' flex justify-center'>
             <motion.img 
-                src='/assets/images/projekts/willich/willich-5.jpg' 
+                src='/assets/images/projekts/willich/willich-5.webp' 
                 className='absolute h-full w-full object-cover'
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}

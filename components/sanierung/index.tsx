@@ -14,7 +14,7 @@ const Sanierung = () => {
                 viewport={{once: true}}
             >
                 <Image 
-                    src={'/assets/images/leistung/sanierung.jpg'} 
+                    src={'/assets/images/leistung/sanierung.webp'} 
                     height={200} 
                     width={700} 
                     alt={''}

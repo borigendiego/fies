@@ -13,7 +13,7 @@ const Energieberatung = () => {
                 viewport={{once: true}}
             >
                 <Image 
-                    src={'/assets/images/leistung/energieberatung.jpg'} 
+                    src={'/assets/images/leistung/energieberatung.webp'} 
                     height={200} 
                     width={700} 
                     alt={''}

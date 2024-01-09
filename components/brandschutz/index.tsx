@@ -13,7 +13,7 @@ const Brandschutz = () => {
                 viewport={{once: true}}
             >
                 <Image 
-                    src={'/assets/images/leistung/brandschutz.jpg'} 
+                    src={'/assets/images/leistung/brandschutz.webp'} 
                     height={200} 
                     width={700} 
                     alt={''}

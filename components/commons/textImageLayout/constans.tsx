@@ -2,7 +2,7 @@ const LAYOUT_DATA = [
     {
         id: 1,
         title: 'Forschung',
-        image: '/assets/images/banner/bannerImage-4.jpg',
+        image: '/assets/images/uber/forschung.webp',
         reversed: false,
         text: <div>
                     <p className='py-2'>Bereits seit 2018 sind wir an der HafenCity Universität in Hamburg in der Forschung tätig. Durch den ständigen Austausch und den direkten Kontakt zu diversen Forschungsgruppen bleiben wir fortlaufend auf dem neuesten Stand der Technik. Gleichzeitig arbeiten wir aktiv an der Entwicklung neuer Standards im Bereich des digitalen Bauens. Die Nähe zur Forschung lässt uns effektive Innovationen direkt in unseren Büroalltag und unsere Arbeitsweise integrieren. </p>
@@ -14,7 +14,7 @@ const LAYOUT_DATA = [
     {
         id: 2,
         title: 'BIM',
-        image: '/assets/images/uber/BIM-Bild3-min.jpg',
+        image: '/assets/images/uber/BIM.webp',
         reversed: true,
         text: <div>
                     <p className='py-2'>Als junges Büro setzen wir auf Innovation und digitalen Fortschritt.</p>
@@ -27,7 +27,7 @@ const LAYOUT_DATA = [
     {
         id: 3,
         title: 'Nachhaltigkeit',
-        image: '/assets/images/banner/bannerImage-4.jpg',
+        image: '',
         reversed: false,
         textDisplay: true,
         text: <div>
@@ -40,7 +40,7 @@ const LAYOUT_DATA = [
     {
         id: 4,
         title: 'Bauen mit Holz',
-        image: '/assets/images/banner/bannerImage-2.jpg',
+        image: '/assets/images/uber/bauen.webp',
         reversed: true,
         text: <div>
                     <p className='py-2'>Holz ist eines der ersten vom Menschen zum Bau genutzten Materialien. Als nachwachsender und klimafreundlicher Rohstoff, der zudem noch regional verfügbar ist, sehen wir im Holz das Baumaterial der Zukunft. </p>

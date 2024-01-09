@@ -40,7 +40,7 @@ const ArchitekturComp = () => {
                     transition={{duration:  .7, delay: .5}}
                     viewport={{once: true}}
                 >
-                    <Image src={'/assets/images/leistung/architektur-image.png'} alt={'architekt image'} width={650} height={200} className={'md:rounded-xl'}/>
+                    <Image src={'/assets/images/leistung/architektur-image.webp'} alt={'architekt image'} width={650} height={200} className={'md:rounded-xl'}/>
                 </motion.div>
             </div>
         </div>
