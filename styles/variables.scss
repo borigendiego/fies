@@ -20,6 +20,7 @@ $bubble-purple: rgb(186 , 105 , 175);
 //Fonts
 $dinLight: 'din light';
 $dinRegular: 'din regular';
+$dinBold: 'din bold';
 $franklin: 'franklin';
 
 @font-face {
@@ -31,6 +32,11 @@ $franklin: 'franklin';
   font-family: 'din regular';
   font-style: normal;
   src: url('/assets/fonts/din-regular.ttf');
+}
+@font-face {
+  font-family: 'din bold';
+  font-style: normal;
+  src: url('/assets/fonts/din-bold.otf');
 }
 
 @font-face {

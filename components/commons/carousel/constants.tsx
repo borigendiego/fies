@@ -27,7 +27,7 @@ const HOME_CAROUSEL:CarouselType[] = [
         </div>
     },
     {
-        bgImage: '/assets/images/home-slider/Spatenstich.jpg',
+        bgImage: '/assets/images/home-slider/Spatenstich.webp',
         title: 'Willich Spatenstich',
         linkTo: 'https://www.meine-woche.de/staedte/willich/spatenstich-auf-dem-toholt-gelaende-in-willich_aid-73284361',
     },

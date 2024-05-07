@@ -23,7 +23,7 @@ const Leistung: NextPage = () => {
                 <title>SPEKTRUM - Leistung</title>
                 <meta name="description" content="SPEKTRUM - Lesitung" />
             </Head>
-            <main>
+            <main className='overflow-hidden'>
                 <Button />
                 <Header />
                 <LeistungComp />
