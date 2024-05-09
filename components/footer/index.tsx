@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import CookieConsent from 'react-cookie-consent';
 import { motion } from 'framer-motion';

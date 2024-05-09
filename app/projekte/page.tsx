@@ -1,11 +1,11 @@
 import React from 'react';
+import '../../styles/globals.scss';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Header from '../components/header';
-import ProjektComponent from '../components/projektPageComponent';
-import ProjektDisplayer from '../components/projektDisplayer';
-import Footer from '../components/footer';
-import Button from '../components/commons/homeButton';
+import Header from '../../components/header';
+import ProjektDisplayer from '../../components/projektDisplayer';
+import Footer from '../../components/footer';
+import Button from '../../components/commons/homeButton';
 
 const Projekte: NextPage = () => {
     return(
@@ -17,7 +17,6 @@ const Projekte: NextPage = () => {
             <main>
                 <Button />
                 <Header />
-                <ProjektComponent />
                 <ProjektDisplayer />
                 <Footer />
             </main>

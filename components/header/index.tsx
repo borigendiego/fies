@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import Nav from '../nav'
@@ -11,20 +12,6 @@ type HeaderPropType = {
 };
 
 const Header = ({ isHomePage }:HeaderPropType) => {
-
-    /*
-    if (process.browser) {
-        // Client-side-only code
-        const stickyFunction = () => window.addEventListener('scroll', function() {
-            let navigation = document.querySelector('nav');
-
-            if (navigation) {
-                navigation.classList.toggle('scroll-nav', window.scrollY > 0);
-            }
-        });
-        stickyFunction();
-    };
-    */
 
     return(
         <motion.nav 

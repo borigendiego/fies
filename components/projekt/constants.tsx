@@ -68,6 +68,13 @@ const PROJEKTS_DATA = [
                 thumbnailHeight: 100,
                 caption: ''
             },
+            {
+                src: '/assets/images/projekts/airpark/airpark-1.webp',
+                thumbnail: '/assets/images/projekts/airpark/airpark-1.webp',
+                thumbnailWidth: 100,
+                thumbnailHeight: 100,
+                caption: ''
+            },
         ],
     },
     {
@@ -82,6 +89,13 @@ const PROJEKTS_DATA = [
             {
                 src: '/assets/images/projekts/pfaffenhofen/Pfaffenhofen-1.webp',
                 thumbnail: '/assets/images/projekts/pfaffenhofen/Pfaffenhofen-1.webp',
+                thumbnailWidth: 100,
+                thumbnailHeight: 100,
+                caption: ''
+            },
+            {
+                src: '/assets/images/projekts/pfaffenhofen/Pfaffenhofen-2.webp',
+                thumbnail: '/assets/images/projekts/pfaffenhofen/Pfaffenhofen-2.webp',
                 thumbnailWidth: 100,
                 thumbnailHeight: 100,
                 caption: ''
