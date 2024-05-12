@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import '../styles/globals.scss'
 import Slick from '../components/commons/Slick';
 import Caraousel from '../components/commons/carousel/Carousel';
 import Button from '../components/commons/homeButton';
