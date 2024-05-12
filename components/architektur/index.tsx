@@ -8,7 +8,7 @@ const ArchitekturComp = () => {
     return(
         <div>
             <div className={'border flex md:flex-row flex-col-reverse mt-8'}>
-                <motion.div 
+                <motion.div
                     className={'py-12 px-6 text-center md:text-left md:w-1/2'}
                     initial={{opacity: 0, x: -30}}
                     whileInView={{opacity: 1, x: 0}}
@@ -21,20 +21,16 @@ const ArchitekturComp = () => {
                         Wir planen und realisieren Gebäude verschiedenster Größenordnung und Funktionen, von der ersten Standortanalyse bis zur Inbetriebnahme des fertigen Bauwerks.
                     </p>
                     <p className='py-2 text-base'>
-                        Unser Leistungsspektrum umfasst nicht nur die Arbeit des klassischen Architekten,
-                        sondern auch die ganzheitliche Umsetzung von komplexen Bauaufgaben als Generalplaner.
-                        Bei Bedarf verantworten wir die Organisation eines integralen Planungsteams aus sämtlichen,
-                        für den Bau erforderlichen Fachbereichen, wie z.B. der Tragwerksplanung, technischen Gebäudeausrüstung, Freianlagen, sowie der Bauphysik.
+                    Unser Leistungsspektrum umfasst als freiberufliche Architekten die Beratung, Betreuung und Vertretung unserer Auftraggeber*Innen in allen die Planung, Ausführung und Überwachung eines Vorhabens betreffenden Angelegenheiten. Bei Bedarf verantworten wir hierbei als Generalplaner die Organisation eines integralen Planungsteams aus sämtlichen, für den Bau erforderlichen Fachbereichen, wie z.B. der Tragwerksplanung, technischen Gebäudeausrüstung, Freianlagen, sowie der Bauphysik.
                     </p>
                     <p className='py-2 text-base'>
                         Unser Anspruch ist es, mit unserer Planung ein optimales, wirtschaftliches Ergebnis für unsere Bauherren zu erzielen.
                         Dies erreichen wir vor allem durch die frühe Einbindung aller am Bau beteiligten Disziplinen.
                         Auf diesem Weg können sehr früh die ersten Unstimmigkeiten ausgeräumt und schnell belastbare Grundlagen für die weitere Planung geschaffen werden.
-                        Aufgrund der interdisziplinären Zusammenarbeit können bereits in den ersten Planungsphasen Qualitäten und Standards für das gesamte
-                        Bauvorhaben festgelegt werden, wodurch die Kostensicherheit enorm erhöht wird.
+                        Aufgrund der interdisziplinären Zusammenarbeit können bereits in den ersten Planungsphasen Qualitäten und Standards für das gesamte Bauvorhaben festgelegt werden, wodurch die Kostensicherheit enorm erhöht wird.
                     </p>
                 </motion.div>
-                <motion.div 
+                <motion.div
                     className={'m-auto'}
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
