@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Slider from "react-slick";
 import { motion } from 'framer-motion';
@@ -13,7 +14,7 @@ const Slick = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoPlaySpeed: 7000,
-        speed: 2000,
+        speed: 1000,
         cssEase: "ease-in"
     };
 
@@ -90,6 +91,7 @@ const Slick = () => {
                     
                             )
                         }
+
                         return (
                             <a key={`${value.title}-${index}`} href={value.linkTo} className='relative cursor-pointer z-10 h-screen'>
                                 <Image 
@@ -115,4 +117,3 @@ const Slick = () => {
 }
 
 export default Slick;
-

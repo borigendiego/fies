@@ -8,7 +8,7 @@ const Contact = () => {
         <div className='md:flex flex-col md:flex-row'>
             <div>
                 <h2 className='text-center md:text-left font-semibold'>Kontakt</h2>
-                <p className='text-center md:text-left'>Sie können uns anrufen, schreiben oder uns besuchen.</p>
+                <p className='text-center md:text-left w-3/4 mx-auto md:mx-0 md:w-full'>Sie können uns anrufen, schreiben oder uns besuchen.</p>
                 <div className='flex flex-col jus md:flex-row mt-6'>
                     <div className='flex flex-col md:mr-4 items-center md:items-start'>
                         <Image

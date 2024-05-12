@@ -1,7 +1,8 @@
-import React from 'react';
+'use client'
+import React, {useState} from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import ProjektGallery from '../projektGallery';
+import LightBox from '../LightBox/LightBox';
 
 type ProjektTypes = {
     title: string,
@@ -24,6 +25,12 @@ const Projekt = ({
     zeitraum, 
     gallery,
 }:ProjektTypes) => {
+
+    const [openGallery, setOpenGallery] = useState(false);
+
+    const toggleGallery = () => {
+        setOpenGallery(!openGallery)
+    }
 
     const projektList = {
         visible: { 
@@ -48,14 +55,14 @@ const Projekt = ({
     }
 
     return(
-        <div id={title} className={'grid grid-flow-row md:grid-flow-col md:my-8 max-w-[1400px] px-8 mx-auto border-b pb-20 scroll-m-10'}>
-            <div className={'pt-16 grid-cols-1'}>
-                <div className={'flex flex-col md:flex-row mt-6 mb-12 items-baseline text-center'}>
-                    <h1 className={'font-bold'}>PROJEKT:</h1>
-                    <p className={'text-4xl md:pl-2'}>{title}</p>
+        <div id={title} className={'grid grid-flow-row md:grid-flow-col md:my-8 max-w-[1400px] md:px-8 px-4 mx-auto border-b pb-20 scroll-m-10'}>
+            <div className={'md:pt-16 pt-8 grid-cols-1'}>
+                <div className={'flex flex-col md:flex-row md:mt-6 mb-12 items-baseline text-center'}>
+                    <h2 className={'hbold'}>PROJEKT:</h2>
+                    <p className={'md:text-4xl text-3xl md:pl-2'}>{title}</p>
                 </div>
                 <motion.div 
-                    className={'grid grid-rows-5 grid-cols-1'}
+                    className={'grid grid-rows-4 grid-cols-1'}
                     variants={projektList}
                     initial={'hidden'}
                     whileInView={'visible'}
@@ -102,20 +109,44 @@ const Projekt = ({
                 transition={{duration:  1, delay: 1}}
                 viewport={{once: true}}
             >
-                <Image
-                    src={mainImage}
-                    alt={''}
-                    height={600} 
-                    width={600}
-                 />
-                 <motion.div className={'my-2 flex w-full justify-end'} variants={projektItems}>
-                    <div className={'max-w-[600px]'}>
+                {
+                    gallery.length >= 1 ? 
+                    <div className='relative md:h-[450px] md:w-[616px] w-full h-[200px]' onClick={toggleGallery}>
+                        <div className='absolute left-0 top-0 w-full h-full bg-black/20 opacity-0 
+                        duration-500 hover:opacity-100 cursor-pointer z-10' />
+                        <Image
+                            src={mainImage}
+                            alt={''}
+                            fill={true}
+                        />
+                    </div>
+                    :
+                    <div className='relative md:h-[450px] md:w-[616px] w-full h-[200px]'>
+                        <Image
+                            src={mainImage}
+                            alt={''}
+                            fill={true}
+                        />
+                    </div>
+                }
+                
+                <motion.div className={'my-2 md:flex hidden w-full justify-end'} variants={projektItems}>
+                    <div className={'max-w-[616px] max-h-[150px] flex gap-2 overflow-hidden flex-wrap'}>
                         {
-                            gallery.length > 0 && <ProjektGallery gallery={gallery} />
+                            gallery.map((val:any, index:any) => {
+                                return(
+                                    <div className='relative' key={index} onClick={toggleGallery}>
+                                        <Image src={val.src} alt={''} height={150} width={200} />
+                                        <div className='absolute left-0 top-0 w-full h-full bg-black/20 opacity-0 
+                                            duration-500 hover:opacity-100 cursor-pointer z-10' />
+                                    </div>
+                                )
+                            })
                         }
                     </div>
                 </motion.div>
             </motion.div>
+            <LightBox projectImages={gallery} isGalleryOpen={openGallery} closeGallery={toggleGallery} />
         </div>
     )
 }

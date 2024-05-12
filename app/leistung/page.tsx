@@ -1,20 +1,21 @@
 import React from 'react';
 import type { NextPage } from 'next';
+import '../../styles/globals.scss'
 import Head from 'next/head';
-import Header from '../components/header';
-import Projektewicklung from '../components/projektenwicklung';
-import LeistungComp from '../components/leistung';
-import ArchitekturComp from '../components/architektur';
-import Statik from '../components/statik';
-import Footer from '../components/footer';
-import Sanierung from '../components/sanierung';
-import Grundstuck from '../components/Grundstuck7';
-import Technische from '../components/technische';
-import Brandschutz from '../components/brandschutz';
-import Energieberatung from '../components/energieberatung';
-import Finanzierung from '../components/finanzierung';
-import Bubbles from '../components/bubbles';
-import Button from '../components/commons/homeButton';
+import Header from '../../components/header';
+import Projektewicklung from '../../components/projektenwicklung';
+import LeistungComp from '../../components/leistung';
+import ArchitekturComp from '../../components/architektur';
+import Statik from '../../components/statik';
+import Footer from '../../components/footer';
+import Sanierung from '../../components/sanierung';
+import Grundstuck from '../../components/Grundstuck7';
+import Technische from '../../components/technische';
+import Brandschutz from '../../components/brandschutz';
+import Energieberatung from '../../components/energieberatung';
+import Finanzierung from '../../components/finanzierung';
+import Bubbles from '../../components/bubbles';
+import Button from '../../components/commons/homeButton';
 
 const Leistung: NextPage = () => {
     return(
@@ -23,7 +24,7 @@ const Leistung: NextPage = () => {
                 <title>SPEKTRUM - Leistung</title>
                 <meta name="description" content="SPEKTRUM - Lesitung" />
             </Head>
-            <main>
+            <main className='overflow-hidden'>
                 <Button />
                 <Header />
                 <LeistungComp />

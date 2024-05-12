@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import Nav from '../nav'
@@ -11,20 +12,6 @@ type HeaderPropType = {
 };
 
 const Header = ({ isHomePage }:HeaderPropType) => {
-
-    /*
-    if (process.browser) {
-        // Client-side-only code
-        const stickyFunction = () => window.addEventListener('scroll', function() {
-            let navigation = document.querySelector('nav');
-
-            if (navigation) {
-                navigation.classList.toggle('scroll-nav', window.scrollY > 0);
-            }
-        });
-        stickyFunction();
-    };
-    */
 
     return(
         <motion.nav 
@@ -44,8 +31,8 @@ const Header = ({ isHomePage }:HeaderPropType) => {
                         height={80}
                     />
                 </Link>
-                <div className='flex flex-col mt-[10%]'>
-                    <h1 className='text-2xl leading-3 text-white uppercase'>Spektrum</h1>
+                <div className='flex flex-col mt-[5%]'>
+                    <h1 className='text-2xl leading-5 text-white uppercase hbold'>Spektrum</h1>
                     <p className='text-white md:text-base'>Architekten | Generalplaner</p>
                 </div>
             </div>

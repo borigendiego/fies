@@ -1,3 +1,4 @@
+'use client'
 import React, {useRef} from "react";
 import { HOME_CAROUSEL } from './constants';
 import Slide from "./Slide";

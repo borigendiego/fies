@@ -1,12 +1,13 @@
 import React from 'react';
+import '../../styles/globals.scss';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Header from '../components/header';
-import WhoWeAre from '../components/whoWeAre';
+import Header from '../../components/header';
+import WhoWeAre from '../../components/whoWeAre';
 
-import Footer from '../components/footer';
-import LayoutDisplayer from '../components/layoutDisplayer';
-import Button from '../components/commons/homeButton';
+import Footer from '../../components/footer';
+import LayoutDisplayer from '../../components/layoutDisplayer';
+import Button from '../../components/commons/homeButton';
 
 
 const Uber: NextPage = () => {
