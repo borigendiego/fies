@@ -1,14 +1,17 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../../components/header';
+import Footer from '../../components/footer';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'SPEKTRUM | Datenschutzerklärung',
+    description: 'SPEKTRUM - Datenschutzerklärung',
+}
 
 const Datenschutzerklärung: NextPage = () => {
     return(
         <div>
-            <Head>
-            </Head>
             <main>
                 <Header />
                 <div className={'privacy-policy md:px-40 px-10 py-10'}>
