@@ -2,6 +2,12 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'SPEKTRUM | Impressum',
+    description: 'SPEKTRUM - Impressum',
+}
 
 const Impressum: NextPage = () => {
     return (

@@ -6,14 +6,17 @@ import Header from '../../components/header';
 import ProjektDisplayer from '../../components/projektDisplayer';
 import Footer from '../../components/footer';
 import Button from '../../components/commons/homeButton';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+    title: 'SPEKTRUM | Projekte',
+    description: 'SPEKTRUM - Projekte',
+}
 
 const Projekte: NextPage = () => {
     return(
         <div>
-            <Head>
-                <title>SPEKTRUM - Projekte</title>
-                <meta name="description" content="SPEKTRUM - Projekte" />
-            </Head>
             <main>
                 <Button />
                 <Header />

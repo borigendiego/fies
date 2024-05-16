@@ -16,14 +16,17 @@ import Energieberatung from '../../components/energieberatung';
 import Finanzierung from '../../components/finanzierung';
 import Bubbles from '../../components/bubbles';
 import Button from '../../components/commons/homeButton';
+import { Metadata } from 'next';
+import Bauantrag from '../../components/Bauantrag';
+
+export const metadata: Metadata = {
+    title: 'SPEKTRUM | Leistung',
+    description: 'SPEKTRUM - Lesitung',
+}
 
 const Leistung: NextPage = () => {
     return(
         <div>
-            <Head>
-                <title>SPEKTRUM - Leistung</title>
-                <meta name="description" content="SPEKTRUM - Lesitung" />
-            </Head>
             <main className='overflow-hidden'>
                 <Button />
                 <Header />
@@ -37,6 +40,7 @@ const Leistung: NextPage = () => {
                 <Projektewicklung />
                 <Finanzierung />
                 <Sanierung />
+                <Bauantrag />
                 <Grundstuck />
                 <Footer />
             </main>
