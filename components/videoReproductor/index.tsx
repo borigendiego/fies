@@ -4,7 +4,7 @@ import React from 'react';
 const VideoReproductor = ({isReproductorOpen, closeReproductor}:any) => {
     return (
         <div 
-            className={`${isReproductorOpen ? 'block' : 'hidden'} h-screen w-full fixed top-0 left-0 z-40 bg-black/95
+            className={`${isReproductorOpen ? '' : 'hidden'} h-screen w-full fixed top-0 left-0 z-40 bg-black/95
             flex flex-col justify-center items-center`}
          >
             <button className='absolute z-30 md:right-12 right-[5%] top-6 p-2 cursor-pointer' onClick={closeReproductor}>

@@ -18,7 +18,7 @@ const BUBBLES_DATA = [
     {
         title: 'PROJEKTENTWICKLUNG',
         link: '#projektentwicklung',
-        left: '500px',
+        left: '650px',
         top: '285px',
         delay: 1.3,
         customClass: 'yellow',
@@ -43,7 +43,7 @@ const BUBBLES_DATA = [
     {
         title: 'FINANZIERUNG',
         link: '#finanzierung',
-        left: '875px',
+        left: '975px',
         top: '275px',
         delay: 2.5,
         customClass: 'orange',
@@ -55,6 +55,14 @@ const BUBBLES_DATA = [
         top: '250px',
         delay: 2.9,
         customClass: 'purple',
+    },
+    {
+        title: 'BAUANTRAG',
+        link: '#bauantrag',
+        left: '370px',
+        top: '370px',
+        delay: 3.2,
+        customClass: 'dark-green',
     }
 ]
 

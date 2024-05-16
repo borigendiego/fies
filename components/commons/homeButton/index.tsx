@@ -6,7 +6,8 @@ import Link from 'next/link';
 const Button = () => {
     return(
         <motion.button
-            className='hidden md:block p-3 fixed cursor-pointer md:bottom-[45px] md:right-[45px] z-40 rounded-xl duration-500 common-button font-bold'
+            className='hidden md:block p-3 fixed cursor-pointer md:bottom-[45px] md:right-[45px] z-20
+             rounded-xl duration-500  bg-[#89adcd99] hover:bg-[#7294b29c] hover:text-white hover:underline font-bold'
             initial={{opacity: 0, y: 20}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: 1.5}}
