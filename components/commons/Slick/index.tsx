@@ -23,7 +23,7 @@ const Slick = () => {
         {
             linkTo: 'https://www.meine-woche.de/staedte/willich/spatenstich-auf-dem-toholt-gelaende-in-willich_aid-73284361',
             src: 'https://res.cloudinary.com/du31j65g6/video/upload/v1705396237/Spektrum/Willich_Zeitraffer_comp_h8mthy.mp4',
-            image: '',
+            image: '/assets/images/projekts/willich/Willich-6.webp',
             title: 'Willich Bauarbeiten',
         },
         {
@@ -69,7 +69,7 @@ const Slick = () => {
                     SLIDES_DATA.map((value, index) => {
                         if (index === 0) {
                             return (
-                                    <div className="relative z-10">
+                                    <div className="relative z-10 h-screen w-screen">
                                         <button
                                             onClick={toggleReproductor}
                                             className="text-white p-4 rounded-full bg-slate-200/20 duration-500 absolute right-0 left-0 mx-auto top-1/2 -translate-y-1/2 z-20 w-fit hover:bg-slate-200/80 hover:text-black">
@@ -87,14 +87,16 @@ const Slick = () => {
                                                 </svg>
                                         </button>
                                         <div className="absolute h-full w-full bg-black/50 left-0 top-0"></div>
-                                        <video autoPlay muted loop className={'object-cover h-screen w-screen'}>
-                                            <source src={value.src} type="video/mp4" />
-                                        </video>
+                                        <Image
+                                            src={value.image}
+                                            className={'object-cover'}
+                                            fill
+                                            alt={value.title}
+                                        />
                                         <div className="absolute z-40 top-[75vh] py-6 pl-10">
                                             <h1 className={"text-white relative z-10 mt-6 font-semibold text-4xl"}>
                                                 {value.title}
                                             </h1>
-
                                         </div>
                                     </div>
                             )

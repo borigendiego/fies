@@ -17,18 +17,18 @@ const Contact = () => {
                             src={'/assets/images/contact/location-white.png'}
                             alt={'Location icon'}
                         />
-                        <a 
+                        <a
                             className='mt-4 w-[170px] md:w-auto text-center md:text-left font-bold cursor-pointer hover:underline'
-                            href="https://www.google.com/maps/place/Leipziger+Str.+38,+28215+Bremen,+Alemania/@53.0936015,8.813952,19z/data=!3m1!4b1!4m6!3m5!1s0x47b1286efbdf8501:0xc4c3953301b1100f!8m2!3d53.0936007!4d8.8144992!16s%2Fg%2F11c172wbqz"
-                            target="_blank" 
+                            href="https://www.google.com/maps/place/Jakobikirchhof+9,+28195+Bremen,+Germany/@53.0775362,8.8005749,17z/data=!3m1!4b1!4m6!3m5!1s0x47b1281708e2d36f:0xda97ceb796a72962!8m2!3d53.0775362!4d8.8031498!16s%2Fg%2F11c21kc8z8?entry=ttu"
+                            target="_blank"
                             rel="noreferrer"
-                        >Leipziger Straße 38<br/> 28215 Bremen</a>
-                        <a 
+                        >Jakobikirchhof 9<br/> 28195 Bremen</a>
+                        <a
                             className='mt-2 w-[170px] md:w-auto text-center md:text-left font-bold cursor-pointer hover:underline'
-                            href="https://www.google.com/maps/place/Ridlerstra%C3%9Fe+35,+80339+M%C3%BCnchen,+Alemania/@48.1325308,11.5347825,17z/data=!3m1!4b1!4m6!3m5!1s0x479dd8af69e42e59:0x67238821b336dbd3!8m2!3d48.1325308!4d11.5347825!16s%2Fg%2F11c5c3jm3n"
-                            target="_blank" 
+                            href="https://www.google.com/maps/place/Max-Planck-Stra%C3%9Fe+17,+85716+Unterschlei%C3%9Fheim,+Germany/@48.2830205,11.5616178,17z/data=!3m1!4b1!4m6!3m5!1s0x479e71cec07b71cb:0xd74e9f97545efc93!8m2!3d48.2830205!4d11.5641927!16s%2Fg%2F11b8v5t_cj?entry=ttu"
+                            target="_blank"
                             rel="noreferrer"
-                        >Ridler Straße 35<br/> 80339 München </a>
+                        >Max-Planck-Straße 17<br/> 85716 Unterschleißheim </a>
                     </div>
                     <div className='flex flex-col md:mx-4 items-center md:items-start mt-3 md:mt-0'>
                         <Image
@@ -37,13 +37,13 @@ const Contact = () => {
                             src={'/assets/images/contact/phone-white.png'}
                             alt={'Phone icon'}
                         />
-                        <a 
-                            className='mt-4 font-bold cursor-pointer hover:underline' 
+                        <a
+                            className='mt-4 font-bold cursor-pointer hover:underline'
                             href="tel:+49 (0) 421 – 56 34 58 11"
                         >
                             Tel: +49 (0) 421 – 56 34 58 11
                         </a>
-                        <a 
+                        <a
                             className='mt-2 font-bold cursor-pointer hover:underline'
                             href="tel:+49 (0) 421 52 40 82 72"
                         >Fax: +49 (0) 421 52 40 82 72

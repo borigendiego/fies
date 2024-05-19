@@ -5,16 +5,16 @@ const Nav = () => {
     return(
         <ul className='md:flex hidden nav'>
             <li>
-                <a 
-                    href={'/#aktuelles'} 
+                <a
+                    href={'/#aktuelles'}
                     className={'md:mx-4 md:p-4 hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg text-white nav-item'}
                 >
                     Aktuelles
                 </a>
             </li>
             <li className=''>
-                <Link 
-                    href={'/uber/'} 
+                <Link
+                    href={'/uber/'}
                     className={'md:mx-4 md:p-4 hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg text-white nav-item'}
                 >Über uns</Link>
                 <ul className={'sub-menu absolute hidden'}>
@@ -26,19 +26,19 @@ const Nav = () => {
                 </ul>
             </li>
             <li>
-                <Link 
-                    href={'/leistung/'} 
+                <Link
+                    href={'/leistung/'}
                     className={'md:mx-4 md:p-4 hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg text-white nav-item'}
                 >
                     Leistung
                 </Link>
                 <ul className={'sub-menu absolute hidden'}>
                     <li><a href={'/leistung/#architektur'}>Architektur</a></li>
+                    <li><a href={'/leistung/#bauantrag'}>Bauantrag</a></li>
                     <li><a href={'/leistung/#tragwerksplanung'}>Tragwerksplanung</a></li>
                     <li><a href={'/leistung/#technische'}>Technische Gebäudeausrüstung</a></li>
                     <li><a href={'/leistung/#brandschutz'}>Brandschutz</a></li>
                     <li><a href={'/leistung/#energieberatung'}>Energieberatung</a></li>
-                    <li><a href={'/leistung/#bauantrag'}>Bauantrag</a></li>
                     <li><a href={'/leistung/#projektentwicklung'}>Projektentwicklung</a></li>
                     <li><a href={'/leistung/#finanzierung'}>Finanzierung</a></li>
                     <li><a href={'/leistung/#sanierung'}>Sanierung</a></li>
@@ -46,16 +46,16 @@ const Nav = () => {
                 </ul>
             </li>
             <li>
-            <Link 
-                href={'/projekte/'} 
+            <Link
+                href={'/projekte/'}
                 className={'md:mx-4 md:p-4 hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg text-white nav-item'}
             >
                 Projekte
             </Link>
             </li>
             <li>
-                <Link 
-                    href={'/kontakt'} 
+                <Link
+                    href={'/kontakt'}
                     className={'md:mx-4 md:p-4 hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg text-white nav-item'}
                 >
                     Kontakt

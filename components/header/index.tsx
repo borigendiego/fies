@@ -14,9 +14,9 @@ type HeaderPropType = {
 const Header = ({ isHomePage }:HeaderPropType) => {
 
     return(
-        <motion.nav 
+        <motion.nav
             id='header-nav'
-            className={`flex justify-between md:px-8 ${isHomePage ? 'fixed bg-none backdrop-blur-none' : 'sticky bg-[#89ADCD80] backdrop-blur-sm'} top-0 w-full z-10 items-center`}
+            className={`flex justify-between md:px-8 ${isHomePage ? 'fixed bg-none backdrop-blur-none' : 'sticky bg-[#89ADCD80] backdrop-blur-sm'} top-0 w-full z-20 items-center`}
             initial={{opacity: 0, y: -15}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: .5, delay: .5}}
@@ -31,10 +31,13 @@ const Header = ({ isHomePage }:HeaderPropType) => {
                         height={80}
                     />
                 </Link>
-                <div className='flex flex-col mt-[5%]'>
-                    <h1 className='text-2xl leading-5 text-white uppercase hbold'>Spektrum</h1>
-                    <p className='text-white md:text-base'>Architekten | Generalplaner</p>
-                </div>
+                <Link href={'/'}>
+                    <div className='flex flex-col mt-[5%]'>
+                        <h1 className='text-2xl leading-5 text-white uppercase hbold'>Spektrum</h1>
+                        <p className='text-white md:text-base'>Architekten | Generalplaner</p>
+                    </div>
+                </Link>
+
             </div>
             <Nav />
             <MobileMenu menuItems={MENU_LINKS} />

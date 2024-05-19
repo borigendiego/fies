@@ -1,7 +1,5 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import '../../styles/globals.scss'
-import Head from 'next/head';
 import Header from '../../components/header';
 import Projektewicklung from '../../components/projektenwicklung';
 import LeistungComp from '../../components/leistung';
