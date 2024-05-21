@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Finanzierung = () => {
     return(
-        <div className='flex flex-col md:flex-row-reverse border-t md:py-8 mt-8 scroll-mt-[8rem]' id={'finanzierung'}>
+        <div className='flex flex-col md:flex-row border-t md:py-8 mt-8 scroll-mt-[8rem]' id={'finanzierung'}>
             <motion.div
                 className={'m-auto'}
                 initial={{opacity: 0}}

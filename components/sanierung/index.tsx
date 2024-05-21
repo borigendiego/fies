@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Sanierung = () => {
     return(
-        <div className='flex flex-col md:flex-row scroll-mt-[8rem] border-t md:py-8 mt-8' id={'sanierung'}>
+        <div className='flex flex-col md:flex-row-reverse scroll-mt-[8rem] border-t md:py-8 mt-8' id={'sanierung'}>
             <motion.div
                 className={'m-auto'}
                 initial={{opacity: 0}}
