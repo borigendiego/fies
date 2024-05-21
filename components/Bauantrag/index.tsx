@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const Bauantrag = () => {
     return(
-        <div className='flex flex-col md:flex-row-reverse border md:py-8 scroll-mt-[100px]' id={'bauantrag'}>
+        <div className='flex flex-col md:flex-row border-t md:py-8 scroll-mt-[4rem]' id={'bauantrag'}>
             <motion.div
-                className='mx-auto flex items-center py-4'
+                className={'m-auto'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration:  1}}
@@ -16,14 +16,14 @@ const Bauantrag = () => {
             >
                 <Image
                     src={'/assets/images/leistung/bauantrag.webp'}
+                    width={650}
                     height={200}
-                    width={700}
                     alt={'Mit unserem erfahrenen Team an Ihrer Seite können Sie sich darauf verlassen, dass Ihr Bauantrag sorgfältig und professionell vorbereitet wird.'}
                     className={'rounded-r-none md:rounded-xl'}
                 />
             </motion.div>
             <motion.div
-                className='md:w-1/2 md:px-16 px-4 text-center md:text-left'
+                className={'px-6 text-center md:text-left md:w-1/2'}
                 initial={{opacity: 0, x: -30}}
                 whileInView={{opacity: 1, x: 0}}
                 transition={{duration: .7, delay: .5}}

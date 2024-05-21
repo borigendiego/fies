@@ -25,12 +25,13 @@ export const metadata: Metadata = {
 const Leistung: NextPage = () => {
     return(
         <div>
-            <main className='overflow-hidden'>
+            <main>
                 <Button />
                 <Header />
                 <LeistungComp />
                 <Bubbles />
                 <ArchitekturComp />
+                <Bauantrag />
                 <Statik />
                 <Technische />
                 <Brandschutz />
@@ -38,7 +39,6 @@ const Leistung: NextPage = () => {
                 <Projektewicklung />
                 <Finanzierung />
                 <Sanierung />
-                <Bauantrag />
                 <Grundstuck />
                 <Footer />
             </main>

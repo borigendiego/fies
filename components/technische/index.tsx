@@ -4,31 +4,16 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Technische = () => {
-    return(
-        <div className='flex flex-col md:flex-row-reverse border md:py-8 scroll-mt-[100px]' id={'technische'}>
-            <motion.div 
-                className='mx-auto flex items-center py-4'
-                initial={{opacity: 0}}
-                whileInView={{opacity: 1}}
-                transition={{duration:  1}}
-                viewport={{once: true}}
-            >
-                <Image 
-                    src={'/assets/images/leistung/technische.webp'} 
-                    height={200} 
-                    width={700} 
-                    alt={''}
-                    className={'rounded-r-none md:rounded-xl'}
-                />
-            </motion.div>
-            <motion.div 
-                className='md:w-1/2 md:px-16 px-4 text-center md:text-left'
+    return (
+        <div id={'technische'} className={'border flex md:flex-row-reverse flex-col-reverse mt-8 scroll-mt-[8rem]'}>
+            <motion.div
+                className={'py-12 px-6 text-center md:text-left md:w-1/2'}
                 initial={{opacity: 0, x: -30}}
                 whileInView={{opacity: 1, x: 0}}
                 transition={{duration: .7, delay: .5}}
                 viewport={{once: true}}
             >
-                <h1 className='py-4 font-semibold text-4xl md:text-[40px]'>Technische Gebäudeausrüstung</h1>
+                <h1 className='pt-4 font-semibold'>Technische Gebäudeausrüstung</h1>
                 <p className='my-4'>
                     Die Planung der Technischen Gebäudeausrüstung nimmt einen zunehmend größeren Stellenwert ein.
                     Insbesondere das Konzept der Gebäudeheizung, Kühlung und Belüftung ist ein fester Bestandteil
@@ -37,7 +22,7 @@ const Technische = () => {
                     planerisch erfasst und mit unterschiedlichen Konzepten der Anlagentechnik abgedeckt.
                     Hierbei ist es besonders wichtig, dass die einzelnen Komponenten ideal aufeinander
                     abgestimmt sind. Um die genaue Größe der Anlagentechnik zu bestimmen, wird bereits
-                    im Vorfeld der voraussichtliche Energiebedarf des Gebäudes ermittelt. 
+                    im Vorfeld der voraussichtliche Energiebedarf des Gebäudes ermittelt.
                 </p>
                 <p className='my-4'>
                     Die Vielzahl der Leitungen für Lüftung, Sanitär und Elektro,
@@ -51,6 +36,22 @@ const Technische = () => {
                     deren Anlagengröße maßgerecht auf die Bedarfe des Gebäudes zugeschnitten ist.
                 </p>
             </motion.div>
+            <motion.div
+                className={'m-auto'}
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{duration:  1}}
+                viewport={{once: true}}
+            >
+                <Image
+                    src={'/assets/images/leistung/technische.webp'}
+                    width={650}
+                    height={200}
+                    alt={'Die Planung der Technischen Gebäudeausrüstung nimmt einen zunehmend größeren Stellenwert ein.'}
+                    className={'md:rounded-xl'}
+                />
+            </motion.div>
+
         </div>
     )
 }

@@ -5,24 +5,9 @@ import Image from "next/image";
 
 const Energieberatung = () => {
     return(
-        <div className='flex flex-col md:flex-row-reverse border md:py-8 scroll-mt-[100px]' id={'energieberatung'}>
-            <motion.div 
-                className='mx-auto flex items-center py-4'
-                initial={{opacity: 0}}
-                whileInView={{opacity: 1}}
-                transition={{duration:  1}}
-                viewport={{once: true}}
-            >
-                <Image 
-                    src={'/assets/images/leistung/energieberatung.webp'} 
-                    height={200} 
-                    width={700} 
-                    alt={''}
-                    className={'rounded-r-none md:rounded-xl'}
-                />
-            </motion.div>
-            <motion.div 
-                className='md:w-1/2 md:px-16 px-4 text-center md:text-left'
+        <div id={'energieberatung'} className='flex md:flex-row-reverse flex-col-reverse mt-8 scroll-mt-[8rem] border-t md:py-8 ' >
+            <motion.div
+                className={'px-6 text-center md:text-left md:w-1/2'}
                 initial={{opacity: 0, x: -30}}
                 whileInView={{opacity: 1, x: 0}}
                 transition={{duration: .7, delay: .5}}
@@ -40,7 +25,7 @@ const Energieberatung = () => {
                     Daher ist es nicht nur ökologisch, sondern auch ökonomisch sehr sinnvoll,
                     ein Gebäude energieeffizient zu planen und zu bauen. Mit einer höheren Anfangsinvestition
                     können so deutlich höhere Kosten vermieden werden, die durch die spätere Nutzung
-                    des Gebäudes entstehen. 
+                    des Gebäudes entstehen.
                 </p>
                 <p className='my-4'>
                     Wir erstellen Energiekonzepte, bei denen die anfänglichen Mehrkosten durch staatliche
@@ -54,6 +39,21 @@ const Energieberatung = () => {
                     von unseren Energieberatern auf der Baustelle überwacht und dokumentiert.
                     Die KfW erhält die Protokolle zur Bestätigung und gibt Ihre Förderung frei.
                 </p>
+            </motion.div>
+            <motion.div
+                className={'m-auto'}
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{duration:  1}}
+                viewport={{once: true}}
+            >
+                <Image
+                    src={'/assets/images/leistung/energieberatung.webp'}
+                    height={200}
+                    width={600}
+                    alt={'Über die Lebensdauer von 50 Jahren gerechnet, fallen nur ca.'}
+                    className={'md:rounded-xl'}
+                />
             </motion.div>
         </div>
     )

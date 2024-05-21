@@ -5,24 +5,24 @@ import Image from "next/image";
 
 const Finanzierung = () => {
     return(
-        <div className='flex flex-col md:flex-row-reverse border md:py-8 scroll-mt-[100px]' id={'finanzierung'}>
-            <motion.div 
-                className='mx-auto flex items-center py-4'
+        <div className='flex flex-col md:flex-row-reverse border-t md:py-8 mt-8 scroll-mt-[8rem]' id={'finanzierung'}>
+            <motion.div
+                className={'m-auto'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration:  1}}
                 viewport={{once: true}}
             >
-                <Image 
-                    src={'/assets/images/leistung/finanzierung.webp'} 
-                    height={200} 
-                    width={700} 
-                    alt={''}
-                    className={'rounded-r-none md:rounded-xl'}
+                <Image
+                    src={'/assets/images/leistung/finanzierung.webp'}
+                    width={650}
+                    height={200}
+                    alt={'Wenn Sie Hilfe bei der Finanzierung Ihres Bauvorhabens benötigen,'}
+                    className={'md:rounded-xl'}
                 />
             </motion.div>
-            <motion.div 
-                className='md:w-1/2 md:px-16 px-4 text-center md:text-left'
+            <motion.div
+                className={'px-6 text-center md:text-left md:w-1/2'}
                 initial={{opacity: 0, x: -30}}
                 whileInView={{opacity: 1, x: 0}}
                 transition={{duration: .7, delay: .5}}
@@ -43,7 +43,7 @@ const Finanzierung = () => {
                 <p className='my-4'>
                     In Abstimmung mit dem Gebäudekonzept und der jeweiligen Förderfähigkeit des Gebäudes
                     können so individuelle Finanzierungspläne erstellt werden, die genau zum Kapitalbedarf
-                    und der Finanzierungsdauer passen. 
+                    und der Finanzierungsdauer passen.
                 </p>
             </motion.div>
         </div>

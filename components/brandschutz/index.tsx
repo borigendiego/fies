@@ -5,30 +5,30 @@ import Image from "next/image";
 
 const Brandschutz = () => {
     return(
-        <div className='flex flex-col md:flex-row border md:py-8'>
-            <motion.div 
-                className='mx-auto flex items-center py-4'
+        <div id={'brandschutz'} className='flex md:flex-row-reverse flex-col mt-8 scroll-mt-[8rem]'>
+            <motion.div
+                className={'m-auto'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration:  1}}
                 viewport={{once: true}}
             >
-                <Image 
-                    src={'/assets/images/leistung/brandschutz.webp'} 
-                    height={200} 
-                    width={700} 
-                    alt={''}
-                    className={'rounded-l-none md:rounded-xl'}
+                <Image
+                    src={'/assets/images/leistung/brandschutz.webp'}
+                    width={650}
+                    height={200}
+                    alt={'Egal ob Wohnhaus, Schule oder Bürogebäude, die Brandschutzplanung ist für die Sicherheit eines jeden Gebäudes unerlässlich.'}
+                    className={'md:rounded-xl'}
                 />
             </motion.div>
-            <motion.div 
-                className='md:w-1/2 md:px-16 px-4 text-center md:text-left'
-                initial={{opacity: 0, x: 30}}
+            <motion.div
+                className={'px-6 text-center md:text-left md:w-1/2'}
+                initial={{opacity: 0, x: -30}}
                 whileInView={{opacity: 1, x: 0}}
-                transition={{duration: .7, delay: 1}}
+                transition={{duration: .7, delay: .5}}
                 viewport={{once: true}}
             >
-                <h1 className='pt-4 font-semibold scroll-mt-[120px]' id={'brandschutz'}>Brandschutz</h1>
+                <h1 className='pt-4 font-semibold'>Brandschutz</h1>
                 <p className='my-4'>
                     Egal ob Wohnhaus, Schule oder Bürogebäude, die Brandschutzplanung
                     ist für die Sicherheit eines jeden Gebäudes unerlässlich.

@@ -6,27 +6,27 @@ import { motion } from "framer-motion";
 
 const Sanierung = () => {
     return(
-        <div className='flex flex-col md:flex-row md:py-8' id={'sanierung'}>
-            <motion.div 
-                className='mx-auto flex items-center py-4'
+        <div className='flex flex-col md:flex-row scroll-mt-[8rem] border-t md:py-8 mt-8' id={'sanierung'}>
+            <motion.div
+                className={'m-auto'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration:  1}}
                 viewport={{once: true}}
             >
-                <Image 
-                    src={'/assets/images/leistung/sanierung.webp'} 
-                    height={200} 
-                    width={700} 
-                    alt={''}
+                <Image
+                    src={'/assets/images/leistung/sanierung.webp'}
+                    width={650}
+                    height={200}
+                    alt={'Laut der Deutschen Energie-Agentur müssen bis spätestens 2050 etwa drei Viertel der 22 Millionen Gebäude in Deutschland saniert werden – das entspricht ungefähr 2.500 Gebäuden täglich.'}
                     className={'md:rounded-xl rounded-l-none'}
                 />
             </motion.div>
-            <motion.div 
-                className='md:w-1/2 md:px-16 px-4 text-center md:text-left'
-                initial={{opacity: 0, x: 30}}
+            <motion.div
+                className={'px-6 text-center md:text-left md:w-1/2'}
+                initial={{opacity: 0, x: -30}}
                 whileInView={{opacity: 1, x: 0}}
-                transition={{duration: .7, delay: 1}}
+                transition={{duration:  .7, delay: 1.5}}
                 viewport={{once: true}}
             >
                 <h1 className='pt-4 font-semibold'>Sanierung</h1>
@@ -49,19 +49,19 @@ const Sanierung = () => {
                 <p className='my-4'>
                     Um die "graue Energie" zu nutzen, die bereits zur Herstellung
                      vorhandener Gebäude aufgewendet wurde, ist es alternativlos den
-                      Bestand zu ertüchtigen und energetisch zu sanieren. 
+                      Bestand zu ertüchtigen und energetisch zu sanieren.
                       Ein Vorteil für die Ökobilanz und die Betriebskosten des Gebäudes,
                        der zusätzlich die Aufenthalts- und Wohnqualität erhöht.
                 </p>
                 <p className='my-4'>
                     Mit fortschreitendem demografischem Wandel wird zudem altersgerechtes
-                     und barrierefreies Wohnen immer wichtiger. Neben den staatlichen 
+                     und barrierefreies Wohnen immer wichtiger. Neben den staatlichen
                      Förderungen für die Sanierungsmaßnahmen ein zusätzlicher Grund für
                       die Bestandssanierung.
                 </p>
                 <p className='my-4 italic'>
                     Wir als Architekten und Ingenieure sehen in der Sanierung ein
-                     enormes Potenzial – sowohl in ökologischer, 
+                     enormes Potenzial – sowohl in ökologischer,
                      als auch ökonomischer Hinsicht.
                 </p>
             </motion.div>
