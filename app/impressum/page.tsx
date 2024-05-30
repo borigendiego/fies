@@ -16,7 +16,7 @@ const Impressum: NextPage = () => {
             <div className={'privacy-policy md:px-40 px-10 py-10'}>
                 <h1>Impressum</h1>
                 <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
-                <p>Fies Schmitz Architeken GbR<br />
+                <p>SPEKTRUM Architektur | Generalplanung PartmbB<br />
                 Leipziger Stra&szlig;e 38<br />
                 28215 Bremen</p>
 
