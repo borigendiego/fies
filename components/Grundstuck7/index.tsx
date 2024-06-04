@@ -10,7 +10,7 @@ const Grundstuck = () => {
     return(
         <div id={'grundstuck'}>
             <motion.h1 
-                className={'md:px-16 px-4 text-center md:text-left font-semibold mt-6 text-[30px] md:text-4xl'}
+                className={'md:px-16 px-4 text-center md:text-left font-semibold mt-28 text-[30px] md:text-4xl'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: true}}
@@ -20,7 +20,7 @@ const Grundstuck = () => {
                 Grundstücksentwicklung in 7- Schritten
             </motion.h1>
             <motion.div 
-                className='grid md:grid-cols-4 gap-2 mx-auto px-10 my-16'
+                className='grid md:grid-cols-4 gap-2 mx-auto px-10 my-12'
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

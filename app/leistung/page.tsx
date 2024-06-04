@@ -2,7 +2,6 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Header from '../../components/header';
 import Projektewicklung from '../../components/projektenwicklung';
-import LeistungComp from '../../components/leistung';
 import ArchitekturComp from '../../components/architektur';
 import Statik from '../../components/statik';
 import Footer from '../../components/footer';
@@ -16,6 +15,7 @@ import Bubbles from '../../components/bubbles';
 import Button from '../../components/commons/homeButton';
 import { Metadata } from 'next';
 import Bauantrag from '../../components/Bauantrag';
+import LeistungDisplayer from '../../components/commons/leistungDisplayer';
 
 export const metadata: Metadata = {
     title: 'SPEKTRUM | Leistung',
@@ -28,17 +28,8 @@ const Leistung: NextPage = () => {
             <main>
                 <Button />
                 <Header />
-                <LeistungComp />
                 <Bubbles />
-                <ArchitekturComp />
-                <Bauantrag />
-                <Statik />
-                <Technische />
-                <Brandschutz />
-                <Energieberatung />
-                <Projektewicklung />
-                <Finanzierung />
-                <Sanierung />
+                <LeistungDisplayer detail={false} />
                 <Grundstuck />
                 <Footer />
             </main>

@@ -33,16 +33,16 @@ const Nav = () => {
                     Leistung
                 </Link>
                 <ul className={'sub-menu absolute hidden'}>
-                    <li><Link href={'/leistung/#architektur'}>Architektur</Link></li>
-                    <li><Link href={'/leistung/#bauantrag'}>Bauantrag</Link></li>
-                    <li><Link href={'/leistung/#tragwerksplanung'}>Tragwerksplanung</Link></li>
-                    <li><Link href={'/leistung/#technische'}>Technische Gebäudeausrüstung</Link></li>
-                    <li><Link href={'/leistung/#brandschutz'}>Brandschutz</Link></li>
-                    <li><Link href={'/leistung/#energieberatung'}>Energieberatung</Link></li>
-                    <li><Link href={'/leistung/#projektentwicklung'}>Projektentwicklung</Link></li>
-                    <li><Link href={'/leistung/#finanzierung'}>Finanzierung</Link></li>
-                    <li><Link href={'/leistung/#sanierung'}>Sanierung</Link></li>
-                    <li><Link href={'/leistung/#grundstuck'}>Grundstücks-entwicklung</Link></li>
+                    <li><Link href={'/architektur'}>Architektur</Link></li>
+                    <li><Link href={'/bauantrag'}>Bauantrag</Link></li>
+                    <li><Link href={'/tragwerksplanung'}>Tragwerksplanung</Link></li>
+                    <li><Link href={'/technische'}>Technische Gebäudeausrüstung</Link></li>
+                    <li><Link href={'/brandschutz'}>Brandschutz</Link></li>
+                    <li><Link href={'/energieberatung'}>Energieberatung</Link></li>
+                    <li><Link href={'/projektentwicklung'}>Projektentwicklung</Link></li>
+                    <li><Link href={'/finanzierung'}>Finanzierung</Link></li>
+                    <li><Link href={'/sanierung'}>Sanierung</Link></li>
+                    <li><Link href={'/grundstucksentwicklung'}>Grundstücks-entwicklung</Link></li>
                 </ul>
             </li>
             <li>
