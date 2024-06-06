@@ -94,7 +94,7 @@ const MyCustomForm = ({
         >
             <div className='pt-[35%] flex text-lg flex-col gap-6'>
                 <p className='text-white leading-4'>Wir freuen uns über eine Nachricht oder einen Anruf von Ihnen:</p>
-                <p className='text-white'>0421/56345811</p>
+                <a href="telto:"><p className='text-white'>0421/56345811</p></a>
                 <h2 className='text-white mt-1'>Kontaktformular</h2>
             </div>
             {

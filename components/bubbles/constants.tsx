@@ -6,6 +6,7 @@ const BUBBLES_DATA = [
         customClass: 'red',
         left: '0px',
         top: '0px',
+        color: '#fb503cb3',
     },
     {
         title: 'TGA',
@@ -13,7 +14,8 @@ const BUBBLES_DATA = [
         top: '0px',
         delay: .9,
         customClass: 'blue',
-        right: '2rem'
+        right: '2rem',
+        color: '#4159cab3',
     },
     {
         title: 'PROJEKTENTWICKLUNG',
@@ -22,7 +24,7 @@ const BUBBLES_DATA = [
         top: '285px',
         delay: 1.3,
         customClass: 'yellow',
-        
+        color: '#ffea41b3',
     },
     {
         title: 'ENERGIEBERATUNG',
@@ -30,7 +32,8 @@ const BUBBLES_DATA = [
         top: '-50px',
         delay: 1.7,
         customClass: 'green',
-        right: '22rem'
+        right: '22rem',
+        color: '#27c97db3',
     },
     {
         title: 'ARCHITEKTUR',
@@ -39,6 +42,7 @@ const BUBBLES_DATA = [
         top: '-15px',
         delay: 2.1,
         customClass: 'silver',
+        color: '#89adcdb3',
     },
     {
         title: 'FINANZIERUNG',
@@ -47,6 +51,7 @@ const BUBBLES_DATA = [
         top: '275px',
         delay: 2.5,
         customClass: 'orange',
+        color: '#fa8d56b3',
     },
     {
         title: 'STATIK',
@@ -55,6 +60,7 @@ const BUBBLES_DATA = [
         top: '250px',
         delay: 2.9,
         customClass: 'purple',
+        color: '#ba69afb3',
     },
     {
         title: 'BAUANTRAG',
@@ -63,6 +69,7 @@ const BUBBLES_DATA = [
         top: '370px',
         delay: 3.2,
         customClass: 'dark-green',
+        color: '#215c38b0',
     }
 ]
 
