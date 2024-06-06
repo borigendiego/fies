@@ -92,7 +92,11 @@ const MyCustomForm = ({
             transition={{duration: .7, delay: 1.5}}
             viewport={{once: true}}
         >
-            <h1 className='text-white text-4xl mb-6 pt-[50%]'>Kontakt</h1>
+            <div className='pt-[35%] flex text-lg flex-col gap-6'>
+                <p className='text-white leading-4'>Wir freuen uns über eine Nachricht oder einen Anruf von Ihnen:</p>
+                <p className='text-white'>0421/56345811</p>
+                <h2 className='text-white mt-1'>Kontaktformular</h2>
+            </div>
             {
                 fields.map((field:any)=> {
                     const { name, type, label, validations, selectOptions, size, placeholder } = field;

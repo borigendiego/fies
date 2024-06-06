@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Header from '../../components/header';
 import KontaktComponent from '../../components/kontaktComponent';
 import { Metadata } from 'next';
+import Footer from '../../components/footer';
 
 export const metadata: Metadata = {
     title: 'SPEKTRUM | Kontakt',
@@ -16,6 +17,7 @@ const Kontakt: NextPage = () => {
             <main>
                 <Header isHomePage />
                 <KontaktComponent />
+                <Footer />
             </main>
             <footer>
 

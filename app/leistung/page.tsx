@@ -20,8 +20,6 @@ const Leistung: NextPage = () => {
                 <Button />
                 <Header />
                 <Bubbles />
-                <LeistungDisplayer detail={false} />
-                <Grundstuck />
                 <Footer />
             </main>
             <footer>
