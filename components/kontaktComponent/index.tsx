@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const KontaktComponent = () => {
     return(
-        <div className="min-h-screen">
-            <div className='flex justify-center relative pb-8'>
+        <div className="min-h-screen relative">
+            <div className='flex justify-center pb-8'>
                 <motion.img
                     src='/assets/images/projekts/willich/willich-5.webp'
                     className='absolute h-full w-full object-cover'

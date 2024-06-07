@@ -93,7 +93,7 @@ const MyCustomForm = ({
             viewport={{once: true}}
         >
             <div className='pt-[35%] flex text-lg flex-col gap-2'>
-                <p className='text-white leading-4 mb-4'>Wir freuen uns über eine Nachricht oder einen Anruf von Ihnen:</p>
+                <p className='text-white mb-6 font-bold'>Wir freuen uns über eine Nachricht oder einen Anruf von Ihnen:</p>
                 <p className='text-white mb-0'>Telefon</p>
                 <a className='text-white hover:underline' href="tel:0421/56345811">0421/56345811</a>
                 <h2 className='text-white mt-4 mb-4 text-[20px]'>Kontaktformular</h2>
