@@ -84,7 +84,7 @@ const MyCustomForm = ({
     };
 
     return (
-        <motion.form 
+        <motion.form
             className={`form ${customClass} mb-16 backdrop-blur-sm`}
             onSubmit={(event) => handleSubmit(event)}
             initial={{opacity: 0, y: -30}}
@@ -92,10 +92,11 @@ const MyCustomForm = ({
             transition={{duration: .7, delay: 1.5}}
             viewport={{once: true}}
         >
-            <div className='pt-[35%] flex text-lg flex-col gap-6'>
-                <p className='text-white leading-4'>Wir freuen uns über eine Nachricht oder einen Anruf von Ihnen:</p>
-                <a href="telto:"><p className='text-white'>0421/56345811</p></a>
-                <h2 className='text-white mt-1'>Kontaktformular</h2>
+            <div className='pt-[35%] flex text-lg flex-col gap-2'>
+                <p className='text-white leading-4 mb-4'>Wir freuen uns über eine Nachricht oder einen Anruf von Ihnen:</p>
+                <p className='text-white mb-0'>Telefon</p>
+                <a className='text-white hover:underline' href="tel:0421/56345811">0421/56345811</a>
+                <h2 className='text-white mt-4 mb-4 text-[20px]'>Kontaktformular</h2>
             </div>
             {
                 fields.map((field:any)=> {

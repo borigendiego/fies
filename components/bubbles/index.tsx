@@ -17,7 +17,7 @@ const Bubbles = () => {
                     {
                         BUBBLES_DATA.map((value) => {
                             return(
-                                <motion.div 
+                                <motion.div
                                     className={`${value.customClass} outer-b `}
                                     style={{
                                         left: value.left,
@@ -30,9 +30,9 @@ const Bubbles = () => {
                                     viewport={{once: true}}
                                     transition={{duration: 1, delay: value.delay}}
                                 >
-                                    <motion.a 
+                                    <motion.a
                                         className={`inner-b`}
-                                        variants={imagesChild} 
+                                        variants={imagesChild}
                                         transition={{duration: .7, delay: value.delay}}
                                         href={`${value.link}`}
                                     >
@@ -48,8 +48,8 @@ const Bubbles = () => {
                 {
                     BUBBLES_DATA.map((value) => {
                         return(
-                            <motion.a 
-                                className='rounded-full w-[300px] h-[300px] flex justify-center items-center shadow-2xl'
+                            <motion.a
+                                className='rounded-full md:w-[300px] w-[200px] md:h-[300px] h-[200px] flex justify-center items-center shadow-2xl'
                                 style={{
                                     backgroundColor: `${value.color}`,
                                 }}
@@ -60,7 +60,7 @@ const Bubbles = () => {
                                 viewport={{once: true}}
                                 transition={{duration: 1, delay: value.delay}}
                             >
-                                <p className="text-white text-[22px] font-bold">
+                                <p className="text-white text-[16px] md:text-[22px] font-bold">
                                     {value.title}
                                 </p>
                             </motion.a>

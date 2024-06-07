@@ -6,17 +6,17 @@ import { motion } from "framer-motion";
 
 const KontaktComponent = () => {
     return(
-        <div className="h-screen">
-            <div className='flex justify-center'>
-                <motion.img 
-                    src='/assets/images/projekts/willich/willich-5.webp' 
+        <div className="min-h-screen">
+            <div className='flex justify-center relative pb-8'>
+                <motion.img
+                    src='/assets/images/projekts/willich/willich-5.webp'
                     className='absolute h-full w-full object-cover'
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                     transition={{duration:  1, delay: .5}}
                     viewport={{once: true}}
                 />
-                <Form 
+                <Form
                     fields={[
                         {
                             name: 'name',
