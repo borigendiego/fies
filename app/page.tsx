@@ -1,17 +1,22 @@
 import Head from 'next/head';
 import Slick from '../components/commons/Slick';
-import Caraousel from '../components/commons/carousel/Carousel';
 import Button from '../components/commons/homeButton';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import { Metadata } from 'next';
+import BlogWrapper from '../components/blog';
+import { Blog } from '../types';
+import getAllBlogs from '../api/getAllBlogs';
 
 export const metadata: Metadata = {
     title: 'SPEKTRUM | Architekten Ingenieure',
     description: 'Architekten, Generalplaner',
 }
 
-export default function Home() {
+export default async function Home() {
+
+  const blogsData: Blog[] = await getAllBlogs();
+
   return (
     <div>
       <Head>
@@ -23,7 +28,7 @@ export default function Home() {
         <Button />
         <Header isHomePage />
         <Slick />
-        <Caraousel />
+        <BlogWrapper blogsData={blogsData} />
         <Footer />
       </main>
 
