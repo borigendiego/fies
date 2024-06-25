@@ -17,7 +17,7 @@ export default async function BlogSinglePage({ params: { blogId }}: Params) {
 
     const blogData = getBlog(blogId);
     const blog: Blog = await blogData;
-
+    
     return(
         <div>
             <main>
@@ -25,7 +25,7 @@ export default async function BlogSinglePage({ params: { blogId }}: Params) {
                 <Header />
                 <div className='flex flex-col items-center py-12'>
                     <div className="md:w-[700px] w-full md:h-[380px] h-[300px] relative">
-                        <Image src={`${blog.image}`} alt="" objectFit="cover" fill className='rounded-lg' />
+                        <Image src={`${blog.image}`} alt="" objectFit="cover" objectPosition='center center' fill className='rounded-lg' />
                     </div>
                     <div className='border mt-12 w-[1000px] hidden md:block' />
                     <div className='flex flex-col gap-4 max-w-[900px] pt-12 md:mx-auto mx-8'>

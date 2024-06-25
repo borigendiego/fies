@@ -27,8 +27,8 @@ const BlogPageComponent = ({ blogsData }:any) => {
                 {
                     blogsData.map((value:any, index:any) => (
                         <div className="flex flex-col md:flex-row items-center md:gap-16 gap-4 py-12 first:pt-0 md:py-20 border-b-2 md:even:flex-row-reverse" key={index} >
-                            <div className="md:w-[480px] w-[350px] h-[220px] md:h-[320px] relative ">
-                                <Image src={`${value.image}`} alt="" objectFit="cover" fill className='rounded-lg' />
+                            <div className="md:w-[500px] w-[350px] h-[220px] md:h-[320px] relative ">
+                                <Image src={`${value.image}`} alt="" objectFit="cover" objectPosition='center center' fill className='rounded-lg' />
                             </div>
                             <div className="flex flex-col pb-6 md:w-1/2 w-[360px]">
                                 <div className="flex justify-between">
