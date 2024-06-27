@@ -12,7 +12,7 @@ const BlogPageComponent = ({ blogsData }:any) => {
                 className='font-semibold mt-16 md:px-0 md:mx-0 mx-4 px-8 border-b-2'
                 initial={{opacity: 0, y: 20}}
                 whileInView={{opacity: 1, y: 0}}
-                transition={{duration: 1, delay: 1}}
+                transition={{duration: .5, delay: 1}}
                 viewport={{once: true}}
             >
                     Blog
@@ -21,7 +21,7 @@ const BlogPageComponent = ({ blogsData }:any) => {
                 className='grid pt-12 max-w-[1100px] mx-auto'
                 initial={{opacity: 0, y: 20}}
                 whileInView={{opacity: 1, y: 0}}
-                transition={{duration: 1, delay: 1.5}}
+                transition={{duration: .5, delay: 1.5}}
                 viewport={{once: true}}
             >
                 {
@@ -32,7 +32,9 @@ const BlogPageComponent = ({ blogsData }:any) => {
                             </div>
                             <div className="flex flex-col pb-6 md:w-1/2 w-[360px]">
                                 <div className="flex justify-between">
-                                    <p>19 June | 2024</p>
+                                    <p>
+                                        {new Date(value.date).toLocaleDateString('de', { year: 'numeric', month: 'long', day:'numeric' })}
+                                    </p>
                                     <p className='hidden'>By: Juan Borigen</p>
                                 </div>
                                 <h3 className="text-2xl font-bold pt-6">{value.title}</h3>

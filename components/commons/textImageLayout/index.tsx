@@ -60,7 +60,7 @@ const Layout = ({
                     className={'w-full md:w-6/12 md:flex md:flex-col md:justify-center md:items-center mx-auto'}
                     initial={{opacity: 0, x: -30}}
                     whileInView={{opacity: 1, x: 0}}
-                    transition={{duration:  1, delay: 1}}
+                    transition={{duration:  .5, delay: 1}}
                     viewport={{once: true}}
                 >
                     <h1 className={'text-center text-[30px] mb-3 md:mt-0 mt-6 font-bold'}>
@@ -75,16 +75,16 @@ const Layout = ({
                     className={'w-full md:w-6/12 md:h-auto h-52 relative mb-6 md:mb-0'}
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
-                    transition={{duration:  1.5, delay: .5}}
+                    transition={{duration:  1, delay: .5}}
                     viewport={{once: true}}
                 >
-                <Image src={image} alt={''} layout={'fill'} className={`object-cover md:rounded-2xl  ${reverse ? 'rounded-r-none' : 'rounded-l-none'}`} /> 
+                    <Image src={image} alt={''} layout={'fill'} className={`object-cover md:rounded-2xl  ${reverse ? 'rounded-r-none' : 'rounded-l-none'}`} /> 
                 </motion.div>
                 <motion.div 
                     className={'w-full md:w-6/12 md:flex md:flex-col md:justify-center md:items-center mx-auto'}
                     initial={{opacity: 0, x: -30}}
                     whileInView={{opacity: 1, x: 0}}
-                    transition={{duration:  1, delay: 1}}
+                    transition={{duration:  .5, delay: 1}}
                     viewport={{once: true}}
                 >
                     <h1 className={'text-center text-[30px] mb-3 md:mt-0 mt-6 font-bold'}>
