@@ -24,7 +24,7 @@ const Slick = () => {
             linkTo: 'https://www.meine-woche.de/staedte/willich/spatenstich-auf-dem-toholt-gelaende-in-willich_aid-73284361',
             src: 'https://res.cloudinary.com/du31j65g6/video/upload/v1705396237/Spektrum/Willich_Zeitraffer_comp_h8mthy.mp4',
             image: '/assets/images/projekts/willich/Willich-6.webp',
-            title: 'Willich Bauarbeiten',
+            title: 'PROJEKT: Willich',
         },
         {
             linkTo: '/projekte/#Airpark',

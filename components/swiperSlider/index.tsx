@@ -43,7 +43,7 @@ const SwiperSlider = ({ SwiperData }:any) => {
                             <SwiperSlide key={index}>
                                 <div className='flex flex-col items-center p-4 md:w-[300px] h-[320px] bg-white hover:shadow-xl duration-700'>
                                     <div className='relative md:w-[300px] w-[340px] min-h-[360px] md:min-h-[320px] group cursor-pointer'>
-                                        <Link href={`/blog/${value.id}`}>
+                                        <Link href={`/aktuelles#${value.id}`}>
                                             <Image src={`${value.image}`} fill alt='' objectPosition='center center' objectFit='cover' className='' />
                                             <div className='flex flex-col justify-end pt-4 absolute h-full w-full left-0 top-0 bg-black/30 md:opacity-30 duration-700 group-hover:opacity-100'>
                                                 <h2 className='text-xl text-white font-bold p-4 md:opacity-0 duration-700 group-hover:opacity-100'>{value.title}</h2>

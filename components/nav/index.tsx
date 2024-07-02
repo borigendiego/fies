@@ -6,7 +6,7 @@ const Nav = () => {
         <ul className='md:flex hidden nav'>
             <li>
                 <a
-                    href={'/#aktuelles'}
+                    href={'/aktuelles'}
                     className={'md:mx-4 md:p-4 hover:opacity-50 transition-all duration-200 ease-in cursor-pointer text-lg text-white nav-item'}
                 >
                     Aktuelles

@@ -21,20 +21,19 @@ const Header = ({ isHomePage }:HeaderPropType) => {
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: .5, delay: .5}}
         >
-            <div className='flex items-center justify-center'>
-                <Link href={'/'}>
+            <div className='flex gap-3 py-6 items-center justify-center'>
+                <Link href={'/'} className='relative w-[44px] h-[44px]'>
                     <Image
-                        src={'/assets/images/Logo_white.png'}
+                        src={'/assets/images/Logo_white2.png'}
                         className={'header-white-logo hover:scale-110'}
                         alt={'Logo'}
-                        width={85}
-                        height={80}
+                        fill
                     />
                 </Link>
                 <Link href={'/'}>
-                    <div className='flex flex-col mt-[5%]'>
-                        <h1 className='text-2xl leading-5 text-white uppercase hbold'>Spektrum</h1>
-                        <p className='text-white md:text-base'>Architekten | Generalplaner</p>
+                    <div className='flex flex-col h-[44px] justify-between'>
+                        <h2 className='text-2xl leading-[22px] text-white uppercase hbold'>Spektrum</h2>
+                        <p className='text-white '>Architekten | Generalplaner</p>
                     </div>
                 </Link>
 
