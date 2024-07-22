@@ -50,7 +50,7 @@ const SchemaOrg = () => {
                                 "name": "Johannes Schmitz"
                             }
                         ],
-                        "description": "Wir sind ein junges Team engagierter Architekten und Ingenieuren, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.",
+                        "description": "Wir sind ein junges Team engagierter Architekten und Ingenieuren, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben."
                     }`,
                 }}
             />
