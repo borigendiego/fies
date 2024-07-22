@@ -37,7 +37,7 @@ const WhoWeAre = () => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: true}}
-                transition={{duration: 1, delay: 1}}
+                transition={{duration: .5, delay: .7}}
 
             >Wir stellen uns Vor</motion.h1>
             <div>
@@ -49,11 +49,11 @@ const WhoWeAre = () => {
                     viewport={{once: true}}
                     transition={{duration: 1, delay: 1.2}}
                 >
-                    <motion.div variants={imagesChild} transition={{duration: .7, delay:1}}>
+                    <motion.div variants={imagesChild} transition={{duration: .5, delay:1}}>
                         <Image src={'/assets/images/uber/Fies-min.jpg'} alt={'Johannes Fies photo'} width={400} height={200}></Image>
                         <p className="text-center font-semibold md:pl-12">Johannes Fies, M.A. Architekt</p>
                     </motion.div>
-                    <motion.div variants={imagesChild} transition={{duration: .7, delay:1.7}} className={'mt-10 md:mt-0'}>
+                    <motion.div variants={imagesChild} transition={{duration: .5, delay:1.4}} className={'mt-10 md:mt-0'}>
                         <Image src={'/assets/images/uber/Schmitz-min.jpg'} alt={'Johannes Schmitz photo'} width={400} height={200}></Image>
                         <p className="text-center font-semibold md:pl-12">Johannes Schmitz, M.A. Architekt</p>
                     </motion.div>
@@ -62,7 +62,7 @@ const WhoWeAre = () => {
                     initial={{opacity: 0, y: 30}}
                     whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
-                    transition={{duration: .7, delay: 1}}
+                    transition={{duration: .7, delay: 2}}
                     className={'flex md:flex-row flex-col justify-around px-16 my-14 text-center md:text-left'}
                 >
                     <div className='md:w-7/12'>

@@ -24,7 +24,7 @@ const LeistungLayout = ({id, title, text, image, reverse, detail}:any) => {
             </motion.div>
             <motion.div
                 className={`${detail ? '' : 'hidden'} px-6 md:text-left md:w-1/2 pt-4 pb-10`}
-                initial={{opacity: 0, y: 30}}
+                initial={{opacity: 0, y: 40}}
                 whileInView={{opacity: 1, y: 0}}
                 transition={{duration:  .7, delay: 1.5}}
                 viewport={{once: true}}

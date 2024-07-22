@@ -22,8 +22,8 @@ const Footer = () => {
                 <motion.div
                     initial={{opacity: 0, y: 15}}
                     whileInView={{opacity: 1, y: 0}}
-                    transition={{duration: .5 , delay: 1}}
-                    viewport={{once: true}}
+                    transition={{duration: .5 , delay: .7}}
+                    viewport={{once: true}} 
                 >
                     <Contact />
                 </motion.div>
@@ -33,7 +33,7 @@ const Footer = () => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: true}}
-                transition={{delay: 2}}
+                transition={{delay: 2, duration: .5}}
                 >
                     Zurück
                 </motion.button>

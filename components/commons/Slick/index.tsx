@@ -14,8 +14,8 @@ const Slick = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoPlaySpeed: 7000,
-        speed: 500,
+        autoPlaySpeed: 5000,
+        speed: 1000,
         cssEase: "ease-in"
     };
 
@@ -24,7 +24,7 @@ const Slick = () => {
             linkTo: 'https://www.meine-woche.de/staedte/willich/spatenstich-auf-dem-toholt-gelaende-in-willich_aid-73284361',
             src: 'https://res.cloudinary.com/du31j65g6/video/upload/v1705396237/Spektrum/Willich_Zeitraffer_comp_h8mthy.mp4',
             image: '/assets/images/projekts/willich/Willich-6.webp',
-            title: 'Willich Bauarbeiten',
+            title: 'PROJEKT: Willich',
         },
         {
             linkTo: '/projekte/#Airpark',
@@ -69,7 +69,7 @@ const Slick = () => {
                     SLIDES_DATA.map((value, index) => {
                         if (index === 0) {
                             return (
-                                    <div className="relative z-10 h-screen w-screen">
+                                    <div className="relative z-10 h-screen w-screen" key={index}>
                                         <button
                                             onClick={toggleReproductor}
                                             className="text-white p-4 rounded-full bg-slate-200/20 duration-500 absolute right-0 left-0 mx-auto top-1/2 -translate-y-1/2 z-20 w-fit hover:bg-slate-200/80 hover:text-black">
