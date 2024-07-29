@@ -6,6 +6,7 @@ import '../styles/globals.scss'
 export const metadata: Metadata = {
   title: 'SPEKTRUM | Architekten Ingenieure',
   description: 'Wir sind ein junges Team engagierter Architekten und Ingenieuren, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.',
+  keywords: 'Architektur, Bauantrag, Tragwerksplanung, Technische Gebäudeausrüstung, Brandschutz',
   openGraph: {
     title: 'SPEKTRUM | Architekten Ingenieure',
     description: 'Wir sind ein junges Team engagierter Architekten und Ingenieuren, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.',
