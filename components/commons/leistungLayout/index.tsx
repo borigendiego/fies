@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const LeistungLayout = ({id, title, text, image, reverse, detail}:any) => {
     return (
-        <div id={id} className={`${reverse ? 'md:flex-row-reverse' : ''} md:py-8 flex md:flex-row flex-col-reverse mt-8`}>
+        <div id={id} className={`${reverse ? 'md:flex-row-reverse' : ''} md:py-8 px-4 flex md:flex-row flex-col-reverse mt-8`}>
             <motion.div
                 className={`${detail ? 'hidden' : ''} flex flex-col justify-center items-center px-6 text-center md:text-left md:w-1/2 md:mt-0 mt-8`}
                 initial={{opacity: 0, y: 30}}
@@ -44,7 +44,7 @@ const LeistungLayout = ({id, title, text, image, reverse, detail}:any) => {
                     alt={'architekt image'}
                     width={650}
                     height={300}
-                    className={'md:rounded-xl'}
+                    className={'rounded-xl'}
                 />
             </motion.div>
         </div>

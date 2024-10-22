@@ -8,6 +8,7 @@ const LayoutDisplayer = () => {
             {
                 LAYOUT_DATA.map((value, index) => {
                     return <Layout 
+                        key={index}
                         title={value.title} 
                         image={value.image} 
                         text={value.text} 

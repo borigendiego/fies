@@ -1,6 +1,6 @@
 const LAYOUT_DATA = [
     {
-        id: 1,
+        id: 'forschung',
         title: 'Forschung',
         image: '/assets/images/uber/forschung.webp',
         reversed: false,
@@ -12,7 +12,7 @@ const LAYOUT_DATA = [
                 </div>
     },
     {
-        id: 2,
+        id: 'bim',
         title: 'BIM',
         image: '/assets/images/uber/BIM.webp',
         reversed: true,
@@ -25,7 +25,7 @@ const LAYOUT_DATA = [
                 </div>
     },
     {
-        id: 3,
+        id: 'nachhaltigkeit',
         title: 'Nachhaltigkeit',
         image: '',
         reversed: false,
@@ -38,7 +38,7 @@ const LAYOUT_DATA = [
                 </div>,
     },
     {
-        id: 4,
+        id: 'bauen-mit-holz',
         title: 'Bauen mit Holz',
         image: '/assets/images/uber/bauen.webp',
         reversed: true,

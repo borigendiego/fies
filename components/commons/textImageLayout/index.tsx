@@ -25,7 +25,7 @@ const Layout = ({
     return(
         textDisplay 
         ?
-            <div className={`flex relative my-4 py-20 flex-wrap border-b ${reverse ? 'md:flex-row-reverse' : ''}`} id={`${id}`}>
+            <div id={id} className={`flex relative my-4 py-20 flex-wrap border-b ${reverse ? 'md:flex-row-reverse' : ''}`}>
                 <motion.div 
                     className={'w-full md:w-6/12 md:h-auto relative mb-6 md:mb-0 md:px-32 px-4 text-center'}
                     initial={{opacity: 0}}
