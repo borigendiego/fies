@@ -27,7 +27,7 @@ const Impressum: NextPage = () => {
                 <h2>Kontakt</h2>
                 <p>Telefon: 0421-56345811<br />
                 Telefax: 0421-52408272<br />
-                E-Mail: info@Spektrum-holding.de</p>
+                E-Mail: info@spektrum-architektur.de</p>
 
                 <h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>
                 <p>Berufsbezeichnung:<br />
