@@ -14,15 +14,15 @@ const SchemaOrg = () => {
                         "@context": "https://schema.org",
                         "@type": "Organization",
                         "name": "Spektrum Architekten Ingenieure",
-                        "url": "https://spektrum-holding.de/",
-                        "logo": "https://spektrum-holding.de/assets/images/logo.png",
+                        "url": "https://spektrum-architektur.de/",
+                        "logo": "https://spektrum-architektur.de/assets/images/logo.png",
                         "contactPoint": {
                             "@type": "ContactPoint",
                             "telephone": "+49 (0) 421 – 56 34 58 11",
                             "contactType": "customer service",
                             "areaServed": "DE",
                             "availableLanguage": "de",
-                            "email": "info@spektrum-holding.de"
+                            "email": "info@spektrum-architektur.de"
                         },
                         "address": [
                             {

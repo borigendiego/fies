@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     title: 'SPEKTRUM | Architekten Ingenieure',
     description: 'Wir sind ein junges Team engagierter Architekten und Ingenieuren, die sich die ganzheitliche und integrale Gebäudeplanung zur Aufgabe gemacht haben.',
     type: 'website',
-    url: 'https://spektrum-holding.de/',
+    url: 'https://spektrum-architektur.de/',
     siteName: 'Spektrum Holding',
     images: [
       {
-        url: 'https://spektrum-holding.de/assets/images/home-screen.png',
+        url: 'https://spektrum-architektur.de/assets/images/home-screen.png',
         width: 800,
         height: 600,
         alt: 'Architekten, Generalplaner',
