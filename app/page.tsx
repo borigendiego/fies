@@ -7,6 +7,7 @@ import { Metadata } from 'next';
 import BlogWrapper from '../components/blog';
 import { Blog } from '../types';
 import getAllBlogs from '../api/getAllBlogs';
+import { revalidatePath } from 'next/cache';
 
 export const metadata: Metadata = {
     title: 'SPEKTRUM | Architekten Ingenieure',
@@ -14,7 +15,8 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-
+  
+  revalidatePath('/', 'page')
   const blogsData: Blog[] = await getAllBlogs();
 
   return (

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import type { NextPage } from 'next';
+import { revalidatePath } from 'next/cache';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import Button from '../../components/commons/homeButton';
@@ -10,12 +10,13 @@ import getAllBlogs from '../../api/getAllBlogs';
 import BlogPageComponent from '../../components/blogPageComponent';
 
 export const metadata: Metadata = {
-    title: 'SPEKTRUM | Blog',
-    description: 'SPEKTRUM - Blog',
+    title: 'SPEKTRUM | Aktuelles',
+    description: 'SPEKTRUM - Aktuelles',
 }
 
 
 const BlogPage = async () => {
+    revalidatePath('/aktuelles', 'page')
     const blogsData: Blog[] = await getAllBlogs();
     return(
         <div>

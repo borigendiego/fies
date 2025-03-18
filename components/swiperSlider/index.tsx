@@ -35,9 +35,9 @@ const SwiperSlider = ({ SwiperData }:any) => {
                 scrollbar={{ draggable: true }}
                 freeMode={true}
                 modules={[FreeMode, Pagination, Navigation, Scrollbar, A11y]}
-                className='md:max-w-[1300px]'
+                className='md:max-w-[1300px] cursor-grab'
             >
-                <div className='flex'>
+                <div className='flex cursor-grab'>
                     {
                         SwiperData.map((value:any, index:any) => (
                             <SwiperSlide key={index}>
@@ -56,7 +56,7 @@ const SwiperSlider = ({ SwiperData }:any) => {
                     }
                     <SwiperSlide >
                         <div className='md:w-[350px] h-[400px] p-4 mx-auto md:mx-0'>
-                            <Link href={'/blog'} >
+                            <Link href={'/aktuelles'} >
                                 <div className='flex flex-col justify-center items-center md:w-[310px] w-[340px] md:h-[320px] h-[360px] group hover:bg-[#89adcdcc] bg-[#89adcdcc] md:bg-white backdrop-blur-sm cursor-pointer duration-1000'>
                                     <h2 className='text-xl text-black group-hover:text-white duration-700'>READ MORE</h2>
                                 </div>

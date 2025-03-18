@@ -16,7 +16,7 @@ const Header = ({ isHomePage }:HeaderPropType) => {
     return(
         <motion.nav
             id='header-nav'
-            className={`flex justify-between md:px-8 ${isHomePage ? 'fixed bg-none backdrop-blur-none' : 'sticky bg-[#89ADCD80] backdrop-blur-sm'} top-0 w-full z-20 items-center`}
+            className={`flex justify-between md:px-8 px-6 ${isHomePage ? 'fixed bg-none backdrop-blur-none' : 'sticky bg-[#89ADCD80] backdrop-blur-sm'} top-0 w-full z-20 items-center`}
             initial={{opacity: 0, y: -15}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: .5, delay: .5}}

@@ -38,7 +38,7 @@ const BlogPageComponent = ({ blogsData }:any) => {
                                 </div>
                                 <h3 className="text-2xl font-bold pt-6">{value.title}</h3>
                                 <div dangerouslySetInnerHTML={{ __html: value.excerpt }} className='text-sm'></div>
-                                <Link href={`/blog/${value.id}`} className='p-3 cursor-pointer w-fit mt-4
+                                <Link href={`/aktuelles/${value.id}`} className='p-3 cursor-pointer w-fit mt-4
                                     rounded-xl duration-300 bg-[#89adcd99]
                                     hover:bg-[#7294b29c] hover:text-white font-bold'>
                                     Read More

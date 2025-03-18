@@ -1,7 +1,7 @@
 const MENU_LINKS = [
     {
         label: 'Aktuelles',
-        linkTo: '#aktuelles'
+        linkTo: '/aktuelles'
     },
     {
         label: 'Über uns',
