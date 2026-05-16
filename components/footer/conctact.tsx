@@ -40,9 +40,9 @@ const Contact = () => {
                         />
                         <a
                             className='mt-4 font-bold cursor-pointer hover:underline'
-                            href="tel:+49 (0) 421 – 56 34 58 11"
+                            href="tel:+49 (0) 421 – 17 30 67-77"
                         >
-                            Tel: +49 (0) 421 – 56 34 58 11
+                            Tel: +49 (0) 421 – 17 30 67-77
                         </a>
                         <a
                             className='mt-2 font-bold cursor-pointer hover:underline'
