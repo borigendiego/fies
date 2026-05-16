@@ -13,7 +13,7 @@ const SchemaOrg = () => {
                     __html: `{
                         "@context": "https://schema.org",
                         "@type": "Organization",
-                        "name": "Spektrum Architekten Ingenieure",
+                        "name": "Spektrum Architektur Generalplanung",
                         "url": "https://spektrum-architektur.de/",
                         "logo": "https://spektrum-architektur.de/assets/images/logo.png",
                         "contactPoint": {

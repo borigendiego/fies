@@ -1,7 +1,6 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-//
 
 const Contact = () => {
     return(
@@ -19,10 +18,12 @@ const Contact = () => {
                         />
                         <a
                             className='mt-4 w-[170px] md:w-auto text-center md:text-left font-bold cursor-pointer hover:underline'
-                            href="https://www.google.com/maps/place/Jakobikirchhof+9,+28195+Bremen,+Germany/@53.0775362,8.8005749,17z/data=!3m1!4b1!4m6!3m5!1s0x47b1281708e2d36f:0xda97ceb796a72962!8m2!3d53.0775362!4d8.8031498!16s%2Fg%2F11c21kc8z8?entry=ttu"
+                            href="https://www.google.com/maps/place/Unser+Lieben+Frauen+Kirchhof+8,+28195+Bremen,+Germany/@53.0766146,8.8064759,16.86z/data=!4m6!3m5!1s0x47b12810eada1db3:0x2d8db4b364b80ea5!8m2!3d53.0768867!4d8.8078657!16s%2Fg%2F11bw3ytz5j?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D"
                             target="_blank"
                             rel="noreferrer"
-                        >Jakobikirchhof 9<br/> 28195 Bremen</a>
+                        >
+                            Unser Lieben Frauen Kirchhof 8, <br/> 28195 Bremen
+                        </a>
                         <a
                             className='mt-2 w-[170px] md:w-auto text-center md:text-left font-bold cursor-pointer hover:underline'
                             href="https://www.google.com/maps/place/Max-Planck-Stra%C3%9Fe+17,+85716+Unterschlei%C3%9Fheim,+Germany/@48.2830205,11.5616178,17z/data=!3m1!4b1!4m6!3m5!1s0x479e71cec07b71cb:0xd74e9f97545efc93!8m2!3d48.2830205!4d11.5641927!16s%2Fg%2F11b8v5t_cj?entry=ttu"
