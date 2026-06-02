@@ -1,33 +1,29 @@
-import React from 'react';
-import '../../styles/globals.scss';
-import type { NextPage } from 'next';
-import Head from 'next/head';
 import Header from '../../components/header';
 import ProjektDisplayer from '../../components/projektDisplayer';
 import Footer from '../../components/footer';
 import Button from '../../components/commons/homeButton';
+import ProjectsGrid from '../../components/projekt/ProjectsGrid';
+import getProjects from '../../api/getProjects';
 import { Metadata } from 'next';
-
 
 export const metadata: Metadata = {
     title: 'SPEKTRUM | Projekte',
     description: 'SPEKTRUM - Projekte',
 }
 
-const Projekte: NextPage = () => {
-    return(
+export default async function Projekte() {
+    const projects = await getProjects();
+
+    return (
         <div>
             <main>
                 <Button />
                 <Header />
-                <ProjektDisplayer />
+                <div className='min-h-screen'>
+                    <ProjectsGrid projects={projects} />
+                </div>
                 <Footer />
             </main>
-            <footer>
-
-            </footer>
         </div>
-    )
+    );
 }
-
-export default Projekte;

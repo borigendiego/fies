@@ -1,17 +1,18 @@
 'use client'
 import React from "react";
-import SwiperSlider from "../swiperSlider";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Blog } from "../../types";
+import BlogSlider from "../commons/BlogSlider";
 
 
-const BlogWrapper = ({ blogsData }:any ) => {
+const BlogWrapper = () => {
 
     return(
-        <div className="mt-24 mb-32 mx-auto">
-            <div className="md:w-[1300px] mx-auto flex">
+        <div className="mt-12 mb-32 mx-auto">
+            <div className="md:w-[1300px] mx-auto flex flex-col gap-4">
                 <Link href={'/aktuelles'} className="w-fit hover:underline mt-4">
-                    <motion.h2 
+                    <motion.h2
                         className="pl-6 md:pl-0"
                         initial={{opacity: 0, y: 15}}
                         whileInView={{opacity: 1, y: 0}}
@@ -21,8 +22,8 @@ const BlogWrapper = ({ blogsData }:any ) => {
                         AKTUELLES
                     </motion.h2>
                 </Link>
+                <BlogSlider />
             </div>
-            <SwiperSlider SwiperData={blogsData} />
         </div>
     )
 }

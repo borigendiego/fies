@@ -121,7 +121,7 @@ h4 {
 
 .sub-menu {
   transition: all 400ms ease-in;
-  background-color: $main-blue;
+  background-color: #fff;
   border-radius: 5px;
   margin-top: 5px;
   border-radius: 10px;
@@ -140,7 +140,7 @@ h4 {
 }
 
 .sub-menu li:hover {
-  background-color: $main-blue-hover;
+  background-color: #e1d6d680;
   border-radius: 5px;
 }
 
@@ -603,6 +603,7 @@ dialog[open] {
 dialog::backdrop {
   background-color: #00000085;
 }
+
 
 //Swiper
 

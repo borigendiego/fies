@@ -28,10 +28,10 @@ const Datenschutzeinstellungen: NextPage = () => {
                 <p><strong>Konto</strong> bezeichnet ein einzigartiges Konto, das für Sie erstellt wurde, um auf unseren Dienst oder Teile unseres Dienstes zuzugreifen.</p>
                 </li>
                 <li>
-                <p><strong>Unternehmen</strong> (in dieser Vereinbarung entweder als „das Unternehmen“, „wir“, „uns“ oder „unser“ bezeichnet) bezieht sich auf Specktrum, Leipziger Straße 38, 28215 Bremen , Deutschland.</p>
+                <p><strong>Unternehmen</strong> (in dieser Vereinbarung entweder als „das Unternehmen“, „wir“, „uns“ oder „unser“ bezeichnet) bezieht sich auf Specktrum, Unser Lieben Frauen Kirchhof 8, 28195 Bremen, Deutschland.</p>
                 </li>
 
-                
+
                 <li>
                 <p><strong>Cookies</strong> sind kleine Dateien, die von einer Website auf Ihrem Computer, Mobilgerät oder einem anderen Gerät abgelegt werden und unter anderem die Details Ihres Browserverlaufs auf dieser Website enthalten.</p>
                 </li>
@@ -113,7 +113,7 @@ const Datenschutzeinstellungen: NextPage = () => {
                 </ul>
                 <p>Weitere Informationen zu den von uns verwendeten Cookies und Ihren Auswahlmöglichkeiten in Bezug auf Cookies finden Sie in unserer Cookie-Richtlinie oder im Abschnitt Cookies unserer Datenschutzrichtlinie.</p>
                 <h2>Verwendung Ihrer personenbezogenen Daten</h2>
-                
+
 
                 <p>Das Unternehmen kann personenbezogene Daten für die folgenden Zwecke verwenden:</p>
                 <ul>
@@ -182,7 +182,7 @@ const Datenschutzeinstellungen: NextPage = () => {
                 <h1>Datenschutz von Kindern</h1>
                 <p>Unser Service richtet sich nicht an Personen unter 13 Jahren. Wir erfassen wissentlich keine personenbezogenen Daten</p>
                 </div>
-                
+
 
             </main>
             <footer>

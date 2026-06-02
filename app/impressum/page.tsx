@@ -17,17 +17,16 @@ const Impressum: NextPage = () => {
                 <h1>Impressum</h1>
                 <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
                 <p>SPEKTRUM Architektur | Generalplanung PartmbB<br />
-                Leipziger Stra&szlig;e 38<br />
-                28215 Bremen</p>
+                Unser Lieben Frauen Kirchhof 8, <br/> 28195 Bremen</p>
 
                 <p><strong>Vertreten durch:</strong><br />
                 Johannes Fies<br />
                 Johannes Schmitz</p>
 
                 <h2>Kontakt</h2>
-                <p>Telefon: 0421-56345811<br />
-                Telefax: 0421-52408272<br />
-                E-Mail: info@Spektrum-holding.de</p>
+                <p>Telefon: +49 (0) 421 17 30 67-77<br />
+                Telefax: +49 (0) 421 17 30 67-78<br />
+                E-Mail: info@spektrum-architektur.de</p>
 
                 <h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>
                 <p>Berufsbezeichnung:<br />

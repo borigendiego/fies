@@ -95,7 +95,7 @@ const MyCustomForm = ({
             <div className='pt-[35%] flex text-lg flex-col gap-2'>
                 <p className='text-white mb-6 font-bold'>Wir freuen uns über eine Nachricht oder einen Anruf von Ihnen:</p>
                 <p className='text-white mb-0'>Telefon</p>
-                <a className='text-white hover:underline' href="tel:0421/56345811">0421/56345811</a>
+                <a className='text-white hover:underline' href="tel:+4942117306777">+49 (0) 421 17 30 67-77</a>
                 <h2 className='text-white mt-4 mb-4 text-[20px]'>Kontaktformular</h2>
             </div>
             {

@@ -20,7 +20,6 @@ const Slide = ({
         const iframeElement = document.querySelector('iframe');
         let iframeURL = iframeElement && iframeElement?.getAttribute('src') ? iframeElement?.getAttribute('src') : '';
 
-        console.log(iframeElement);
         if (dialogRef.current?.open && !showModal.show) {
             iframeURL = iframeURL?.replace('?autoplay=1&mute=1', '') ? iframeURL?.replace('?autoplay=1&mute=1', '') : '';
             iframeElement?.setAttribute('src', iframeURL);

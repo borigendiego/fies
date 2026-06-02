@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const LAYOUT_DATA = [
     {
         id: 'forschung',
@@ -22,6 +24,13 @@ const LAYOUT_DATA = [
                     <p className='py-2'>Die BIM-Arbeitsmethode erlaubt allen anderen Beteiligten, notwendige Informationen aus dem Gebäudemodell auszulesen. Anhand des Uploads auf sichere Projekt-Server bleiben gleichzeitig alle involvierten Stellen stetig auf dem gleichen Planungsstand.</p>
                     <p className='py-2'>Durch die Arbeit mit "intelligenten" Gebäudeteilen in der CAD, schaffen wir einen enorm hohen Informationsgehalt der Modelle. So sind wir etwa in der Lage, bereits im Vorentwurf sehr genaue Mengen- und Kostenermittlungen "auf Kopfdruck" auslesen zu können. Diese Daten können mit anderen Varianten verglichen werden, um frühzeitig Risiken, Kosten und zeitliche Rahmenbedingungen einzuschätzen.</p>
                     <p className='py-2'>Unser Leitsatz: "Erst digital, dann real bauen!"</p>
+                    <Image
+                        className='mt-4 object-contain'
+                        src={'/assets/images/building-smart.png'}
+                        alt={'Building Smart Logo'}
+                        width={270}
+                        height={100}
+                    />
                 </div>
     },
     {
