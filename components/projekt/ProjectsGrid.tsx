@@ -23,14 +23,9 @@ const fadeUp = {
     visible: { opacity: 1, y: 0 },
 };
 
-const staggerGrid = {
-    hidden: {},
-    visible: { transition: { staggerChildren: 0.18 } },
-};
 
 export default function ProjectsGrid({ projects }: { projects: Project[] }) {
     const [active, setActive] = useState<Filter>('Alle');
-
     const visible = active === 'Alle'
         ? projects
         : projects.filter((p) => p.projectType === active);
@@ -74,20 +69,17 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
 
             <motion.div
                 className="grid grid-cols-1 md:grid-cols-3 gap-6"
-                variants={staggerGrid}
+                variants={fadeUp}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.1 }}
             >
                 {visible.map((project) => {
                     const imageUrl = project.images?.large ?? project.images?.full ?? null;
 
                     return (
-                        <motion.div
-                            key={project.id}
-                            variants={fadeUp}
-                            transition={{ duration: 0.8 }}
-                        >
+                        <div key={project.id}>
                             <Link href={`/projekte/${project.slug}`} className="group cursor-pointer max-h-[350px] block">
                                 <div className="relative w-full h-[350px] overflow-hidden bg-gray-100">
                                     {imageUrl ? (
@@ -112,7 +104,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
                                     </div>
                                 </div>
                             </Link>
-                        </motion.div>
+                        </div>
                     );
                 })}
             </motion.div>

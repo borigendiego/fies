@@ -34,7 +34,8 @@ export type Project = {
 export default async function getProjects(): Promise<Project[]> {
     const fields = '_fields=id,slug,status,title,acf,_links,featured_media';
     const res = await fetch(
-        `https://admin.spektrum-holding.de/wp-json/wp/v2/project?_embed&${fields}`
+        `https://admin.spektrum-holding.de/wp-json/wp/v2/project?_embed&${fields}`,
+        { next: { revalidate: 3600 } }
     );
 
     if (!res.ok) {
