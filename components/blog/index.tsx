@@ -2,8 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Blog } from "../../types";
-import BlogSlider from "../commons/BlogSlider";
+import BlogSliderClient from "../commons/BlogSlider/BlogSliderClient";
 
 
 const BlogWrapper = () => {
@@ -22,7 +21,7 @@ const BlogWrapper = () => {
                         AKTUELLES
                     </motion.h2>
                 </Link>
-                <BlogSlider />
+                <BlogSliderClient />
             </div>
         </div>
     )

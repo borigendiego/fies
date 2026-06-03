@@ -5,10 +5,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Blog } from '../../../types';
+import getAllBlogs from '../../../api/getAllBlogs';
 
 const SLIDE_GAP = 15;
 
-export default function BlogSliderClient({ blogs }: { blogs: Blog[] }) {
+export default function BlogSliderClient() {
+    const [blogs, setBlogs] = useState<Blog[]>([]);
+    const [loading, setLoading] = useState(true);
     const [index, setIndex] = useState(0);
     const [slidesPerView, setSlidesPerView] = useState(4);
     const [dragOffset, setDragOffset] = useState(0);
@@ -16,7 +19,14 @@ export default function BlogSliderClient({ blogs }: { blogs: Blog[] }) {
     const slideRef = useRef<HTMLDivElement>(null);
     const startX = useRef(0);
 
-    const total = blogs.length + 1; // +1 for READ MORE card
+    // ← fetch integrado, reemplaza la prop blogs
+    useEffect(() => {
+        getAllBlogs()
+            .then(setBlogs)
+            .finally(() => setLoading(false));
+    }, []);
+
+    const total = blogs.length + 1;
     const max = Math.max(0, total - slidesPerView);
 
     useEffect(() => {
@@ -54,6 +64,13 @@ export default function BlogSliderClient({ blogs }: { blogs: Blog[] }) {
     };
 
     const translateX = -(index * getSlideWidth()) + dragOffset;
+
+    // ← estado de carga
+    if (loading) return (
+        <div className="flex items-center justify-center h-[320px] w-full">
+            <span className="text-gray-400 text-sm animate-pulse">Cargando...</span>
+        </div>
+    );
 
     return (
         <motion.div
