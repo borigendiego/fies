@@ -97,7 +97,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
                                     <div className="absolute inset-0 lg:bg-black/20 bg-black/10 lg:group-hover:bg-black/10 duration-700" />
 
                                     <div className="absolute lg:group-hover:opacity-100 lg:opacity-0 bottom-0 left-0 right-0 bg-black/25 lg:bg-auto group-hover:bg-black/25 backdrop-blur-xs group-hover:backdrop-blur-[2px] duration-500 px-4 py-3">
-                                        <h3 className="font-black text-white">PROJEKT: {project.name}</h3>
+                                        <h3 className="font-black text-white">{project.name}</h3>
                                         {project.project && (
                                             <p className="hidden md:block text-white/80 text-sm mt-0.5 leading-snug">{project.project}</p>
                                         )}
