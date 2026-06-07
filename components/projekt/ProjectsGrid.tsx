@@ -31,7 +31,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
         : projects.filter((p) => p.projectType === active);
 
     return (
-        <section className="lg:max-w-[1300px] w-[90vw] mx-auto px-8 py-12">
+        <section className="lg:max-w-[1300px] w-[90vw] mx-auto py-12">
             <motion.h1
                 className="font-black tracking-tight"
                 variants={fadeUp}
