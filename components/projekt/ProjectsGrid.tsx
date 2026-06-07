@@ -81,7 +81,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
                         <Link
                             key={project.id}
                             href={`/projekte/${project.slug}`}
-                            className="group cursor-pointer max-h-[350px]"
+                            className="group cursor-pointer max-h-[350px] hover:scale-105 duration-700"
                         >
                             <div className="relative w-full h-[350px]">
                                 {imageUrl ? (
@@ -90,7 +90,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
                                         alt={project.name}
                                         width={600}
                                         height={400}
-                                        className="duration-700 group-hover:scale-105 object-cover w-full h-full"
+                                        className="object-cover w-full h-full"
                                     />
                                 ) : (
                                     <div className="w-full h-full bg-gray-200" />
