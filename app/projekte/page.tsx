@@ -1,5 +1,4 @@
 import Header from '../../components/header';
-import ProjektDisplayer from '../../components/projektDisplayer';
 import Footer from '../../components/footer';
 import Button from '../../components/commons/homeButton';
 import ProjectsGrid from '../../components/projekt/ProjectsGrid';

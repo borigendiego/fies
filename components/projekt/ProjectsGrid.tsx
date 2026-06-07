@@ -31,8 +31,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
         : projects.filter((p) => p.projectType === active);
 
     return (
-        <section className="max-w-[1300px] mx-auto px-4 md:px-0 py-12">
-
+        <section className="lg:max-w-[1300px] w-[90vw] mx-auto px-8 py-12">
             <motion.h1
                 className="font-black tracking-tight"
                 variants={fadeUp}
@@ -68,7 +67,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
             </motion.div>
 
             <motion.div
-                className="grid grid-cols-1 md:grid-cols-3 gap-6"
+                className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="visible"
@@ -79,32 +78,34 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
                     const imageUrl = project.images?.large ?? project.images?.full ?? null;
 
                     return (
-                        <div key={project.id}>
-                            <Link href={`/projekte/${project.slug}`} className="group cursor-pointer max-h-[350px] block">
-                                <div className="relative w-full h-[350px] overflow-hidden bg-gray-100">
-                                    {imageUrl ? (
-                                        <Image
-                                            src={imageUrl}
-                                            alt={project.name}
-                                            fill
-                                            style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                            className="duration-700 group-hover:scale-105"
-                                        />
-                                    ) : (
-                                        <div className="w-full h-full bg-gray-200" />
+                        <Link
+                            key={project.id}
+                            href={`/projekte/${project.slug}`}
+                            className="group cursor-pointer max-h-[350px]"
+                        >
+                            <div className="relative w-full h-[350px]">
+                                {imageUrl ? (
+                                    <Image
+                                        src={imageUrl}
+                                        alt={project.name}
+                                        width={600}
+                                        height={400}
+                                        className="duration-700 group-hover:scale-105 object-cover w-full h-full"
+                                    />
+                                ) : (
+                                    <div className="w-full h-full bg-gray-200" />
+                                )}
+
+                                <div className="absolute inset-0 lg:bg-black/20 bg-black/10 lg:group-hover:bg-black/10 duration-700" />
+
+                                <div className="absolute lg:group-hover:opacity-100 lg:opacity-0 bottom-0 left-0 right-0 bg-black/25 lg:bg-auto group-hover:bg-black/25 backdrop-blur-xs group-hover:backdrop-blur-[2px] duration-500 px-4 py-3">
+                                    <h3 className="font-black text-white">{project.name}</h3>
+                                    {project.project && (
+                                        <p className="hidden md:block text-white/80 text-sm mt-0.5 leading-snug">{project.project}</p>
                                     )}
-
-                                    <div className="absolute inset-0 lg:bg-black/20 bg-black/10 lg:group-hover:bg-black/10 duration-700" />
-
-                                    <div className="absolute lg:group-hover:opacity-100 lg:opacity-0 bottom-0 left-0 right-0 bg-black/25 lg:bg-auto group-hover:bg-black/25 backdrop-blur-xs group-hover:backdrop-blur-[2px] duration-500 px-4 py-3">
-                                        <h3 className="font-black text-white">{project.name}</h3>
-                                        {project.project && (
-                                            <p className="hidden md:block text-white/80 text-sm mt-0.5 leading-snug">{project.project}</p>
-                                        )}
-                                    </div>
                                 </div>
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     );
                 })}
             </motion.div>
