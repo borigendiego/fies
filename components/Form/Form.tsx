@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import { motion } from "framer-motion";
+import ReCAPTCHA from 'react-google-recaptcha';
 
 //Hook
 import useContactForm from './useContactForm';
@@ -14,12 +15,14 @@ const MyCustomForm = ({
     onSuccessMessage,
     onErrorMessage,
     customClass,
-    emailServiceURL,
     submitButtonLabel
 }:any) => {
     const [messageSent, setMessageSent] = useState('');
     const [isAPILoading, setIsAPILoading] = useState(false);
     const [messageDescription, setMessageDescription] = useState('');
+    const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+    const recaptchaRef = useRef<ReCAPTCHA>(null);
+    const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? '';
     const initialValues = {
         name: '',
         customerEmail: '',
@@ -37,14 +40,29 @@ const MyCustomForm = ({
         initialValues,
         fields,
         onSubmit: () => {
+            if (!recaptchaSiteKey) {
+                setMessageDescription('reCAPTCHA site key is not configured.');
+                setMessageSent('error');
+                return;
+            }
+
+            if (!recaptchaToken) {
+                setMessageDescription('Bitte bestätigen Sie das reCAPTCHA-Feld.');
+                setMessageSent('error');
+                return;
+            }
+
             setIsAPILoading(true);
+            setMessageSent('');
+            setMessageDescription('');
             axios.post(
-                emailServiceURL,
+                '/api/contact',
                 {
                     message: values.message,
                     name: values.name,
                     phone: values.phone,
                     customerEmail: values.customerEmail,
+                    recaptchaToken,
                 },
                 {
                     headers: {
@@ -55,6 +73,8 @@ const MyCustomForm = ({
             )
                 .then(function (response) {
                     setValues(initialValues);
+                    recaptchaRef.current?.reset();
+                    setRecaptchaToken(null);
                     setMessageSent('succeed');
                     setIsAPILoading(false);
                 })
@@ -81,6 +101,10 @@ const MyCustomForm = ({
             </div>
         }
         return null;
+    };
+
+    const handleRecaptchaChange = (token: string | null) => {
+        setRecaptchaToken(token);
     };
 
     return (
@@ -161,6 +185,15 @@ const MyCustomForm = ({
                 })
             }
             {renderSentMessage()}
+            {recaptchaSiteKey ? (
+                <section className={`${styles.item} flex justify-center`}>
+                    <ReCAPTCHA
+                        ref={recaptchaRef}
+                        sitekey={recaptchaSiteKey}
+                        onChange={handleRecaptchaChange}
+                    />
+                </section>
+            ) : null}
             <section className={`${styles.item} text-center contact-input-button`}>
                 <input
                     type={'submit'}
@@ -179,7 +212,6 @@ MyCustomForm.propTypes = {
     onErrorMessage: PropTypes.string,
     customClass: PropTypes.string,
     submitButtonLabel: PropTypes.string,
-    emailServiceURL: PropTypes.string,
     placeholder: PropTypes.string,
 };
 

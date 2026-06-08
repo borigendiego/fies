@@ -12,6 +12,19 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Environment Variables
+
+Create a `.env.local` file with:
+
+```bash
+NEXT_PUBLIC_RECAPTCHA_SITE_KEY=your_site_key_here
+RECAPTCHA_SECRET_KEY=your_secret_key_here
+EMAIL_SERVICE_URL=https://thehippoapi.netlify.app/.netlify/functions/api/spektrum-email
+```
+
+`NEXT_PUBLIC_RECAPTCHA_SITE_KEY` is used by the client form.
+`RECAPTCHA_SECRET_KEY` is used only on the server route (`/api/contact`) to verify tokens.
+
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.

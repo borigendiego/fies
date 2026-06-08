@@ -37,7 +37,6 @@ export default async function getProjects(): Promise<Project[]> {
         `https://admin.spektrum-holding.de/wp-json/wp/v2/project?_embed&orderby=menu_order&order=asc&${fields}`,
         {
             cache: 'no-store',
-            next: { revalidate: 0 },
         },
     );
 

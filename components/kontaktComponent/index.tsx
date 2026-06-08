@@ -50,7 +50,6 @@ const KontaktComponent = () => {
                     onSuccessMessage={'Deine Nachricht wurde erfolgreich gesendet. Wir werden Sie in Kürze kontaktieren'}
                     onErrorMessage={'Versuchen Sie es in ein paar Minuten erneut.'}
                     submitButtonLabel={'Senden'}
-                    emailServiceURL={'https://thehippoapi.netlify.app/.netlify/functions/api/spektrum-email'}
                     />
             </div>
         </div>
