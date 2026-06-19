@@ -14,10 +14,9 @@ export const metadata: Metadata = {
     description: 'SPEKTRUM - Aktuelles',
 }
 
-
 const BlogPage = async () => {
-    revalidatePath('/aktuelles', 'page')
     const blogsData: Blog[] = await getAllBlogs();
+
     return(
         <div>
             <main>

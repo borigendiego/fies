@@ -13,7 +13,19 @@ const SingleBlogComponent = ({ blog }:any) => {
                 transition={{duration: .5, delay: 1}}
                 viewport={{once: true}}
             >
-                {blog.image && <Image src={blog.image} alt="" objectFit="cover" objectPosition='center center' fill className='rounded-lg' />}
+                {
+                    blog.imageUrl
+                    ? <Image
+                        src={blog.imageUrl}
+                        alt={blog.title}
+                        objectFit="cover"
+                        objectPosition='center center'
+                        width={700}
+                        height={380}
+                        className='lg:rounded-lg max-h-96 w-full'
+                    />
+                    : null
+                }
             </motion.div>
             <motion.div
                 className='border mt-12 w-[1000px] hidden md:block'
