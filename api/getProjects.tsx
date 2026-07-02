@@ -16,7 +16,8 @@ export type Project = {
     id: number;
     slug: string;
     name: string;
-    projectType: string | null;
+    subTitle: string | null;
+    projectType: string[];
     images: {
         thumbnail?: string;
         medium?: string;
@@ -72,7 +73,8 @@ export default async function getProjects(): Promise<Project[]> {
                 id: post.id,
                 slug: post.slug,
                 name: post.title.rendered,
-                projectType: acf.project_type?.[0] ?? null,
+                subTitle: acf.secondary_title ?? null,
+                projectType: acf.project_type ?? [],
                 images: sizes
                     ? {
                           thumbnail: sizes.thumbnail?.source_url,

@@ -28,7 +28,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
     const [active, setActive] = useState<Filter>('Alle');
     const visible = active === 'Alle'
         ? projects
-        : projects.filter((p) => p.projectType === active);
+        : projects.filter((p) => p.projectType.includes(active));
 
     return (
         <section className="lg:max-w-[1300px] w-[90vw] mx-auto py-12">
@@ -81,7 +81,7 @@ export default function ProjectsGrid({ projects }: { projects: Project[] }) {
                         <Link
                             key={project.id}
                             href={`/projekte/${project.slug}`}
-                            className="group cursor-pointer max-h-[350px] hover:scale-105 duration-700"
+                            className="group cursor-pointer max-h-[350px] hover:scale-105 duration-300"
                         >
                             <div className="relative w-full h-[350px]">
                                 {imageUrl ? (

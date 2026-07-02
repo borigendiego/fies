@@ -20,7 +20,7 @@ export default function SingleProject({ project }: { project: Project }) {
 
     const infoFields = [
         { label: 'Ort', value: project.location },
-        { label: 'Projekt', value: project.project },
+        { label: 'Projekt', value: project.subTitle },
         { label: 'Leistungen', value: project.services },
         { label: 'Zeitraum', value: project.dates },
         { label: 'Bauherr', value: project.owner },

@@ -9,7 +9,8 @@
       "Bash(curl -s \"https://admin.spektrum-holding.de/wp-json/\")",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(list\\(d.get\\('namespaces',[]\\)\\)\\)\")",
       "Bash(mkdir -p /Users/juanmanuelborigen/Desktop/HippoSoft/fies/app/projekte/[slug])",
-      "Bash(mkdir -p \"/Users/juanmanuelborigen/Desktop/HippoSoft/fies/app/projekte/[slug]\")"
+      "Bash(mkdir -p \"/Users/juanmanuelborigen/Desktop/HippoSoft/fies/app/projekte/[slug]\")",
+      "Bash(npx tsc *)"
     ],
     "additionalDirectories": [
       "/Users/juanmanuelborigen/Desktop/HippoSoft/fies/app/projekte"
