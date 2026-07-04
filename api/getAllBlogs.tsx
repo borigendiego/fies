@@ -1,5 +1,5 @@
 export default async function getAllBlogs()  {
-    const res = await fetch('https://admin.spektrum-holding.de/wp-json/wp/v2/posts?_embed', {
+    const res = await fetch('https://admin.spektrum-holding.de/wp-json/wp/v2/posts?_embed&per_page=100', {
         cache: 'no-store'
     });
     const resolved = await res.json();

@@ -35,7 +35,7 @@ export type Project = {
 export default async function getProjects(): Promise<Project[]> {
     const fields = '_fields=id,slug,status,title,acf,_links,featured_media';
     const res = await fetch(
-        `https://admin.spektrum-holding.de/wp-json/wp/v2/project?_embed&orderby=menu_order&order=asc&${fields}`,
+        `https://admin.spektrum-holding.de/wp-json/wp/v2/project?_embed&per_page=100&orderby=menu_order&order=asc&${fields}`,
         {
             cache: 'no-store',
         },
