@@ -51,22 +51,30 @@ export default function SingleProject({ project }: { project: Project }) {
             ))}
 
             {/* Prev arrow */}
-                <button
-                    onClick={() => setIndex(i => wrap(i - 1))}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white text-6xl leading-none"
-                    aria-label="Previous"
-                >
-                    ‹
-                </button>
+            {
+                slides.length > 1 && (
+                    <button
+                        onClick={() => setIndex(i => wrap(i - 1))}
+                        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white text-6xl leading-none"
+                        aria-label="Previous"
+                    >
+                        ‹
+                    </button>
+                )
+            }
 
             {/* Next arrow */}
-                <button
-                    onClick={() => setIndex(i => wrap(i + 1))}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white text-6xl leading-none"
-                    aria-label="Next"
-                >
-                    ›
-                </button>
+            {
+                slides.length > 1 && (
+                    <button
+                        onClick={() => setIndex(i => wrap(i + 1))}
+                        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white text-6xl leading-none"
+                        aria-label="Next"
+                    >
+                        ›
+                    </button>
+                )
+            }
             {/* Bottom-left: title + description */}
             <div className="absolute bottom-8 left-8 z-10 max-w-[60%]">
                 <h2 className="text-white font-black text-xl md:text-2xl uppercase tracking-widest">
