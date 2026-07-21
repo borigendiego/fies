@@ -18,6 +18,7 @@ export default function BlogSliderClient() {
     const [dragging, setDragging] = useState(false);
     const slideRef = useRef<HTMLDivElement>(null);
     const startX = useRef(0);
+    const movedRef = useRef(false);
 
     // ← fetch integrado, reemplaza la prop blogs
     useEffect(() => {
@@ -46,21 +47,37 @@ export default function BlogSliderClient() {
     const onPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
         setDragging(true);
         startX.current = e.clientX;
-        e.currentTarget.setPointerCapture(e.pointerId);
+        movedRef.current = false;
     };
 
     const onPointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
         if (!dragging) return;
-        setDragOffset(e.clientX - startX.current);
+        const delta = e.clientX - startX.current;
+        if (!movedRef.current && Math.abs(delta) > 5) {
+            movedRef.current = true;
+            e.currentTarget.setPointerCapture(e.pointerId);
+        }
+        setDragOffset(delta);
     };
 
-    const onPointerUp = () => {
+    const onPointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
         if (!dragging) return;
         setDragging(false);
         const threshold = getSlideWidth() / 3;
         if (dragOffset < -threshold) setIndex(i => clamp(i + 1));
         else if (dragOffset > threshold) setIndex(i => clamp(i - 1));
         setDragOffset(0);
+        if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+            e.currentTarget.releasePointerCapture(e.pointerId);
+        }
+    };
+
+    const onClickCapture = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (movedRef.current) {
+            e.preventDefault();
+            e.stopPropagation();
+            movedRef.current = false;
+        }
     };
 
     const translateX = -(index * getSlideWidth()) + dragOffset;
@@ -68,7 +85,7 @@ export default function BlogSliderClient() {
     // ← estado de carga
     if (loading) return (
         <div className="flex items-center justify-center h-[320px] w-full">
-            <span className="text-gray-400 text-sm animate-pulse">Cargando...</span>
+            <span className="text-gray-400 text-sm animate-pulse">Wird geladen...</span>
         </div>
     );
 
@@ -78,24 +95,25 @@ export default function BlogSliderClient() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
             viewport={{ once: true }}
-            className="relative overflow-hidden md:max-w-[1300px] mx-auto"
+            className="relative w-full overflow-hidden md:max-w-[1300px] mx-auto"
         >
             <div
-                className={`flex select-none cursor-grab active:cursor-grabbing ${dragging ? '' : 'transition-transform duration-500 ease-in-out'}`}
+                className={`flex select-none cursor-grab active:cursor-grabbing touch-pan-y overscroll-x-contain ${dragging ? '' : 'transition-transform duration-500 ease-in-out'}`}
                 style={{ transform: `translateX(${translateX}px)`, gap: SLIDE_GAP }}
                 onPointerDown={onPointerDown}
                 onPointerMove={onPointerMove}
                 onPointerUp={onPointerUp}
                 onPointerLeave={onPointerUp}
+                onClickCapture={onClickCapture}
             >
                 {blogs.map((blog, i) => (
                     <div
                         key={blog.id}
                         ref={i === 0 ? slideRef : undefined}
-                        className="flex-none w-[340px] md:w-[300px]"
+                        className="flex-none w-[85vw] max-w-[340px] md:w-[300px] md:max-w-none"
                     >
                         <div className="relative w-full h-[360px] md:h-[320px] group cursor-pointer bg-white hover:shadow-xl duration-700">
-                            <Link href={`/aktuelles#${blog.id}`}>
+                            <Link href={`/aktuelles/${blog.id}`}>
                                 {blog.imageUrl && (
                                     <Image
                                         src={blog.imageUrl}
@@ -115,7 +133,7 @@ export default function BlogSliderClient() {
                     </div>
                 ))}
 
-                <div className="flex-none w-[340px] md:w-[300px] h-[360px] md:h-[320px]">
+                <div className="flex-none w-[85vw] max-w-[340px] md:w-[300px] md:max-w-none h-[360px] md:h-[320px]">
                     <Link href="/aktuelles">
                         <div className="flex flex-col justify-center items-center w-full h-full group hover:bg-[#89adcdcc] bg-[#89adcdcc] md:bg-white backdrop-blur-sm cursor-pointer duration-1000">
                             <h2 className="text-xl text-black group-hover:text-white duration-700">READ MORE</h2>

@@ -15,8 +15,7 @@ export default function SingleProject({ project }: { project: Project }) {
         ? project.gallery.map(img => img.fullUrl)
         : [project.images?.full ?? project.images?.large ?? ''].filter(Boolean);
 
-    const max = slides.length - 1;
-    const clamp = (v: number) => Math.min(Math.max(v, 0), max);
+    const wrap = (v: number) => (v + slides.length) % slides.length;
 
     const infoFields = [
         { label: 'Ort', value: project.location },
@@ -47,32 +46,27 @@ export default function SingleProject({ project }: { project: Project }) {
                         priority={i === 0}
                         draggable={false}
                     />
-                    <div className="absolute inset-0 bg-black/25" />
+                    <div className="absolute inset-0 bg-black/15" />
                 </div>
             ))}
 
             {/* Prev arrow */}
-            {index > 0 && (
                 <button
-                    onClick={() => setIndex(i => clamp(i - 1))}
+                    onClick={() => setIndex(i => wrap(i - 1))}
                     className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white text-6xl leading-none"
                     aria-label="Previous"
                 >
                     ‹
                 </button>
-            )}
 
             {/* Next arrow */}
-            {index < max && (
                 <button
-                    onClick={() => setIndex(i => clamp(i + 1))}
+                    onClick={() => setIndex(i => wrap(i + 1))}
                     className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white text-6xl leading-none"
                     aria-label="Next"
                 >
                     ›
                 </button>
-            )}
-
             {/* Bottom-left: title + description */}
             <div className="absolute bottom-8 left-8 z-10 max-w-[60%]">
                 <h2 className="text-white font-black text-xl md:text-2xl uppercase tracking-widest">
@@ -129,7 +123,9 @@ export default function SingleProject({ project }: { project: Project }) {
                                     <p className="text-white/45 uppercase text-xs tracking-widest mb-1">
                                         {label}
                                     </p>
-                                    <p className="font-semibold leading-snug">{value}</p>
+                                    <p className="font-semibold leading-snug whitespace-pre-line">
+                                        {typeof value === 'string' ? value.replace(/[\r\n]+/g, '\n') : value}
+                                    </p>
                                 </div>
                             ))}
                         </div>

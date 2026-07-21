@@ -26,7 +26,7 @@ const BlogPageComponent = ({ blogsData }:any) => {
                 {
                     blogsData.map((value:any, index:any) => (
                         <div className="flex flex-col md:flex-row items-center md:gap-16 gap-4 py-12 first:pt-0 md:py-20 border-b-2 md:even:flex-row-reverse" key={index} id={value.id}>
-                            <div className="md:w-[500px] w-[350px] h-[220px] md:h-[320px] relative ">
+                            <div className="md:w-[500px] w-[85vw] h-[220px] md:h-[320px] relative ">
                                 {
                                     value.imageUrl
                                     ? <Image
@@ -42,18 +42,18 @@ const BlogPageComponent = ({ blogsData }:any) => {
                                     : null
                                 }
                             </div>
-                            <div className="flex flex-col pb-6 md:w-1/2 w-[360px]">
+                            <div className="flex flex-col pb-6 md:w-1/2 w-[85vw]">
                                 <div className="flex justify-between">
                                     <p>
                                         {new Date(value.date).toLocaleDateString('de', { year: 'numeric', month: 'long', day:'numeric' })}
                                     </p>
                                 </div>
-                                <h3 className="text-2xl font-bold pt-6 mb-4">{value.title}</h3>
+                                <h3 className="text-2xl font-bold lg:pt-6 pt-2 mb-4">{value.title}</h3>
                                 <div dangerouslySetInnerHTML={{ __html: value.excerpt }} className='text-sm'></div>
-                                <Link href={`/aktuelles/${value.id}`} className='p-3 cursor-pointer w-fit mt-4
+                                <Link href={`/aktuelles/${value.id}`} className='py-2 px-4 cursor-pointer w-fit mt-4
                                     rounded-xl duration-300 bg-[#89adcd99]
-                                    hover:bg-[#7294b29c] hover:text-white font-bold'>
-                                    Read More
+                                    hover:bg-white border border-[#89adcd99] hover:underline font-bold'>
+                                    Mehr
                                 </Link>
                             </div>
                         </div>

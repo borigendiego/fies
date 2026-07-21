@@ -21,8 +21,8 @@ const SingleBlogComponent = ({ blog }:any) => {
                         objectFit="cover"
                         objectPosition='center center'
                         width={700}
-                        height={380}
-                        className='lg:rounded-lg max-h-96 w-full'
+                        height={400}
+                        className='lg:rounded-lg max-h-[400px] w-full object-cover'
                     />
                     : null
                 }
