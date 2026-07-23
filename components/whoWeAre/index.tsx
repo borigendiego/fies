@@ -7,13 +7,13 @@ import { motion } from "framer-motion";
 const WhoWeAre = () => {
 
     const imagesAnimations = {
-        visible: { 
+        visible: {
             opacity: 1,
             y: 0,
             transition: {
                 when: "beforeChildren",
                 staggerChildren: .5,
-              }, 
+              },
         },
         hidden: {
             opacity: 0,
@@ -32,16 +32,16 @@ const WhoWeAre = () => {
 
     return(
         <div className={'pt-2'}>
-            <motion.h1 
+            <motion.h1
                 className={'text-center font-semibold mt-6'}
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once: true}}
                 transition={{duration: .5, delay: .7}}
 
-            >Wir stellen uns Vor</motion.h1>
+            >Wir stellen uns vor</motion.h1>
             <div>
-                <motion.div 
+                <motion.div
                     className='flex flex-col md:flex-row md:justify-around py-6'
                     variants={imagesAnimations}
                     initial={'hidden'}
