@@ -49,7 +49,7 @@ const LAYOUT_DATA = [
     {
         id: 'bauen-mit-holz',
         title: 'Bauen mit Holz',
-        image: '/assets/images/uber/bauen.webp',
+        image: '/assets/images/uber/bauen2.webp',
         reversed: true,
         text: <div>
                     <p className='py-2'>Holz ist eines der ersten vom Menschen zum Bau genutzten Materialien. Als nachwachsender und klimafreundlicher Rohstoff, der zudem noch regional verfügbar ist, sehen wir im Holz das Baumaterial der Zukunft. </p>

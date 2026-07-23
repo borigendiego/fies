@@ -41,7 +41,6 @@ const Nav = () => {
                     <Link href={'/brandschutz'}><li>Brandschutz</li></Link>
                     <Link href={'/energieberatung'}><li>Energieberatung</li></Link>
                     <Link href={'/projektentwicklung'}><li>Projektentwicklung</li></Link>
-                    <Link href={'/finanzierung'}><li>Finanzierung</li></Link>
                     <Link href={'/sanierung'}><li>Sanierung</li></Link>
                     <Link href={'/grundstucksentwicklung'}><li>Grundstücks-entwicklung</li></Link>
                 </ul>

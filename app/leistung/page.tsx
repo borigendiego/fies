@@ -2,7 +2,6 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
-import Grundstuck from '../../components/Grundstuck7';
 import Bubbles from '../../components/bubbles';
 import Button from '../../components/commons/homeButton';
 import { Metadata } from 'next';
