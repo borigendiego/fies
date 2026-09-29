@@ -1,13 +1,13 @@
 'use client'
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
+import BlogCoverImage from '../commons/BlogCoverImage';
 
 const SingleBlogComponent = ({ blog }:any) => {
     return (
         <div className='flex flex-col items-center py-12'>
             <motion.div
-                className="md:w-[700px] w-full md:h-[380px] h-[300px] relative"
+                className="md:w-[700px] w-full"
                 initial={{opacity: 0, y: 15}}
                 whileInView={{opacity: 1, y: 0}}
                 transition={{duration: .5, delay: 1}}
@@ -15,16 +15,17 @@ const SingleBlogComponent = ({ blog }:any) => {
             >
                 {
                     blog.imageUrl
-                    ? <Image
+                    ? <BlogCoverImage
                         src={blog.imageUrl}
                         alt={blog.title}
-                        objectFit="cover"
-                        objectPosition='center center'
                         width={700}
                         height={400}
-                        className='lg:rounded-lg max-h-[400px] w-full object-cover'
+                        className='w-full'
+                        landscapeClassName='h-[300px] md:h-[380px]'
+                        portraitClassName='h-[480px] md:h-[650px]'
+                        imageClassName='lg:rounded-lg'
                     />
-                    : null
+                    : <div className="h-[300px] md:h-[380px]" />
                 }
             </motion.div>
             <motion.div

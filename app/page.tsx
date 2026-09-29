@@ -6,13 +6,18 @@ import Footer from '../components/footer';
 import Header from '../components/header';
 import { Metadata } from 'next';
 import BlogWrapper from '../components/blog';
+import Customers from '../components/Customers';
+import getCustomers from '../api/getCustomers';
+import { Customer } from '../types';
 
 export const metadata: Metadata = {
     title: 'SPEKTRUM Architektur | Generalplanung',
     description: 'Architektur, Generalplanung',
 }
 
-export default function Home() {
+export default async function Home() {
+    const customers: Customer[] = await getCustomers();
+
     return (
         <div>
             <Head>
@@ -23,6 +28,7 @@ export default function Home() {
                 <Header isHomePage />
                 <Slick />
                 <BlogWrapper />
+                <Customers customers={customers} />
             </main>
             <Footer />
         </div>

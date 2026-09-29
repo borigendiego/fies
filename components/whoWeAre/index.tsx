@@ -30,6 +30,8 @@ const WhoWeAre = () => {
         hidden: {opacity: 0, y: 50}
     }
 
+    const profileCircle = 'relative mx-auto w-[310px] max-w-[80vw] aspect-square rounded-full overflow-hidden'
+
     return(
         <div className={'pt-2'}>
             <motion.h1
@@ -50,13 +52,18 @@ const WhoWeAre = () => {
                     transition={{duration: 1, delay: 1.2}}
                 >
                     <motion.div variants={imagesChild} transition={{duration: .5, delay:1}}>
-                        <Image src={'/assets/images/uber/Fies-min.jpg'} alt={'Johannes Fies photo'} width={400} height={200}></Image>
-                        <p className="text-center font-semibold md:pl-12">Johannes Fies, M.A. Architekt</p>
+                        <div className={profileCircle}>
+                            <Image src={'/assets/images/uber/Fies.webp'} alt={'Johannes Fies photo'} width={3027} height={3027} sizes={'340px'} className={'absolute max-w-none h-auto'} style={{width: '108.5%', left: '-2.1%', top: '-2.1%'}}/>
+                        </div>
+                        <p className="text-center font-semibold mt-4">Johannes Fies, M.A. Architekt</p>
                     </motion.div>
                     <motion.div variants={imagesChild} transition={{duration: .5, delay:1.4}} className={'mt-10 md:mt-0'}>
-                        <Image src={'/assets/images/uber/Schmitz-min.jpg'} alt={'Johannes Schmitz photo'} width={400} height={200}></Image>
-                        <p className="text-center font-semibold md:pl-12">Johannes Schmitz, M.A. Architekt</p>
+                        <div className={profileCircle}>
+                            <Image src={'/assets/images/uber/Schmitz-min.jpg'} alt={'Johannes Schmitz photo'} width={3307} height={3000} sizes={'450px'} className={'absolute max-w-none h-auto'} style={{width: '133%', left: '-19.6%', top: '-3%'}}/>
+                        </div>
+                        <p className="text-center font-semibold mt-4">Johannes Schmitz, M.A. Architekt</p>
                     </motion.div>
+
                 </motion.div>
                 <motion.div
                     initial={{opacity: 0, y: 30}}
@@ -74,7 +81,7 @@ const WhoWeAre = () => {
                         <p className="py-2">Wir, Johannes Fies und Johannes Schmitz, haben uns während des Architekturstudiums 2009 kenngelernt. Bereits seitdem planen wir Projekte im Team. Nach über zwölfjähriger Zusammenarbeit haben wir 2021 unser gemeinsames Büro gegründet. </p>
                         <p className="py-2 font-semibold">Wir freuen uns für Sie tätig zu werden!</p>
                     </div>
-                    <Image src={'/assets/images/uber/uber-map.jpg'} alt={'Map'} height={200} width={400} className="md:mt-0 mt-6"/>
+                    <Image src={'/assets/images/uber/uber-map.png'} alt={'Map'} height={200} width={400} className="md:mt-0 mt-6"/>
                 </motion.div>
             </div>
         </div>

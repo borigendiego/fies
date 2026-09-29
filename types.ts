@@ -24,3 +24,9 @@ export type Blog = {
   link: string;
   excerpt: string;
 };
+export type Customer = {
+  id: number;
+  title: string;
+  imageUrl: string | null;
+  redirection: string | null;
+};

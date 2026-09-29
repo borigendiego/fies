@@ -1,8 +1,8 @@
 'use client'
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import BlogCoverImage from '../commons/BlogCoverImage';
 
 const BlogPageComponent = ({ blogsData }:any) => {
     return (
@@ -26,22 +26,20 @@ const BlogPageComponent = ({ blogsData }:any) => {
                 {
                     blogsData.map((value:any, index:any) => (
                         <div className="flex flex-col md:flex-row items-center md:gap-16 gap-4 py-12 first:pt-0 md:py-20 border-b-2 md:even:flex-row-reverse" key={index} id={value.id}>
-                            <div className="md:w-[500px] w-[85vw] h-[220px] md:h-[320px] relative ">
-                                {
-                                    value.imageUrl
-                                    ? <Image
-                                        src={value.imageUrl}
-                                        alt={value.title}
-                                        objectFit="cover"
-                                        objectPosition='center
-                                        center'
-                                        width={500}
-                                        height={320}
-                                        className='rounded-lg max-h-[200px] lg:max-h-[320px] w-full'
-                                    />
-                                    : null
-                                }
-                            </div>
+                            {
+                                value.imageUrl
+                                ? <BlogCoverImage
+                                    src={value.imageUrl}
+                                    alt={value.title}
+                                    width={500}
+                                    height={320}
+                                    className='md:w-[500px] w-[85vw] shrink-0'
+                                    landscapeClassName='h-[220px] md:h-[320px]'
+                                    portraitClassName='h-[420px] md:h-[560px]'
+                                    imageClassName='rounded-lg'
+                                />
+                                : <div className="md:w-[500px] w-[85vw] h-[220px] md:h-[320px]" />
+                            }
                             <div className="flex flex-col pb-6 md:w-1/2 w-[85vw]">
                                 <div className="flex justify-between">
                                     <p>
