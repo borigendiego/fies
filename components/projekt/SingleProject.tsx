@@ -143,3 +143,4 @@ export default function SingleProject({ project }: { project: Project }) {
         </div>
     );
 }
+
