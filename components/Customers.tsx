@@ -1,7 +1,7 @@
 'use client'
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useAnimationFrame, useMotionValue, useTransform } from "framer-motion";
 import { Customer } from "../types";
 
 // Placeholders shown after the real customers until more logos are loaded in WordPress
@@ -16,17 +16,20 @@ const placeholders = [
 
 const MIN_ITEMS = 6
 
-const cardClassName = "w-[240px] md:w-[320px] h-[110px] md:h-[135px] border border-gray-200 flex items-center justify-center"
+// Seconds the auto scroll takes to move through the whole list once
+const LOOP_DURATION = 40
+
+const cardClassName = "w-[240px] md:w-[320px] h-[110px] md:h-[135px] bg-white flex items-center justify-center"
 
 const CustomerCard = ({ customer }: { customer: Customer }) => {
     const logo = customer.imageUrl
-        ? <Image src={customer.imageUrl} alt={customer.title} fill sizes="320px" className="object-contain" />
+        ? <Image src={customer.imageUrl} alt={customer.title} fill sizes="320px" draggable={false} className="object-contain" />
         : <span className="font-semibold text-xl">{customer.title}</span>
 
     const content = <div className="relative w-3/4 h-3/4 flex items-center justify-center">{logo}</div>
 
     return customer.redirection
-        ? <a href={customer.redirection} target="_blank" rel="noopener noreferrer" className={cardClassName}>{content}</a>
+        ? <a href={customer.redirection} target="_blank" rel="noopener noreferrer" draggable={false} className={cardClassName}>{content}</a>
         : <div className={cardClassName}>{content}</div>
 }
 
@@ -38,9 +41,39 @@ const Customers = ({ customers }: { customers: Customer[] }) => {
             .map((placeholder) => ({ type: 'placeholder' as const, placeholder })),
     ]
 
+    const trackRef = useRef<HTMLDivElement>(null)
+    // Width of one copy of the list, the distance after which the loop repeats
+    const loopWidth = useRef(0)
+    const isDragging = useRef(false)
+    const hasDragged = useRef(false)
+
+    const baseX = useMotionValue(0)
+    // Keeps the track between -loopWidth and 0 so it never runs out in either direction
+    const x = useTransform(baseX, (value) => {
+        const width = loopWidth.current
+        return width ? ((value % width) - width) % width : 0
+    })
+
+    useEffect(() => {
+        const track = trackRef.current
+        if(!track) return
+
+        const measure = () => { loopWidth.current = track.scrollWidth / 2 }
+        measure()
+
+        const observer = new ResizeObserver(measure)
+        observer.observe(track)
+        return () => observer.disconnect()
+    }, [])
+
+    useAnimationFrame((_, delta) => {
+        if(isDragging.current || !loopWidth.current) return
+        baseX.set(baseX.get() - (loopWidth.current / LOOP_DURATION) * (delta / 1000))
+    })
+
     return(
-        <div className="bg-white pt-4 pb-32 md:pb-32 md:pt-16">
-            <div className="md:w-[1300px] mx-auto flex flex-col mb-12 md:mb-16">
+        <div className="bg-[#89adcd] py-16 md:py-24">
+            <div className="md:w-[1300px] mx-auto flex flex-col mb-8">
                 <motion.h2
                     className="pl-6 md:pl-0 text-black"
                     initial={{opacity: 0, y: 15}}
@@ -52,11 +85,17 @@ const Customers = ({ customers }: { customers: Customer[] }) => {
                 </motion.h2>
             </div>
             <div className="relative overflow-hidden max-w-[1300px] mx-auto">
-                {/* The list is rendered twice and moved by -50%, so the loop restarts seamlessly */}
+                {/* The list is rendered twice and wrapped at half its width, so the loop restarts seamlessly */}
                 <motion.div
-                    className="flex w-max"
-                    animate={{x: ['0%', '-50%']}}
-                    transition={{duration: 40, ease: 'linear', repeat: Infinity}}
+                    ref={trackRef}
+                    className="flex w-max cursor-grab active:cursor-grabbing select-none"
+                    style={{x, touchAction: 'pan-y'}}
+                    onPointerDownCapture={() => { hasDragged.current = false }}
+                    onPanStart={() => { isDragging.current = true; hasDragged.current = true }}
+                    onPan={(_, info) => baseX.set(baseX.get() + info.delta.x)}
+                    onPanEnd={() => { isDragging.current = false }}
+                    // Avoids opening a customer link when the click was actually a drag
+                    onClickCapture={(e) => { if(hasDragged.current) { e.preventDefault(); e.stopPropagation() } }}
                 >
                     {[...items, ...items].map((item, index) => (
                         <div key={index} className="px-2 shrink-0" aria-hidden={index >= items.length}>
@@ -75,8 +114,8 @@ const Customers = ({ customers }: { customers: Customer[] }) => {
                         </div>
                     ))}
                 </motion.div>
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-48 bg-gradient-to-r from-white to-transparent"/>
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-48 bg-gradient-to-l from-white to-transparent"/>
+                <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-48 bg-gradient-to-r from-[#89adcd] to-transparent"/>
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-48 bg-gradient-to-l from-[#89adcd] to-transparent"/>
             </div>
         </div>
     )

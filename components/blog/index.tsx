@@ -8,9 +8,9 @@ import BlogSliderClient from "../commons/BlogSlider/BlogSliderClient";
 const BlogWrapper = () => {
 
     return(
-        <div className="mt-12 mb-32 mx-auto">
-            <div className="md:w-[1300px] mx-auto flex flex-col gap-4">
-                <Link href={'/aktuelles'} className="w-fit hover:underline mt-4">
+        <div className="py-16 md:py-24 mx-auto">
+            <div className="md:w-[1300px] mx-auto flex flex-col gap-8">
+                <Link href={'/aktuelles'} className="w-fit hover:underline">
                     <motion.h2
                         className="pl-6 md:pl-0"
                         initial={{opacity: 0, y: 15}}
